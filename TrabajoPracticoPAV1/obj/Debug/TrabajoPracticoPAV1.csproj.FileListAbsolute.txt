@@ -9,3 +9,15 @@ C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\Tr
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe.config
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Principal.resources
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Empleados.resources
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginForm.resources
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Properties.Resources.resources
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.GenerateResource.cache
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
