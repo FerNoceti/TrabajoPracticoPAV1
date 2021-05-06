@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="AD\AD_Empleados.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
+    <Compile Include="AD\AD_Varios.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

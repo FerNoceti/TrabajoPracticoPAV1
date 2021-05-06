@@ -40,12 +40,18 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         private void cargarComboTipoDocumentos()
         {
-            
+            cmbTipoDocumento.DataSource = AD_Varios.obtenerTipoDocumentos();
+            cmbTipoDocumento.DisplayMember = "Nombre";
+            cmbTipoDocumento.ValueMember = "Id";
+            cmbTipoDocumento.SelectedIndex = -1;
         }
 
         private void cargarComboSucursales()
         {
-
+            cmbSucursal.DataSource = AD_Varios.obtenerSucursales();
+            cmbSucursal.DisplayMember = "Nombre";
+            cmbSucursal.ValueMember = "Id";
+            cmbSucursal.SelectedIndex = -1;
         }
 
 
