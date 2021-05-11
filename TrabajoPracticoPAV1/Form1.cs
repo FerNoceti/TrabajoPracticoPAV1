@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabajoPracticoPAV1.Formularios.ABM;
 
 namespace TrabajoPracticoPAV1
 {
@@ -29,6 +30,12 @@ namespace TrabajoPracticoPAV1
         private void Principal_FormClosed(object sender, FormClosedEventArgs e)
         {
             formPadre.Close();
+        }
+
+        private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Barrios formBarrios = new ABM_Barrios(this);
+            formBarrios.Show();
         }
     }
 }
