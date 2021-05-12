@@ -42,6 +42,8 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnActualizarLab = new System.Windows.Forms.Button();
             this.btnGuardarLab = new System.Windows.Forms.Button();
             this.cmbBarrio = new System.Windows.Forms.ComboBox();
+            this.dgvLaboratorios = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLaboratorios)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -141,6 +143,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnActualizarLab.TabIndex = 14;
             this.btnActualizarLab.Text = "Actualizar laboratorio";
             this.btnActualizarLab.UseVisualStyleBackColor = true;
+            this.btnActualizarLab.Click += new System.EventHandler(this.btnActualizarLab_Click);
             // 
             // btnGuardarLab
             // 
@@ -150,6 +153,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarLab.TabIndex = 15;
             this.btnGuardarLab.Text = "Guardar laboratorio";
             this.btnGuardarLab.UseVisualStyleBackColor = true;
+            this.btnGuardarLab.Click += new System.EventHandler(this.btnGuardarLab_Click);
             // 
             // cmbBarrio
             // 
@@ -159,11 +163,20 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.cmbBarrio.Size = new System.Drawing.Size(100, 21);
             this.cmbBarrio.TabIndex = 16;
             // 
+            // dgvLaboratorios
+            // 
+            this.dgvLaboratorios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLaboratorios.Location = new System.Drawing.Point(366, 38);
+            this.dgvLaboratorios.Name = "dgvLaboratorios";
+            this.dgvLaboratorios.Size = new System.Drawing.Size(374, 259);
+            this.dgvLaboratorios.TabIndex = 17;
+            // 
             // ABM_Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvLaboratorios);
             this.Controls.Add(this.cmbBarrio);
             this.Controls.Add(this.btnGuardarLab);
             this.Controls.Add(this.btnActualizarLab);
@@ -181,6 +194,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Name = "ABM_Laboratorios";
             this.Text = "ABM_Laboratorios";
             this.Load += new System.EventHandler(this.ABM_Laboratorios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLaboratorios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +215,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.Button btnActualizarLab;
         private System.Windows.Forms.Button btnGuardarLab;
         private System.Windows.Forms.ComboBox cmbBarrio;
+        private System.Windows.Forms.DataGridView dgvLaboratorios;
     }
 }
