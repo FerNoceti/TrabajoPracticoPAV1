@@ -36,12 +36,12 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumeroCalle = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtIdBarrio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnLimpiarDatos = new System.Windows.Forms.Button();
             this.btnActualizarLab = new System.Windows.Forms.Button();
             this.btnGuardarLab = new System.Windows.Forms.Button();
+            this.cmbBarrio = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -103,13 +103,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.label3.TabIndex = 8;
             this.label3.Text = "Numero calle:";
             // 
-            // txtIdBarrio
-            // 
-            this.txtIdBarrio.Location = new System.Drawing.Point(195, 198);
-            this.txtIdBarrio.Name = "txtIdBarrio";
-            this.txtIdBarrio.Size = new System.Drawing.Size(100, 20);
-            this.txtIdBarrio.TabIndex = 11;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -138,6 +131,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnLimpiarDatos.TabIndex = 13;
             this.btnLimpiarDatos.Text = "Limpiar datos";
             this.btnLimpiarDatos.UseVisualStyleBackColor = true;
+            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
             // 
             // btnActualizarLab
             // 
@@ -157,16 +151,24 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarLab.Text = "Guardar laboratorio";
             this.btnGuardarLab.UseVisualStyleBackColor = true;
             // 
+            // cmbBarrio
+            // 
+            this.cmbBarrio.FormattingEnabled = true;
+            this.cmbBarrio.Location = new System.Drawing.Point(195, 196);
+            this.cmbBarrio.Name = "cmbBarrio";
+            this.cmbBarrio.Size = new System.Drawing.Size(100, 21);
+            this.cmbBarrio.TabIndex = 16;
+            // 
             // ABM_Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbBarrio);
             this.Controls.Add(this.btnGuardarLab);
             this.Controls.Add(this.btnActualizarLab);
             this.Controls.Add(this.btnLimpiarDatos);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtIdBarrio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNumeroCalle);
             this.Controls.Add(this.label3);
@@ -193,11 +195,11 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumeroCalle;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtIdBarrio;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnLimpiarDatos;
         private System.Windows.Forms.Button btnActualizarLab;
         private System.Windows.Forms.Button btnGuardarLab;
+        private System.Windows.Forms.ComboBox cmbBarrio;
     }
 }
