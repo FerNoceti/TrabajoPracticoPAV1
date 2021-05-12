@@ -16,5 +16,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             InitializeComponent();
         }
+
+        private void ABM_Empleados_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

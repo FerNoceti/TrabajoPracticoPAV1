@@ -20,3 +20,5 @@ D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\Trabajo
 D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
 D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
 D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Empleados.resources
+D:\.UTN\3ro\pav\TpPAV1\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Laboratorios.resources

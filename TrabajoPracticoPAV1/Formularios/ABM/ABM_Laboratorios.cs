@@ -16,5 +16,15 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             InitializeComponent();
         }
+
+        private void ABM_Laboratorios_Load(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
