@@ -60,6 +60,12 @@
     <Compile Include="Formularios\ABM\ABM_Empleados.Designer.cs">
       <DependentUpon>ABM_Empleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM\ABM_Laboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Laboratorios.Designer.cs">
+      <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
