@@ -92,10 +92,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             }
         }
 
+
         private Barrio ObtenerDatosBarrio()
         {
             Barrio b = new Barrio();
-            b.IdBarrio = Convert.ToInt32(txtId.Text);
             b.NombreBarrio = txtNombre.Text.Trim();
             b.CiudadBarrio = (int)cmbCiudad.SelectedValue;
             b.DescripcionBarrio = txtDescripción.Text.Trim();
@@ -121,7 +121,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             }
             else
             {
-                Barrio b = ObtenerDatosBarrio();
+                Barrio b = ObtenerDatosBarrioAActualizar();
                 bool resultado = AD_Varios.ActualizarBarrio(b);
                 if (resultado)
                 {
@@ -135,6 +135,16 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
                     MessageBox.Show("Error al actualizar barrio");
                 }
             }
+        }
+
+        private Barrio ObtenerDatosBarrioAActualizar()
+        {
+            Barrio b = new Barrio();
+            b.IdBarrio = Convert.ToInt32(txtId.Text);
+            b.NombreBarrio = txtNombre.Text.Trim();
+            b.CiudadBarrio = (int)cmbCiudad.SelectedValue;
+            b.DescripcionBarrio = txtDescripción.Text.Trim();
+            return b;
         }
 
         private void CargarCampos(Barrio b)
