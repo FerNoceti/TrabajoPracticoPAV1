@@ -37,8 +37,14 @@ namespace TrabajoPracticoPAV1
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ABM_Empleados formEmpleados = new ABM_Empleados(this);
-            formEmpleados.Show();
+            ABM_Empleados formEmpleados = new ABM_Empleados();
+            formEmpleados.ShowDialog();
+        }
+
+        private void sucursalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Sucursales formSucursales = new ABM_Sucursales();
+            formSucursales.ShowDialog();
         }
     }
 }

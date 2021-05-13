@@ -29,7 +29,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnConsultarEmpleado = new System.Windows.Forms.Button();
             this.btnEliminarEmpleado = new System.Windows.Forms.Button();
             this.btnAgregarEmpleado = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -54,49 +53,46 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.txtFechaNac = new System.Windows.Forms.MaskedTextBox();
             this.lbSucursal = new System.Windows.Forms.Label();
             this.cmbSucursal = new System.Windows.Forms.ComboBox();
+            this.btnCancelarOperacion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gdrEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnConsultarEmpleado
-            // 
-            this.btnConsultarEmpleado.Location = new System.Drawing.Point(21, 306);
-            this.btnConsultarEmpleado.Name = "btnConsultarEmpleado";
-            this.btnConsultarEmpleado.Size = new System.Drawing.Size(265, 26);
-            this.btnConsultarEmpleado.TabIndex = 0;
-            this.btnConsultarEmpleado.Text = "Consultar";
-            this.btnConsultarEmpleado.UseVisualStyleBackColor = true;
-            // 
             // btnEliminarEmpleado
             // 
-            this.btnEliminarEmpleado.Location = new System.Drawing.Point(159, 338);
+            this.btnEliminarEmpleado.Location = new System.Drawing.Point(159, 318);
             this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
-            this.btnEliminarEmpleado.Size = new System.Drawing.Size(127, 23);
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(127, 31);
             this.btnEliminarEmpleado.TabIndex = 1;
-            this.btnEliminarEmpleado.Text = "Borrar";
+            this.btnEliminarEmpleado.Text = "Eliminar";
             this.btnEliminarEmpleado.UseVisualStyleBackColor = true;
+            this.btnEliminarEmpleado.Click += new System.EventHandler(this.btnEliminarEmpleado_Click);
             // 
             // btnAgregarEmpleado
             // 
-            this.btnAgregarEmpleado.Location = new System.Drawing.Point(21, 274);
+            this.btnAgregarEmpleado.Location = new System.Drawing.Point(21, 277);
             this.btnAgregarEmpleado.Name = "btnAgregarEmpleado";
-            this.btnAgregarEmpleado.Size = new System.Drawing.Size(265, 26);
+            this.btnAgregarEmpleado.Size = new System.Drawing.Size(265, 35);
             this.btnAgregarEmpleado.TabIndex = 2;
             this.btnAgregarEmpleado.Text = "Agregar";
             this.btnAgregarEmpleado.UseVisualStyleBackColor = true;
+            this.btnAgregarEmpleado.Click += new System.EventHandler(this.btnAgregarEmpleado_Click);
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(21, 338);
+            this.btnActualizar.Location = new System.Drawing.Point(21, 318);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(132, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(132, 31);
             this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // gdrEmpleados
             // 
             this.gdrEmpleados.AllowUserToAddRows = false;
             this.gdrEmpleados.AllowUserToDeleteRows = false;
+            this.gdrEmpleados.AllowUserToResizeColumns = false;
+            this.gdrEmpleados.AllowUserToResizeRows = false;
             this.gdrEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdrEmpleados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.TipoDocumento,
@@ -107,10 +103,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.FechaIngreso,
             this.Sucursal});
             this.gdrEmpleados.Location = new System.Drawing.Point(317, 12);
+            this.gdrEmpleados.MultiSelect = false;
             this.gdrEmpleados.Name = "gdrEmpleados";
             this.gdrEmpleados.ReadOnly = true;
-            this.gdrEmpleados.Size = new System.Drawing.Size(570, 348);
+            this.gdrEmpleados.RowHeadersVisible = false;
+            this.gdrEmpleados.Size = new System.Drawing.Size(581, 386);
             this.gdrEmpleados.TabIndex = 4;
+            this.gdrEmpleados.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrEmpleados_CellClick);
             // 
             // TipoDocumento
             // 
@@ -160,11 +159,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // Sucursal
             // 
-            this.Sucursal.DataPropertyName = "IdSucursal";
+            this.Sucursal.DataPropertyName = "Sucursal";
             this.Sucursal.HeaderText = "Sucursal";
             this.Sucursal.Name = "Sucursal";
             this.Sucursal.ReadOnly = true;
-            this.Sucursal.Width = 50;
             // 
             // lbEmpleados
             // 
@@ -214,11 +212,11 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // lbFechaNacimiento
             // 
             this.lbFechaNacimiento.AutoSize = true;
-            this.lbFechaNacimiento.Location = new System.Drawing.Point(18, 197);
+            this.lbFechaNacimiento.Location = new System.Drawing.Point(12, 191);
             this.lbFechaNacimiento.Name = "lbFechaNacimiento";
-            this.lbFechaNacimiento.Size = new System.Drawing.Size(60, 13);
+            this.lbFechaNacimiento.Size = new System.Drawing.Size(85, 26);
             this.lbFechaNacimiento.TabIndex = 10;
-            this.lbFechaNacimiento.Text = "Nacimiento";
+            this.lbFechaNacimiento.Text = "   Nacimiento \r\n(DD/MM/YYYY)";
             // 
             // txtNombre
             // 
@@ -236,6 +234,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // cmbTipoDocumento
             // 
+            this.cmbTipoDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoDocumento.FormattingEnabled = true;
             this.cmbTipoDocumento.Location = new System.Drawing.Point(94, 114);
             this.cmbTipoDocumento.Name = "cmbTipoDocumento";
@@ -251,7 +250,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // txtFechaNac
             // 
-            this.txtFechaNac.Location = new System.Drawing.Point(94, 197);
+            this.txtFechaNac.Location = new System.Drawing.Point(114, 197);
             this.txtFechaNac.Mask = "00/00/0000";
             this.txtFechaNac.Name = "txtFechaNac";
             this.txtFechaNac.Size = new System.Drawing.Size(71, 20);
@@ -269,17 +268,29 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // cmbSucursal
             // 
+            this.cmbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSucursal.FormattingEnabled = true;
             this.cmbSucursal.Location = new System.Drawing.Point(94, 233);
             this.cmbSucursal.Name = "cmbSucursal";
             this.cmbSucursal.Size = new System.Drawing.Size(192, 21);
             this.cmbSucursal.TabIndex = 17;
             // 
+            // btnCancelarOperacion
+            // 
+            this.btnCancelarOperacion.Location = new System.Drawing.Point(21, 355);
+            this.btnCancelarOperacion.Name = "btnCancelarOperacion";
+            this.btnCancelarOperacion.Size = new System.Drawing.Size(265, 33);
+            this.btnCancelarOperacion.TabIndex = 18;
+            this.btnCancelarOperacion.Text = "Cancelar";
+            this.btnCancelarOperacion.UseVisualStyleBackColor = true;
+            this.btnCancelarOperacion.Click += new System.EventHandler(this.btnCancelarOperacion_Click);
+            // 
             // ABM_Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 372);
+            this.ClientSize = new System.Drawing.Size(939, 410);
+            this.Controls.Add(this.btnCancelarOperacion);
             this.Controls.Add(this.cmbSucursal);
             this.Controls.Add(this.lbSucursal);
             this.Controls.Add(this.txtFechaNac);
@@ -297,9 +308,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAgregarEmpleado);
             this.Controls.Add(this.btnEliminarEmpleado);
-            this.Controls.Add(this.btnConsultarEmpleado);
             this.Name = "ABM_Empleados";
-            this.Text = "ABM_Empleados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Empleados";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ABM_Empleados_FormClosed);
             this.Load += new System.EventHandler(this.ABM_Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gdrEmpleados)).EndInit();
@@ -309,19 +320,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnConsultarEmpleado;
         private System.Windows.Forms.Button btnEliminarEmpleado;
         private System.Windows.Forms.Button btnAgregarEmpleado;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.DataGridView gdrEmpleados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NroDocumento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sucursal;
         private System.Windows.Forms.Label lbEmpleados;
         private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.Label lbApellido;
@@ -335,5 +337,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.MaskedTextBox txtFechaNac;
         private System.Windows.Forms.Label lbSucursal;
         private System.Windows.Forms.ComboBox cmbSucursal;
+        private System.Windows.Forms.Button btnCancelarOperacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoDocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NroDocumento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaIngreso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sucursal;
     }
 }

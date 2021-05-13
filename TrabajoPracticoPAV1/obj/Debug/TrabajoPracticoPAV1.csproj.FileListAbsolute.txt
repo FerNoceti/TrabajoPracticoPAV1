@@ -21,3 +21,4 @@ C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\D
 C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
 C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
 C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\matia\Documents\git\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Sucursales.resources

@@ -36,7 +36,7 @@ namespace TrabajoPracticoPAV1.AD
             }
         }
 
-        private static DataTable obtenerTabla(string storedProcedure)
+        public static DataTable obtenerTabla(string storedProcedure)
         {
             DataTable tabla = new DataTable();
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
