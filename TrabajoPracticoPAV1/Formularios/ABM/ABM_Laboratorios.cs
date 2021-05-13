@@ -23,6 +23,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             LimpiarCampos();
             CargarCombosBarrios();
+            CargarGrilla();
         }
 
         private void CargarCombosBarrios()
@@ -45,8 +46,22 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             txtRazonSocial.Text = "";
             txtCalle.Text = "";
-            txtNumeroCalle.Text = "";        
+            txtNumeroCalle.Text = "";
+            txtId.Enabled = false;
             
+        }
+        
+        private void CargarGrilla()
+        {
+            try
+            {
+                dgvLaboratorios.DataSource = AD_Laboratorios.ObtenerListadoLaboratorios();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void btnLimpiarDatos_Click(object sender, EventArgs e)
@@ -84,9 +99,30 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         private void btnActualizarLab_Click(object sender, EventArgs e)
         {
+            Laboratorio lab = ObtenerDatosLaboratorio();
+            bool resultado = AD_Laboratorios.ActualizarLabABD(lab);
+        }
 
+
+        private void CargarCampos(Laboratorio lab)
+        {
+            txtId.Text = lab.IdLaboratorios;
+            txtRazonSocial.Text = lab.RazonSocialLaboratorio;
+            txtCalle.Text = lab.CalleLaboratorio;
+            txtNumeroCalle.Text = lab.NumeroCalleLaboratorio;
+            cmbBarrio.SelectedValue = lab.IdLaboratorios;
+        }
+
+        private void dgvLaboratorios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice = e.RowIndex;
+            DataGridViewRow filaSeleccionada = dgvLaboratorios.Rows[indice];
+            int id = int.Parse(filaSeleccionada.Cells["Id"].Value.ToString());
+            Laboratorio lab = AD_Laboratorios.ObtenerDatosLaboratorio(id);
+            LimpiarCampos();
+            CargarCampos(lab);
+            btnActualizarLab.Enabled = true;
         }
     }
-
-    
 }
+

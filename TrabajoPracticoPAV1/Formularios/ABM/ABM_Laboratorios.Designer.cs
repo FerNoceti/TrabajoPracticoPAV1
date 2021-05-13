@@ -43,6 +43,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarLab = new System.Windows.Forms.Button();
             this.cmbBarrio = new System.Windows.Forms.ComboBox();
             this.dgvLaboratorios = new System.Windows.Forms.DataGridView();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NroCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaboratorios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,13 +57,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(993, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // txtRazonSocial
             // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(195, 89);
+            this.txtRazonSocial.Location = new System.Drawing.Point(187, 113);
             this.txtRazonSocial.Name = "txtRazonSocial";
             this.txtRazonSocial.Size = new System.Drawing.Size(100, 20);
             this.txtRazonSocial.TabIndex = 5;
@@ -65,7 +72,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 87);
+            this.label1.Location = new System.Drawing.Point(77, 111);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 20);
             this.label1.TabIndex = 4;
@@ -73,7 +80,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // txtCalle
             // 
-            this.txtCalle.Location = new System.Drawing.Point(195, 124);
+            this.txtCalle.Location = new System.Drawing.Point(187, 148);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(100, 20);
             this.txtCalle.TabIndex = 7;
@@ -82,7 +89,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 122);
+            this.label2.Location = new System.Drawing.Point(77, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 6;
@@ -90,7 +97,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // txtNumeroCalle
             // 
-            this.txtNumeroCalle.Location = new System.Drawing.Point(195, 159);
+            this.txtNumeroCalle.Location = new System.Drawing.Point(187, 183);
             this.txtNumeroCalle.Name = "txtNumeroCalle";
             this.txtNumeroCalle.Size = new System.Drawing.Size(100, 20);
             this.txtNumeroCalle.TabIndex = 9;
@@ -99,7 +106,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 157);
+            this.label3.Location = new System.Drawing.Point(77, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 20);
             this.label3.TabIndex = 8;
@@ -109,7 +116,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(85, 196);
+            this.label4.Location = new System.Drawing.Point(77, 220);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 10;
@@ -127,7 +134,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // btnLimpiarDatos
             // 
-            this.btnLimpiarDatos.Location = new System.Drawing.Point(12, 252);
+            this.btnLimpiarDatos.Location = new System.Drawing.Point(4, 276);
             this.btnLimpiarDatos.Name = "btnLimpiarDatos";
             this.btnLimpiarDatos.Size = new System.Drawing.Size(88, 45);
             this.btnLimpiarDatos.TabIndex = 13;
@@ -137,7 +144,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // btnActualizarLab
             // 
-            this.btnActualizarLab.Location = new System.Drawing.Point(106, 252);
+            this.btnActualizarLab.Location = new System.Drawing.Point(98, 276);
             this.btnActualizarLab.Name = "btnActualizarLab";
             this.btnActualizarLab.Size = new System.Drawing.Size(100, 45);
             this.btnActualizarLab.TabIndex = 14;
@@ -147,7 +154,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // btnGuardarLab
             // 
-            this.btnGuardarLab.Location = new System.Drawing.Point(212, 252);
+            this.btnGuardarLab.Location = new System.Drawing.Point(204, 276);
             this.btnGuardarLab.Name = "btnGuardarLab";
             this.btnGuardarLab.Size = new System.Drawing.Size(100, 45);
             this.btnGuardarLab.TabIndex = 15;
@@ -158,24 +165,83 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // cmbBarrio
             // 
             this.cmbBarrio.FormattingEnabled = true;
-            this.cmbBarrio.Location = new System.Drawing.Point(195, 196);
+            this.cmbBarrio.Location = new System.Drawing.Point(187, 220);
             this.cmbBarrio.Name = "cmbBarrio";
             this.cmbBarrio.Size = new System.Drawing.Size(100, 21);
             this.cmbBarrio.TabIndex = 16;
             // 
             // dgvLaboratorios
             // 
+            this.dgvLaboratorios.AllowUserToAddRows = false;
+            this.dgvLaboratorios.AllowUserToDeleteRows = false;
             this.dgvLaboratorios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvLaboratorios.Location = new System.Drawing.Point(366, 38);
+            this.dgvLaboratorios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.RazonSocial,
+            this.Calle,
+            this.NroCalle,
+            this.idBarrio});
+            this.dgvLaboratorios.Location = new System.Drawing.Point(324, 38);
             this.dgvLaboratorios.Name = "dgvLaboratorios";
-            this.dgvLaboratorios.Size = new System.Drawing.Size(374, 259);
+            this.dgvLaboratorios.ReadOnly = true;
+            this.dgvLaboratorios.Size = new System.Drawing.Size(544, 401);
             this.dgvLaboratorios.TabIndex = 17;
+            this.dgvLaboratorios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLaboratorios_CellClick);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(187, 80);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 19;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.Location = new System.Drawing.Point(77, 78);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(27, 20);
+            this.lblId.TabIndex = 18;
+            this.lblId.Text = "Id:";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // RazonSocial
+            // 
+            this.RazonSocial.DataPropertyName = "RazonSocial";
+            this.RazonSocial.HeaderText = "Razon Social";
+            this.RazonSocial.Name = "RazonSocial";
+            // 
+            // Calle
+            // 
+            this.Calle.DataPropertyName = "Calle";
+            this.Calle.HeaderText = "Calle";
+            this.Calle.Name = "Calle";
+            // 
+            // NroCalle
+            // 
+            this.NroCalle.DataPropertyName = "NroCalle";
+            this.NroCalle.HeaderText = "Numero Calle";
+            this.NroCalle.Name = "NroCalle";
+            // 
+            // idBarrio
+            // 
+            this.idBarrio.DataPropertyName = "idBarrio";
+            this.idBarrio.HeaderText = "Id Barrio";
+            this.idBarrio.Name = "idBarrio";
             // 
             // ABM_Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(993, 523);
+            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.lblId);
             this.Controls.Add(this.dgvLaboratorios);
             this.Controls.Add(this.cmbBarrio);
             this.Controls.Add(this.btnGuardarLab);
@@ -216,5 +282,12 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.Button btnGuardarLab;
         private System.Windows.Forms.ComboBox cmbBarrio;
         private System.Windows.Forms.DataGridView dgvLaboratorios;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RazonSocial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NroCalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idBarrio;
     }
 }
