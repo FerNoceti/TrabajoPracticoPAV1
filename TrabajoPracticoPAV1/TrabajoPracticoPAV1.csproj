@@ -47,12 +47,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="AD\AD_Empleados.cs" />
+    <Compile Include="AD\AD_Sucursales.cs" />
+    <Compile Include="AD\AD_Usuarios.cs" />
+    <Compile Include="AD\AD_Varios.cs" />
+    <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Sucursal.cs" />
+=======
     <Compile Include="AD\AD_Laboratorios.cs" />
     <Compile Include="AD\AD_Sintomas.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
     <Compile Include="AD\AD_Varios.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
     <Compile Include="Entidades\Sintomas.cs" />
+>>>>>>> main
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +74,14 @@
     <Compile Include="Formularios\ABM\ABM_Empleados.Designer.cs">
       <DependentUpon>ABM_Empleados.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Formularios\ABM\ABM_Sucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sucursales.Designer.cs">
+      <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+    </Compile>
+=======
     <Compile Include="Formularios\ABM\ABM_Laboratorios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +95,7 @@
       <DependentUpon>ABM_Sintomas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
+>>>>>>> main
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,11 +110,16 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Empleados.resx">
       <DependentUpon>ABM_Empleados.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Formularios\ABM\ABM_Sucursales.resx">
+      <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+=======
     <EmbeddedResource Include="Formularios\ABM\ABM_Laboratorios.resx">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Sintomas.resx">
       <DependentUpon>ABM_Sintomas.cs</DependentUpon>
+>>>>>>> main
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
