@@ -120,12 +120,14 @@ namespace TrabajoPracticoPAV1
             this.medicamentosToolStripMenuItem.Name = "medicamentosToolStripMenuItem";
             this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.medicamentosToolStripMenuItem.Text = "Medicamentos";
+            this.medicamentosToolStripMenuItem.Click += new System.EventHandler(this.medicamentosToolStripMenuItem_Click);
             // 
             // razasToolStripMenuItem
             // 
             this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
             this.razasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.razasToolStripMenuItem.Text = "Razas";
+            this.razasToolStripMenuItem.Click += new System.EventHandler(this.razasToolStripMenuItem_Click);
             // 
             // laboratoriosToolStripMenuItem
             // 

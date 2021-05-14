@@ -264,6 +264,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "ABM_Laboratorios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM_Laboratorios";
             this.Load += new System.EventHandler(this.ABM_Laboratorios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaboratorios)).EndInit();

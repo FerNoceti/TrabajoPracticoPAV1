@@ -50,18 +50,18 @@ namespace TrabajoPracticoPAV1
         private void laboratoriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ABM_Laboratorios ventana = new ABM_Laboratorios();
-            ventana.Show();
+            ventana.ShowDialog();
         }
 
         private void sintomasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ABM_Sintomas ventana = new ABM_Sintomas();
-            ventana.Show();
+            ventana.ShowDialog();
         }
         private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ABM_Barrios formBarrios = new ABM_Barrios(this);
-            formBarrios.Show();
+            formBarrios.ShowDialog();
         }
 
         private void perrosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,6 +75,17 @@ namespace TrabajoPracticoPAV1
         {
             ABM_Usuarios ventana_Usu = new ABM_Usuarios();
             ventana_Usu.ShowDialog();
+        }
+        private void medicamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Medicamentos ventana = new ABM_Medicamentos();
+            ventana.ShowDialog();
+        }
+
+        private void razasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Razas ventana = new ABM_Razas();
+            ventana.ShowDialog();
         }
     }
 }

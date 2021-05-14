@@ -120,9 +120,8 @@ namespace TrabajoPracticoPAV1.AD
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM @nombreTabla";
+                string consulta = "SELECT * FROM " + nombreTabla;
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@nombreTabla", nombreTabla);
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -134,8 +133,9 @@ namespace TrabajoPracticoPAV1.AD
 
 
             }
-            catch (Exception)
-            { 
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
             return tabla;

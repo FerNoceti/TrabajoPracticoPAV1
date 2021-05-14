@@ -15,3 +15,6 @@ C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPra
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Perros.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Usuarios.resources
+C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Medicamentos.resources
+C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Razas.resources
+C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache

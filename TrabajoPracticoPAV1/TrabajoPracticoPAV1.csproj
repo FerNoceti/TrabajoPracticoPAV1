@@ -49,7 +49,9 @@
   <ItemGroup>
     <Compile Include="AD\AD_Empleados.cs" />
     <Compile Include="AD\AD_Laboratorios.cs" />
+    <Compile Include="AD\AD_Medicamentos.cs" />
     <Compile Include="AD\AD_Perros.cs" />
+    <Compile Include="AD\AD_Razas.cs" />
     <Compile Include="AD\AD_Sintomas.cs" />
     <Compile Include="AD\AD_Sucursales.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
@@ -57,7 +59,9 @@
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
+    <Compile Include="Entidades\Medicamentos.cs" />
     <Compile Include="Entidades\Perro.cs" />
+    <Compile Include="Entidades\Razas.cs" />
     <Compile Include="Entidades\Sintomas.cs" />
     <Compile Include="Entidades\Sucursal.cs" />
     <Compile Include="Entidades\Usuario.cs" />
@@ -85,11 +89,23 @@
     <Compile Include="Formularios\ABM\ABM_Laboratorios.Designer.cs">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM\ABM_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Medicamentos.designer.cs">
+      <DependentUpon>ABM_Medicamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM\ABM_Perros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\ABM\ABM_Perros.designer.cs">
       <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Razas.designer.cs">
+      <DependentUpon>ABM_Razas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\ABM_Sintomas.cs">
       <SubType>Form</SubType>
@@ -130,8 +146,14 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Laboratorios.resx">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Medicamentos.resx">
+      <DependentUpon>ABM_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Perros.resx">
       <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Razas.resx">
+      <DependentUpon>ABM_Razas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Sintomas.resx">
       <DependentUpon>ABM_Sintomas.cs</DependentUpon>
