@@ -130,12 +130,14 @@ namespace TrabajoPracticoPAV1
             this.laboratoriosToolStripMenuItem.Name = "laboratoriosToolStripMenuItem";
             this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.laboratoriosToolStripMenuItem.Text = "Laboratorios";
+            this.laboratoriosToolStripMenuItem.Click += new System.EventHandler(this.laboratoriosToolStripMenuItem_Click);
             // 
             // sintomasToolStripMenuItem
             // 
             this.sintomasToolStripMenuItem.Name = "sintomasToolStripMenuItem";
             this.sintomasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sintomasToolStripMenuItem.Text = "Sintomas";
+            this.sintomasToolStripMenuItem.Click += new System.EventHandler(this.sintomasToolStripMenuItem_Click);
             // 
             // perrosToolStripMenuItem
             // 

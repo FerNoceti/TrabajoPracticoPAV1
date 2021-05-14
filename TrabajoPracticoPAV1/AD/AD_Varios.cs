@@ -41,17 +41,13 @@ namespace TrabajoPracticoPAV1.AD
             DataTable tabla = new DataTable();
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(CadenaDB);
-
-
-            try
+	    try
             {
                 SqlCommand cmd = new SqlCommand();
-                cmd.CommandType = CommandType.StoredProcedure;
+		cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = storedProcedure;
-
                 cn.Open();
                 cmd.Connection = cn;
-
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tabla);
 
@@ -59,7 +55,6 @@ namespace TrabajoPracticoPAV1.AD
             }
             catch (Exception)
             {
-
                 throw;
             }
             finally
@@ -68,6 +63,37 @@ namespace TrabajoPracticoPAV1.AD
             }
         }
 
+        public static DataTable ObtenerTabla(string nombreTabla)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT * FROM @nombreTabla";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nombreTabla", nombreTabla);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+                DataTable tabla = new DataTable();
 
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+
+
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ using TrabajoPracticoPAV1.Formularios;
 using TrabajoPracticoPAV1.Formularios.ABM;
 using TrabajoPracticoPAV1.AD;
 
+
 namespace TrabajoPracticoPAV1
 {
     public partial class Principal : Form
@@ -45,6 +46,18 @@ namespace TrabajoPracticoPAV1
         {
             ABM_Sucursales formSucursales = new ABM_Sucursales();
             formSucursales.ShowDialog();
+
+        private void laboratoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Laboratorios ventana = new ABM_Laboratorios();
+            ventana.Show();
+        }
+
+        private void sintomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Sintomas ventana = new ABM_Sintomas();
+            ventana.Show();
+
         }
     }
 }
