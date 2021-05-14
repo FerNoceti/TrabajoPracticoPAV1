@@ -20,16 +20,20 @@ namespace TrabajoPracticoPAV1.AD
         {
             try
             {
-                return obtenerTabla("getTipoDocumentos");
+                return obtenerTablaSP("getTipoDocumentos");
             }
             catch (Exception ex)
             {
+                throw ex;
+            }
+        }
+
 
         public static DataTable ObtenerCiudades()
         {
             try
             {
-                return ObtenerTabla("getCiudades");
+                return obtenerTablaSP("getCiudades");
             }
             catch (Exception ex)
             {
@@ -41,7 +45,7 @@ namespace TrabajoPracticoPAV1.AD
         {
             try
             {
-                return obtenerTabla("getSucursales");
+                return obtenerTablaSP("getSucursales");
             }
             catch (Exception ex)
             {
@@ -50,47 +54,29 @@ namespace TrabajoPracticoPAV1.AD
             }
         }
 
-        public static DataTable obtenerTabla(string storedProcedure)
+        public static DataTable obtenerTablaSP(string storedProcedure)
         {
             DataTable tabla = new DataTable();
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(CadenaDB);
-	    try
-            {
-                SqlCommand cmd = new SqlCommand();
-		cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = storedProcedure;
-                cn.Open();
-                cmd.Connection = cn;
-        public static DataTable ObtenerTabla(string storedProcedure)
-        {
-            DataTable tabla = new DataTable();
-            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
-            SqlConnection cn = new SqlConnection(CadenaDB);
-
             try
             {
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = storedProcedure;
-
                 cn.Open();
                 cmd.Connection = cn;
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tabla);
-
                 return tabla;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
-            }
-            finally
-            {
-                cn.Close();
+                throw ex;
             }
         }
+
 
         public static DataTable ObtenerListadoBarriosReducido()
         {
@@ -114,9 +100,7 @@ namespace TrabajoPracticoPAV1.AD
 
                 return tabla;
             }
-            catch (Exception)
-            {
-                throw;
+
             catch (Exception ex)
             {
 
@@ -130,6 +114,7 @@ namespace TrabajoPracticoPAV1.AD
 
         public static DataTable ObtenerTabla(string nombreTabla)
         {
+            DataTable tabla = new DataTable();
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
             try
@@ -142,8 +127,6 @@ namespace TrabajoPracticoPAV1.AD
                 cmd.CommandText = consulta;
                 cn.Open();
                 cmd.Connection = cn;
-                DataTable tabla = new DataTable();
-
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tabla);
                 return tabla;
@@ -152,6 +135,8 @@ namespace TrabajoPracticoPAV1.AD
 
             }
             catch (Exception)
+            { 
+            }
 
             return tabla;
         }

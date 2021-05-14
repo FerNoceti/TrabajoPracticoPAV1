@@ -11,7 +11,6 @@ using TrabajoPracticoPAV1;
 using TrabajoPracticoPAV1.Formularios;
 using TrabajoPracticoPAV1.Formularios.ABM;
 using TrabajoPracticoPAV1.AD;
-
 using TrabajoPracticoPAV1.Formularios.ABM;
 
 namespace TrabajoPracticoPAV1
@@ -47,7 +46,7 @@ namespace TrabajoPracticoPAV1
         {
             ABM_Sucursales formSucursales = new ABM_Sucursales();
             formSucursales.ShowDialog();
-
+        }
         private void laboratoriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ABM_Laboratorios ventana = new ABM_Laboratorios();
@@ -58,7 +57,7 @@ namespace TrabajoPracticoPAV1
         {
             ABM_Sintomas ventana = new ABM_Sintomas();
             ventana.Show();
-
+        }
         private void barriosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ABM_Barrios formBarrios = new ABM_Barrios(this);
