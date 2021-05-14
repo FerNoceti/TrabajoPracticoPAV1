@@ -135,6 +135,7 @@ namespace TrabajoPracticoPAV1
             this.sintomasToolStripMenuItem.Name = "sintomasToolStripMenuItem";
             this.sintomasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.sintomasToolStripMenuItem.Text = "Sintomas";
+            this.sintomasToolStripMenuItem.Click += new System.EventHandler(this.sintomasToolStripMenuItem_Click);
             // 
             // perrosToolStripMenuItem
             // 
@@ -231,7 +232,7 @@ namespace TrabajoPracticoPAV1
             this.calendarioDeVacunasToolStripMenuItem1,
             this.razasToolStripMenuItem1});
             this.informesToolStripMenuItem.Name = "informesToolStripMenuItem";
-            this.informesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.informesToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.informesToolStripMenuItem.Text = "Informes";
             // 
             // empleadosToolStripMenuItem1
@@ -283,7 +284,7 @@ namespace TrabajoPracticoPAV1
             this.perrosRegistradosToolStripMenuItem,
             this.ingresosObtenidosToolStripMenuItem});
             this.estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
-            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadisticasToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.estadisticasToolStripMenuItem.Text = "Estadisticas";
             // 
             // consultasRealizadasToolStripMenuItem

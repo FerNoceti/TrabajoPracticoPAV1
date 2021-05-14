@@ -37,5 +37,11 @@ namespace TrabajoPracticoPAV1
             ABM_Laboratorios ventana = new ABM_Laboratorios();
             ventana.Show();
         }
+
+        private void sintomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Sintomas ventana = new ABM_Sintomas();
+            ventana.Show();
+        }
     }
 }

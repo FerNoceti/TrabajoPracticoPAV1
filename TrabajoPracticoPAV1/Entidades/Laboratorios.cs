@@ -8,7 +8,7 @@ namespace TrabajoPracticoPAV1.Entidades
 {
     public class Laboratorio
     {
-        private string Id;
+        private int Id;
         private string RazonSocial;
         private string Calle;
         private string NumeroCalle;
@@ -20,7 +20,7 @@ namespace TrabajoPracticoPAV1.Entidades
         }
 
 
-        public string IdLaboratorios
+        public int IdLaboratorios
         {
             get => Id;
             set => Id = value;

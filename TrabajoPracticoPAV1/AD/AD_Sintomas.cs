@@ -9,9 +9,9 @@ using TrabajoPracticoPAV1.Entidades;
 
 namespace TrabajoPracticoPAV1.AD
 {
-    public class AD_Laboratorios
+    public class AD_Sintomas
     {
-        public static bool AregarLaboratorioABD(Laboratorio lab)
+        public static bool AgregarSintomaABD(Sintoma sin)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -20,12 +20,9 @@ namespace TrabajoPracticoPAV1.AD
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "insertLaboratorios";
+                string consulta = "insertSintoma";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@razonSocial", lab.RazonSocialLaboratorio);
-                cmd.Parameters.AddWithValue("@calle", lab.CalleLaboratorio);
-                cmd.Parameters.AddWithValue("@numeroCalle", lab.NumeroCalleLaboratorio);
-                cmd.Parameters.AddWithValue("@idBarrio", lab.IdBarrioLaboratorio);
+                cmd.Parameters.AddWithValue("@nombre", sin.NombreSintomas);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
                 cn.Open();
@@ -45,8 +42,7 @@ namespace TrabajoPracticoPAV1.AD
             return resultado;
 
         }
-
-        internal static object ObtenerListadoLaboratorios()
+        public static object ObtenerListadoSintomas()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -55,7 +51,7 @@ namespace TrabajoPracticoPAV1.AD
             {
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "getLaboratorios";
+                string consulta = "getSintomas";
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
@@ -83,7 +79,7 @@ namespace TrabajoPracticoPAV1.AD
             }
         }
 
-        public static bool ActualizarLabABD(Laboratorio lab)
+        public static bool ActualizarSinABD(Sintoma sin)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -92,16 +88,14 @@ namespace TrabajoPracticoPAV1.AD
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "UPDATE Laboratorios SET RazonSocial = @razonSocial, Calle = @calle, NroCalle = @numeroCalle, idBarrio = @idBarrio WHERE Id LIKE @id";
+                string consulta = "updateSintomas";
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@id", lab.IdLaboratorios);
-                cmd.Parameters.AddWithValue("@razonSocial", lab.RazonSocialLaboratorio);
-                cmd.Parameters.AddWithValue("@calle", lab.CalleLaboratorio);
-                cmd.Parameters.AddWithValue("@numeroCalle", lab.NumeroCalleLaboratorio);
-                cmd.Parameters.AddWithValue("@idBarrio", lab.IdBarrioLaboratorio);
+                cmd.Parameters.AddWithValue("@id", sin.IdSintomas);
+                cmd.Parameters.AddWithValue("@nombre", sin.NombreSintomas);
 
 
-                cmd.CommandType = CommandType.Text;
+
+                cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = consulta;
                 cn.Open();
 
@@ -121,18 +115,18 @@ namespace TrabajoPracticoPAV1.AD
             return resultado;
         }
 
-        public static Laboratorio ObtenerDatosLaboratorio(int id)
+        public static Sintoma ObtenerSintoma(int id)
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
 
 
-            Laboratorio lab = new Laboratorio();
+            Sintoma sin = new Sintoma();
 
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT * FROM Laboratorios where Id like @id";
+                string consulta = "SELECT * FROM Sintomas where Id like @id";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@id", id);
 
@@ -146,32 +140,22 @@ namespace TrabajoPracticoPAV1.AD
                 if (dr != null && dr.Read())
 
                 {
-                    lab.IdLaboratorios = int.Parse(dr["Id"].ToString());
-                    lab.RazonSocialLaboratorio = dr["RazonSocial"].ToString();
-                    lab.CalleLaboratorio = dr["Calle"].ToString();
-                    lab.NumeroCalleLaboratorio = dr["NroCalle"].ToString();
-                    lab.IdBarrioLaboratorio = int.Parse(dr["idBarrio"].ToString());
-                }
-                else
-                {
-  
+                    sin.IdSintomas = int.Parse(dr["Id"].ToString());
+                    sin.NombreSintomas = dr["NombreSintoma"].ToString();
                 }
             }
             catch (Exception ex)
             {
 
-               
                 throw;
             }
             finally
             {
                 cn.Close();
             }
-            return lab;
+            return sin;
         }
+        
     }
-    
-}
-    
 
-    
+}

@@ -43,13 +43,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarLab = new System.Windows.Forms.Button();
             this.cmbBarrio = new System.Windows.Forms.ComboBox();
             this.dgvLaboratorios = new System.Windows.Forms.DataGridView();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.lblId = new System.Windows.Forms.Label();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Calle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroCalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idBarrio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLaboratorios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +89,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(77, 146);
+            this.label2.Location = new System.Drawing.Point(133, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 20);
             this.label2.TabIndex = 6;
@@ -106,7 +106,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 181);
+            this.label3.Location = new System.Drawing.Point(76, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 20);
             this.label3.TabIndex = 8;
@@ -116,7 +116,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 220);
+            this.label4.Location = new System.Drawing.Point(108, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 20);
             this.label4.TabIndex = 10;
@@ -188,6 +188,41 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.dgvLaboratorios.TabIndex = 17;
             this.dgvLaboratorios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLaboratorios_CellClick);
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // RazonSocial
+            // 
+            this.RazonSocial.DataPropertyName = "RazonSocial";
+            this.RazonSocial.HeaderText = "Razon Social";
+            this.RazonSocial.Name = "RazonSocial";
+            this.RazonSocial.ReadOnly = true;
+            // 
+            // Calle
+            // 
+            this.Calle.DataPropertyName = "Calle";
+            this.Calle.HeaderText = "Calle";
+            this.Calle.Name = "Calle";
+            this.Calle.ReadOnly = true;
+            // 
+            // NroCalle
+            // 
+            this.NroCalle.DataPropertyName = "NroCalle";
+            this.NroCalle.HeaderText = "Numero Calle";
+            this.NroCalle.Name = "NroCalle";
+            this.NroCalle.ReadOnly = true;
+            // 
+            // idBarrio
+            // 
+            this.idBarrio.DataPropertyName = "idBarrio";
+            this.idBarrio.HeaderText = "Id Barrio";
+            this.idBarrio.Name = "idBarrio";
+            this.idBarrio.ReadOnly = true;
+            // 
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(187, 80);
@@ -199,41 +234,11 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(77, 78);
+            this.lblId.Location = new System.Drawing.Point(154, 80);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(27, 20);
             this.lblId.TabIndex = 18;
             this.lblId.Text = "Id:";
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // RazonSocial
-            // 
-            this.RazonSocial.DataPropertyName = "RazonSocial";
-            this.RazonSocial.HeaderText = "Razon Social";
-            this.RazonSocial.Name = "RazonSocial";
-            // 
-            // Calle
-            // 
-            this.Calle.DataPropertyName = "Calle";
-            this.Calle.HeaderText = "Calle";
-            this.Calle.Name = "Calle";
-            // 
-            // NroCalle
-            // 
-            this.NroCalle.DataPropertyName = "NroCalle";
-            this.NroCalle.HeaderText = "Numero Calle";
-            this.NroCalle.Name = "NroCalle";
-            // 
-            // idBarrio
-            // 
-            this.idBarrio.DataPropertyName = "idBarrio";
-            this.idBarrio.HeaderText = "Id Barrio";
-            this.idBarrio.Name = "idBarrio";
             // 
             // ABM_Laboratorios
             // 

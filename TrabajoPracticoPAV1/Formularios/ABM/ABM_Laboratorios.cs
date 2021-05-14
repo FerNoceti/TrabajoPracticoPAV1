@@ -24,6 +24,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             LimpiarCampos();
             CargarCombosBarrios();
             CargarGrilla();
+            btnActualizarLab.Enabled = false;
         }
 
         private void CargarCombosBarrios()
@@ -79,6 +80,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
                 MessageBox.Show("Laboratorio agregado con exito");
                 LimpiarCampos();
                 CargarCombosBarrios();
+                CargarGrilla();
             }
             else
             {
@@ -89,6 +91,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private Laboratorio ObtenerDatosLaboratorio()
         {
             Laboratorio lab = new Laboratorio();
+            lab.IdLaboratorios = int.Parse(txtId.Text.Trim());
             lab.RazonSocialLaboratorio = txtRazonSocial.Text.Trim();
             lab.CalleLaboratorio = txtCalle.Text.Trim();
             lab.NumeroCalleLaboratorio = txtNumeroCalle.Text.Trim();
@@ -101,12 +104,23 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             Laboratorio lab = ObtenerDatosLaboratorio();
             bool resultado = AD_Laboratorios.ActualizarLabABD(lab);
+            if (resultado)
+            {
+                MessageBox.Show("Laboratorio actualizado con exito");
+                LimpiarCampos();
+                CargarGrilla();
+            }
+            else
+            {
+                MessageBox.Show("Error al cargar");
+            }
+            btnActualizarLab.Enabled = false;
         }
 
 
         private void CargarCampos(Laboratorio lab)
         {
-            txtId.Text = lab.IdLaboratorios;
+            txtId.Text = lab.IdLaboratorios.ToString();
             txtRazonSocial.Text = lab.RazonSocialLaboratorio;
             txtCalle.Text = lab.CalleLaboratorio;
             txtNumeroCalle.Text = lab.NumeroCalleLaboratorio;

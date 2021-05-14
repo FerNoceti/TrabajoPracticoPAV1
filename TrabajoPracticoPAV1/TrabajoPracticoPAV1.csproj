@@ -48,9 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AD\AD_Laboratorios.cs" />
+    <Compile Include="AD\AD_Sintomas.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
     <Compile Include="AD\AD_Varios.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
+    <Compile Include="Entidades\Sintomas.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +71,13 @@
     <Compile Include="Formularios\ABM\ABM_Laboratorios.Designer.cs">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sintomas.Designer.cs">
+      <DependentUpon>ABM_Sintomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\Sintomas.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Laboratorios.resx">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Sintomas.resx">
+      <DependentUpon>ABM_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
