@@ -124,7 +124,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             txtRazonSocial.Text = lab.RazonSocialLaboratorio;
             txtCalle.Text = lab.CalleLaboratorio;
             txtNumeroCalle.Text = lab.NumeroCalleLaboratorio;
-            cmbBarrio.SelectedValue = lab.IdLaboratorios;
+            cmbBarrio.SelectedValue = lab.IdBarrioLaboratorio;
         }
 
         private void dgvLaboratorios_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -136,6 +136,11 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             LimpiarCampos();
             CargarCampos(lab);
             btnActualizarLab.Enabled = true;
+        }
+
+        private void dgvLaboratorios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

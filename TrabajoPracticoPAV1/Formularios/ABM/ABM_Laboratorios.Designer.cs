@@ -187,6 +187,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.dgvLaboratorios.Size = new System.Drawing.Size(544, 401);
             this.dgvLaboratorios.TabIndex = 17;
             this.dgvLaboratorios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLaboratorios_CellClick);
+            this.dgvLaboratorios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLaboratorios_CellContentClick);
             // 
             // Id
             // 
