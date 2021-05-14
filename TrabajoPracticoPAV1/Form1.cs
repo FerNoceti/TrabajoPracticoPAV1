@@ -63,5 +63,20 @@ namespace TrabajoPracticoPAV1
             ABM_Barrios formBarrios = new ABM_Barrios(this);
             formBarrios.Show();
         }
+
+        private void perrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Perros ventana_perros = new ABM_Perros();
+            ventana_perros.Show();
+            this.Hide();
+
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Usuarios ventana_Usu = new ABM_Usuarios();
+            ventana_Usu.Show();
+            this.Hide();
+        }
     }
 }

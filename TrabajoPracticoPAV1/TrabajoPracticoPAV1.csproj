@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="AD\AD_Empleados.cs" />
     <Compile Include="AD\AD_Laboratorios.cs" />
+    <Compile Include="AD\AD_Perros.cs" />
     <Compile Include="AD\AD_Sintomas.cs" />
     <Compile Include="AD\AD_Sucursales.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
@@ -56,8 +57,10 @@
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
+    <Compile Include="Entidades\Perro.cs" />
     <Compile Include="Entidades\Sintomas.cs" />
     <Compile Include="Entidades\Sucursal.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +85,12 @@
     <Compile Include="Formularios\ABM\ABM_Laboratorios.Designer.cs">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM\ABM_Perros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Perros.designer.cs">
+      <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM\ABM_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +102,12 @@
     </Compile>
     <Compile Include="Formularios\ABM\ABM_Sucursales.Designer.cs">
       <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Usuarios.designer.cs">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
     <Compile Include="LoginForm.cs">
@@ -115,11 +130,17 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Laboratorios.resx">
       <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Perros.resx">
+      <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Sintomas.resx">
       <DependentUpon>ABM_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Sucursales.resx">
       <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Usuarios.resx">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
