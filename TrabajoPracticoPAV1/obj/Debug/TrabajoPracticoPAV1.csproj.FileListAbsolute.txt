@@ -9,3 +9,17 @@ C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\Tr
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
 C:\Users\matia\source\repos\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe.config
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Principal.resources
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Dueños.resources
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Vacunas.resources
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginForm.resources
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Properties.Resources.resources
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.GenerateResource.cache
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\Matias\Desktop\FACULTAD\2021\PAV I\TP PAV\TP GIT\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Consultas.resources
