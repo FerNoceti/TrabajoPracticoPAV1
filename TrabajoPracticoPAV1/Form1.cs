@@ -87,5 +87,23 @@ namespace TrabajoPracticoPAV1
             ABM_Razas ventana = new ABM_Razas();
             ventana.ShowDialog();
         }
+
+        private void dueñosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Dueños ventana = new ABM_Dueños();
+            ventana.ShowDialog();
+        }
+
+        private void vacunasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Vacunas ventana = new ABM_Vacunas();
+            ventana.Show();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ABM_Consultas ventana = new ABM_Consultas();
+            ventana.Show();
+        }
     }
 }

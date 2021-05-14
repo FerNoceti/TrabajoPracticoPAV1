@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AD\AD_Consulta.cs" />
+    <Compile Include="AD\AD_Dueño.cs" />
     <Compile Include="AD\AD_Empleados.cs" />
     <Compile Include="AD\AD_Laboratorios.cs" />
     <Compile Include="AD\AD_Medicamentos.cs" />
@@ -55,8 +57,11 @@
     <Compile Include="AD\AD_Sintomas.cs" />
     <Compile Include="AD\AD_Sucursales.cs" />
     <Compile Include="AD\AD_Usuarios.cs" />
+    <Compile Include="AD\AD_Vacunas.cs" />
     <Compile Include="AD\AD_Varios.cs" />
     <Compile Include="Entidades\Barrio.cs" />
+    <Compile Include="Entidades\Consulta.cs" />
+    <Compile Include="Entidades\Dueño.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
     <Compile Include="Entidades\Medicamentos.cs" />
@@ -65,11 +70,24 @@
     <Compile Include="Entidades\Sintomas.cs" />
     <Compile Include="Entidades\Sucursal.cs" />
     <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Consultas.Designer.cs">
+      <DependentUpon>ABM_Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Dueños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Dueños.designer.cs">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\ABM_Empleados.cs">
       <SubType>Form</SubType>
@@ -125,6 +143,12 @@
     <Compile Include="Formularios\ABM\ABM_Usuarios.designer.cs">
       <DependentUpon>ABM_Usuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\ABM\ABM_Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Vacunas.designer.cs">
+      <DependentUpon>ABM_Vacunas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -139,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Barrios.resx">
       <DependentUpon>ABM_Barrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Consultas.resx">
+      <DependentUpon>ABM_Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Dueños.resx">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Empleados.resx">
       <DependentUpon>ABM_Empleados.cs</DependentUpon>
@@ -163,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Usuarios.resx">
       <DependentUpon>ABM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
+      <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

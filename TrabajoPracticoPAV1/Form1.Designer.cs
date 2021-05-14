@@ -42,10 +42,6 @@ namespace TrabajoPracticoPAV1
             this.dueñosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vacunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diagnosticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calendarioDeVacunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaParaPerrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionDeConsultasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +58,7 @@ namespace TrabajoPracticoPAV1
             this.consultasRealizadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perrosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosObtenidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,10 +90,7 @@ namespace TrabajoPracticoPAV1
             this.dueñosToolStripMenuItem,
             this.vacunasToolStripMenuItem,
             this.barriosToolStripMenuItem,
-            this.diagnosticoToolStripMenuItem,
-            this.consultasToolStripMenuItem,
-            this.calendarioDeVacunasToolStripMenuItem,
-            this.facturaToolStripMenuItem});
+            this.consultaToolStripMenuItem});
             this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
             this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.registrosToolStripMenuItem.Text = "Registros";
@@ -104,101 +98,79 @@ namespace TrabajoPracticoPAV1
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // sucursalesToolStripMenuItem
             // 
             this.sucursalesToolStripMenuItem.Name = "sucursalesToolStripMenuItem";
-            this.sucursalesToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.sucursalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sucursalesToolStripMenuItem.Text = "Sucursales";
             this.sucursalesToolStripMenuItem.Click += new System.EventHandler(this.sucursalesToolStripMenuItem_Click);
             // 
             // medicamentosToolStripMenuItem
             // 
             this.medicamentosToolStripMenuItem.Name = "medicamentosToolStripMenuItem";
-            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.medicamentosToolStripMenuItem.Text = "Medicamentos";
             this.medicamentosToolStripMenuItem.Click += new System.EventHandler(this.medicamentosToolStripMenuItem_Click);
             // 
             // razasToolStripMenuItem
             // 
             this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
-            this.razasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.razasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.razasToolStripMenuItem.Text = "Razas";
             this.razasToolStripMenuItem.Click += new System.EventHandler(this.razasToolStripMenuItem_Click);
             // 
             // laboratoriosToolStripMenuItem
             // 
             this.laboratoriosToolStripMenuItem.Name = "laboratoriosToolStripMenuItem";
-            this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.laboratoriosToolStripMenuItem.Text = "Laboratorios";
             this.laboratoriosToolStripMenuItem.Click += new System.EventHandler(this.laboratoriosToolStripMenuItem_Click);
             // 
             // sintomasToolStripMenuItem
             // 
             this.sintomasToolStripMenuItem.Name = "sintomasToolStripMenuItem";
-            this.sintomasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.sintomasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sintomasToolStripMenuItem.Text = "Sintomas";
             this.sintomasToolStripMenuItem.Click += new System.EventHandler(this.sintomasToolStripMenuItem_Click);
             // 
             // perrosToolStripMenuItem
             // 
             this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
-            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.perrosToolStripMenuItem.Text = "Perros";
             this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // dueñosToolStripMenuItem
             // 
             this.dueñosToolStripMenuItem.Name = "dueñosToolStripMenuItem";
-            this.dueñosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dueñosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dueñosToolStripMenuItem.Text = "Dueños";
+            this.dueñosToolStripMenuItem.Click += new System.EventHandler(this.dueñosToolStripMenuItem_Click);
             // 
             // vacunasToolStripMenuItem
             // 
             this.vacunasToolStripMenuItem.Name = "vacunasToolStripMenuItem";
-            this.vacunasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.vacunasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vacunasToolStripMenuItem.Text = "Vacunas";
+            this.vacunasToolStripMenuItem.Click += new System.EventHandler(this.vacunasToolStripMenuItem_Click);
             // 
             // barriosToolStripMenuItem
             // 
             this.barriosToolStripMenuItem.Name = "barriosToolStripMenuItem";
-            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.barriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.barriosToolStripMenuItem.Text = "Barrios";
             this.barriosToolStripMenuItem.Click += new System.EventHandler(this.barriosToolStripMenuItem_Click);
-            // 
-            // diagnosticoToolStripMenuItem
-            // 
-            this.diagnosticoToolStripMenuItem.Name = "diagnosticoToolStripMenuItem";
-            this.diagnosticoToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.diagnosticoToolStripMenuItem.Text = "Diagnostico";
-            // 
-            // consultasToolStripMenuItem
-            // 
-            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.consultasToolStripMenuItem.Text = "Consultas";
-            // 
-            // calendarioDeVacunasToolStripMenuItem
-            // 
-            this.calendarioDeVacunasToolStripMenuItem.Name = "calendarioDeVacunasToolStripMenuItem";
-            this.calendarioDeVacunasToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.calendarioDeVacunasToolStripMenuItem.Text = "Calendario de Vacunas";
-            // 
-            // facturaToolStripMenuItem
-            // 
-            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.facturaToolStripMenuItem.Text = "Factura";
             // 
             // procesosToolStripMenuItem
             // 
@@ -314,6 +286,13 @@ namespace TrabajoPracticoPAV1
             this.ingresosObtenidosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresosObtenidosToolStripMenuItem.Text = "Ingresos obtenidos";
             // 
+            // consultaToolStripMenuItem
+            // 
+            this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,10 +329,6 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.ToolStripMenuItem dueñosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vacunasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barriosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diagnosticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem calendarioDeVacunasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem facturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaParaPerrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturacionDeConsultasRealizadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informesToolStripMenuItem;
@@ -368,6 +343,7 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.ToolStripMenuItem consultasRealizadasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perrosRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresosObtenidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
     }
 }
 
