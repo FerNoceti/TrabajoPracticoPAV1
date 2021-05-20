@@ -71,12 +71,6 @@
     <Compile Include="Entidades\Sucursal.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\ABM\ABM_Consultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,17 +144,20 @@
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
-    <Compile Include="LoginForm.cs">
+    <Compile Include="LoginVeterinaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.designer.cs">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <Compile Include="LoginVeterinaria.Designer.cs">
+      <DependentUpon>LoginVeterinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Barrios.resx">
       <DependentUpon>ABM_Barrios.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,8 +194,11 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.cs</DependentUpon>
+    <EmbeddedResource Include="LoginVeterinaria.resx">
+      <DependentUpon>LoginVeterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -208,6 +208,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -220,6 +221,53 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\depositphotos_76975367-stock-illustration-sign-with-domestic-pets-silhouettes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_cross_4115230 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_cross_4115230.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_minus_4115236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-dog-veterinarian-banfield-pet-hospital-veterinary-medicine-dog-angle-animals-text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_76975367-stock-illustration-sign-with-domestic-pets-silhouettes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_cross_4115230 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_minus_41152361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-dog-veterinarian-banfield-pet-hospital-veterinary-medicine-dog-angle-animals-text1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals %281%291.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

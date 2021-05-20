@@ -18,10 +18,14 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         
 
-        public ABM_Barrios(Principal principal)
+        public ABM_Barrios(Menu principal)
         {
             
             InitializeComponent();
+        }
+
+        public ABM_Barrios()
+        {
         }
 
         private void ABM_Barrios_Load(object sender, EventArgs e)

@@ -21,3 +21,26 @@ C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPra
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Consultas.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Dueños.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Vacunas.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Barrios.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Consultas.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Dueños.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Empleados.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Laboratorios.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Medicamentos.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Perros.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Razas.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Sintomas.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Sucursales.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Usuarios.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Vacunas.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginVeterinaria.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Menu.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Properties.Resources.resources
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.GenerateResource.cache
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe.config
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe
+E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.pdb
