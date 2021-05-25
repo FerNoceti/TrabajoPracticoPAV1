@@ -77,10 +77,8 @@ namespace TrabajoPracticoPAV1.AD
                     p.ApellidoDueño = dr["Apellido"].ToString();
                     p.TelefonoDueño = dr["Telefono"].ToString();
                     p.IdDueño = dr["Id"].ToString();
-                    
 
-
-
+                    return p;
                 }
 
 

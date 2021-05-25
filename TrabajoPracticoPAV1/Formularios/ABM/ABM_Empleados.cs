@@ -226,7 +226,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         private void btnEliminarEmpleado_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Desea eliminar a " + empleadoSeleccionado.Apellido + " " + empleadoSeleccionado.Nombre + " ?");
             bool resultado = AD_Empleados.eliminarEmpleado(empleadoSeleccionado);
             if(resultado)
             {

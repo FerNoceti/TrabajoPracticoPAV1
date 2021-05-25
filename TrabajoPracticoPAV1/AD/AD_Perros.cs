@@ -88,5 +88,60 @@ namespace TrabajoPracticoPAV1.AD
             }
             return resultado;
         }
+
+        public static Perro obtenerPerro(int idHistoriaClinica)
+        {
+
+        //private string Nombre;
+        //private int Peso;
+        //private int Altura;
+        //private DateTime FechaNacimiento;
+        //private int IdSexo;
+        //private int IdRaza;
+        //private int IdDueño;
+        //private int IdSucursal;
+        //private int HistClinica;
+
+        Perro resultado = new Perro();
+            string cadena = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadena);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string storedProcedure = "selectPerro";
+
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idHistoriaClinica", idHistoriaClinica);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr != null && dr.Read())
+                {
+                    resultado.NombrePerro = dr["Nombre"].ToString();
+                    resultado.HistoriaClinica = int.Parse(dr["NroHistoriaClinica"].ToString());
+                    resultado.DueñoPerro = int.Parse(dr["IdDueño"].ToString());
+
+                    return resultado;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return resultado;
+        }
     }
 }

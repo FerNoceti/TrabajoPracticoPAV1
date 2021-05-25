@@ -12,6 +12,7 @@ using TrabajoPracticoPAV1.Formularios;
 using TrabajoPracticoPAV1.Formularios.ABM;
 using TrabajoPracticoPAV1.AD;
 using TrabajoPracticoPAV1.Entidades;
+using TrabajoPracticoPAV1.Formularios.Procesos;
 
 namespace TrabajoPracticoPAV1
 {
@@ -197,7 +198,8 @@ namespace TrabajoPracticoPAV1
         private void button17_Click(object sender, EventArgs e)
         {
             //mostrar formulario
-
+            FacturacionConsulta ventana = new FacturacionConsulta();
+            ventana.ShowDialog();
             ocultarSubMenu();
         }
 

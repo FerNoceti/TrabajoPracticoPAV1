@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AD\AD_Consulta.cs" />
+    <Compile Include="AD\AD_Diagnostico.cs" />
     <Compile Include="AD\AD_Dueño.cs" />
     <Compile Include="AD\AD_Empleados.cs" />
+    <Compile Include="AD\AD_Facturas.cs" />
     <Compile Include="AD\AD_Laboratorios.cs" />
     <Compile Include="AD\AD_Medicamentos.cs" />
     <Compile Include="AD\AD_Perros.cs" />
@@ -61,8 +63,10 @@
     <Compile Include="AD\AD_Varios.cs" />
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Consulta.cs" />
+    <Compile Include="Entidades\Diagnostico.cs" />
     <Compile Include="Entidades\Dueño.cs" />
     <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Factura.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
     <Compile Include="Entidades\Medicamentos.cs" />
     <Compile Include="Entidades\Perro.cs" />
@@ -144,6 +148,12 @@
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
+    <Compile Include="Formularios\Procesos\FacturacionConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\FacturacionConsulta.Designer.cs">
+      <DependentUpon>FacturacionConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginVeterinaria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
+      <DependentUpon>FacturacionConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginVeterinaria.resx">
       <DependentUpon>LoginVeterinaria.cs</DependentUpon>

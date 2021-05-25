@@ -57,6 +57,8 @@ namespace TrabajoPracticoPAV1.AD
 
         public static Empleado obtenerEmpleado(int tipoDoc, string nroDoc)
         {
+
+
             Empleado resultado = new Empleado();
             string cadena = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadena);

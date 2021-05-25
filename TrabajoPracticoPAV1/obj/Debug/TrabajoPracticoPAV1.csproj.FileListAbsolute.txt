@@ -1,10 +1,8 @@
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Principal.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Barrios.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Empleados.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Laboratorios.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Sintomas.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Sucursales.resources
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginForm.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Properties.Resources.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.GenerateResource.cache
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
@@ -44,3 +42,6 @@ E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\obj\Deb
 E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe.config
 E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe
 E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.pdb
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Procesos.FacturacionConsulta.resources
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginVeterinaria.resources
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Menu.resources

@@ -350,5 +350,49 @@ namespace TrabajoPracticoPAV1.AD
 
             return resultado;
         }
+
+        public static bool existeConsulta(int nroConsulta, int idSucursal)
+        {
+            DataTable tabla = new DataTable();
+            string cadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string storedProcedure = "selectConsulta";
+            SqlConnection cn = new SqlConnection(cadenaDB);
+            try
+            {
+
+                cn.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+                cmd.Connection = cn;
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@nroConsulta", nroConsulta);
+                cmd.Parameters.AddWithValue("@IdSucursal", idSucursal);
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                if (tabla.Rows.Count == 1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
