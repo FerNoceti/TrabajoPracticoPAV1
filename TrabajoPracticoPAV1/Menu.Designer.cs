@@ -38,10 +38,8 @@ namespace TrabajoPracticoPAV1
             this.btnInformesEstadisticas = new System.Windows.Forms.Button();
             this.panel_submenu_Procesos = new System.Windows.Forms.Panel();
             this.btnFacturacionConsultas = new System.Windows.Forms.Button();
-            this.btnConsultaPerros = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.panel_submenu_ABM = new System.Windows.Forms.Panel();
-            this.btnFactura = new System.Windows.Forms.Button();
             this.btnCalendario = new System.Windows.Forms.Button();
             this.btnConsultas = new System.Windows.Forms.Button();
             this.btnDiagnostico = new System.Windows.Forms.Button();
@@ -101,7 +99,7 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_InformesEstadisticas.Controls.Add(this.btnEstadisticas);
             this.panel_submenu_InformesEstadisticas.Controls.Add(this.btnInformes);
             this.panel_submenu_InformesEstadisticas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_submenu_InformesEstadisticas.Location = new System.Drawing.Point(0, 927);
+            this.panel_submenu_InformesEstadisticas.Location = new System.Drawing.Point(0, 843);
             this.panel_submenu_InformesEstadisticas.Name = "panel_submenu_InformesEstadisticas";
             this.panel_submenu_InformesEstadisticas.Size = new System.Drawing.Size(233, 77);
             this.panel_submenu_InformesEstadisticas.TabIndex = 6;
@@ -153,7 +151,7 @@ namespace TrabajoPracticoPAV1
             this.btnInformesEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformesEstadisticas.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformesEstadisticas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
-            this.btnInformesEstadisticas.Location = new System.Drawing.Point(0, 876);
+            this.btnInformesEstadisticas.Location = new System.Drawing.Point(0, 792);
             this.btnInformesEstadisticas.Name = "btnInformesEstadisticas";
             this.btnInformesEstadisticas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnInformesEstadisticas.Size = new System.Drawing.Size(233, 51);
@@ -167,11 +165,10 @@ namespace TrabajoPracticoPAV1
             // 
             this.panel_submenu_Procesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panel_submenu_Procesos.Controls.Add(this.btnFacturacionConsultas);
-            this.panel_submenu_Procesos.Controls.Add(this.btnConsultaPerros);
             this.panel_submenu_Procesos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_submenu_Procesos.Location = new System.Drawing.Point(0, 792);
+            this.panel_submenu_Procesos.Location = new System.Drawing.Point(0, 754);
             this.panel_submenu_Procesos.Name = "panel_submenu_Procesos";
-            this.panel_submenu_Procesos.Size = new System.Drawing.Size(233, 84);
+            this.panel_submenu_Procesos.Size = new System.Drawing.Size(233, 38);
             this.panel_submenu_Procesos.TabIndex = 4;
             // 
             // btnFacturacionConsultas
@@ -183,7 +180,7 @@ namespace TrabajoPracticoPAV1
             this.btnFacturacionConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturacionConsultas.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturacionConsultas.ForeColor = System.Drawing.Color.White;
-            this.btnFacturacionConsultas.Location = new System.Drawing.Point(0, 40);
+            this.btnFacturacionConsultas.Location = new System.Drawing.Point(0, 0);
             this.btnFacturacionConsultas.Name = "btnFacturacionConsultas";
             this.btnFacturacionConsultas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnFacturacionConsultas.Size = new System.Drawing.Size(233, 44);
@@ -192,25 +189,6 @@ namespace TrabajoPracticoPAV1
             this.btnFacturacionConsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFacturacionConsultas.UseVisualStyleBackColor = true;
             this.btnFacturacionConsultas.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // btnConsultaPerros
-            // 
-            this.btnConsultaPerros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnConsultaPerros.FlatAppearance.BorderSize = 0;
-            this.btnConsultaPerros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.btnConsultaPerros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnConsultaPerros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultaPerros.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultaPerros.ForeColor = System.Drawing.Color.White;
-            this.btnConsultaPerros.Location = new System.Drawing.Point(0, 0);
-            this.btnConsultaPerros.Name = "btnConsultaPerros";
-            this.btnConsultaPerros.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnConsultaPerros.Size = new System.Drawing.Size(233, 40);
-            this.btnConsultaPerros.TabIndex = 14;
-            this.btnConsultaPerros.Text = "Consulta para Perros";
-            this.btnConsultaPerros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsultaPerros.UseVisualStyleBackColor = true;
-            this.btnConsultaPerros.Click += new System.EventHandler(this.button16_Click);
             // 
             // btnProcesos
             // 
@@ -221,7 +199,7 @@ namespace TrabajoPracticoPAV1
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
-            this.btnProcesos.Location = new System.Drawing.Point(0, 741);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 703);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProcesos.Size = new System.Drawing.Size(233, 51);
@@ -234,7 +212,6 @@ namespace TrabajoPracticoPAV1
             // panel_submenu_ABM
             // 
             this.panel_submenu_ABM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panel_submenu_ABM.Controls.Add(this.btnFactura);
             this.panel_submenu_ABM.Controls.Add(this.btnCalendario);
             this.panel_submenu_ABM.Controls.Add(this.btnConsultas);
             this.panel_submenu_ABM.Controls.Add(this.btnDiagnostico);
@@ -252,27 +229,8 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_ABM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_submenu_ABM.Location = new System.Drawing.Point(0, 139);
             this.panel_submenu_ABM.Name = "panel_submenu_ABM";
-            this.panel_submenu_ABM.Size = new System.Drawing.Size(233, 602);
+            this.panel_submenu_ABM.Size = new System.Drawing.Size(233, 564);
             this.panel_submenu_ABM.TabIndex = 2;
-            // 
-            // btnFactura
-            // 
-            this.btnFactura.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFactura.FlatAppearance.BorderSize = 0;
-            this.btnFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.btnFactura.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFactura.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFactura.ForeColor = System.Drawing.Color.White;
-            this.btnFactura.Location = new System.Drawing.Point(0, 560);
-            this.btnFactura.Name = "btnFactura";
-            this.btnFactura.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnFactura.Size = new System.Drawing.Size(233, 39);
-            this.btnFactura.TabIndex = 14;
-            this.btnFactura.Text = "Factura";
-            this.btnFactura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFactura.UseVisualStyleBackColor = true;
-            this.btnFactura.Click += new System.EventHandler(this.button15_Click);
             // 
             // btnCalendario
             // 
@@ -706,7 +664,6 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Button btnABM;
         private System.Windows.Forms.Panel panel_logo;
-        private System.Windows.Forms.Button btnFactura;
         private System.Windows.Forms.Button btnCalendario;
         private System.Windows.Forms.Button btnConsultas;
         private System.Windows.Forms.Button btnDiagnostico;
@@ -721,7 +678,6 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.Panel panel_submenu_Procesos;
         private System.Windows.Forms.Button btnProcesos;
         private System.Windows.Forms.Button btnFacturacionConsultas;
-        private System.Windows.Forms.Button btnConsultaPerros;
         private System.Windows.Forms.Panel panel_submenu_InformesEstadisticas;
         private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.Button btnInformes;
