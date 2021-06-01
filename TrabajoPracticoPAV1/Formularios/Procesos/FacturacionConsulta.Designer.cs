@@ -45,31 +45,32 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.lbNombreDueño = new System.Windows.Forms.Label();
             this.txtNombreDueño = new System.Windows.Forms.TextBox();
             this.grpDetalleFacturacion = new System.Windows.Forms.GroupBox();
+            this.lbSignoPeso3 = new System.Windows.Forms.Label();
             this.txtTotalAFacturar = new System.Windows.Forms.TextBox();
             this.grpMedicamentos = new System.Windows.Forms.GroupBox();
+            this.lbSignoPeso2 = new System.Windows.Forms.Label();
             this.txtSubtotalMedicamentos = new System.Windows.Forms.TextBox();
             this.lbSubtotalMedicamentos = new System.Windows.Forms.Label();
             this.dgvDetalleMedicamentos = new System.Windows.Forms.DataGridView();
+            this.CodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioUnidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbTotalAFacturar = new System.Windows.Forms.Label();
             this.grpDiagnostico = new System.Windows.Forms.GroupBox();
+            this.lbSignoPeso1 = new System.Windows.Forms.Label();
             this.txtSubtotalDiagnosticos = new System.Windows.Forms.TextBox();
             this.lbSubtotalDiagnosticos = new System.Windows.Forms.Label();
             this.dgvDetalleDiagnosticos = new System.Windows.Forms.DataGridView();
+            this.CodigoDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConfirmarFacturacion = new System.Windows.Forms.Button();
             this.btnDeshacerFacturacion = new System.Windows.Forms.Button();
             this.btnBuscarConsulta = new System.Windows.Forms.Button();
             this.lbSucursal = new System.Windows.Forms.Label();
             this.cmbSucursales = new System.Windows.Forms.ComboBox();
             this.txtNroConsulta = new System.Windows.Forms.MaskedTextBox();
-            this.lbSignoPeso1 = new System.Windows.Forms.Label();
-            this.lbSignoPeso2 = new System.Windows.Forms.Label();
-            this.lbSignoPeso3 = new System.Windows.Forms.Label();
-            this.CodigoDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioUnidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbNroConsulta = new System.Windows.Forms.ComboBox();
             this.grpPerro.SuspendLayout();
             this.grpDueño.SuspendLayout();
             this.grpDetalleFacturacion.SuspendLayout();
@@ -100,7 +101,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbNroConsulta
             // 
             this.lbNroConsulta.AutoSize = true;
-            this.lbNroConsulta.Location = new System.Drawing.Point(119, 13);
+            this.lbNroConsulta.Location = new System.Drawing.Point(230, 10);
             this.lbNroConsulta.Name = "lbNroConsulta";
             this.lbNroConsulta.Size = new System.Drawing.Size(103, 13);
             this.lbNroConsulta.TabIndex = 2;
@@ -221,6 +222,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // grpDetalleFacturacion
             // 
             this.grpDetalleFacturacion.Controls.Add(this.lbSignoPeso3);
+            this.grpDetalleFacturacion.Controls.Add(this.txtNroConsulta);
             this.grpDetalleFacturacion.Controls.Add(this.txtTotalAFacturar);
             this.grpDetalleFacturacion.Controls.Add(this.grpMedicamentos);
             this.grpDetalleFacturacion.Controls.Add(this.lbTotalAFacturar);
@@ -231,6 +233,15 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.grpDetalleFacturacion.TabIndex = 9;
             this.grpDetalleFacturacion.TabStop = false;
             this.grpDetalleFacturacion.Text = "Detalle de Facturacion";
+            // 
+            // lbSignoPeso3
+            // 
+            this.lbSignoPeso3.AutoSize = true;
+            this.lbSignoPeso3.Location = new System.Drawing.Point(304, 330);
+            this.lbSignoPeso3.Name = "lbSignoPeso3";
+            this.lbSignoPeso3.Size = new System.Drawing.Size(13, 13);
+            this.lbSignoPeso3.TabIndex = 17;
+            this.lbSignoPeso3.Text = "$";
             // 
             // txtTotalAFacturar
             // 
@@ -252,6 +263,15 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.grpMedicamentos.TabIndex = 9;
             this.grpMedicamentos.TabStop = false;
             this.grpMedicamentos.Text = "Medicamentos";
+            // 
+            // lbSignoPeso2
+            // 
+            this.lbSignoPeso2.AutoSize = true;
+            this.lbSignoPeso2.Location = new System.Drawing.Point(298, 113);
+            this.lbSignoPeso2.Name = "lbSignoPeso2";
+            this.lbSignoPeso2.Size = new System.Drawing.Size(13, 13);
+            this.lbSignoPeso2.TabIndex = 16;
+            this.lbSignoPeso2.Text = "$";
             // 
             // txtSubtotalMedicamentos
             // 
@@ -289,6 +309,28 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.dgvDetalleMedicamentos.Size = new System.Drawing.Size(411, 79);
             this.dgvDetalleMedicamentos.TabIndex = 1;
             // 
+            // CodigoMedicamento
+            // 
+            this.CodigoMedicamento.DataPropertyName = "Id";
+            this.CodigoMedicamento.HeaderText = "Codigo";
+            this.CodigoMedicamento.Name = "CodigoMedicamento";
+            this.CodigoMedicamento.ReadOnly = true;
+            // 
+            // NombreMedicamento
+            // 
+            this.NombreMedicamento.DataPropertyName = "Descripcion";
+            this.NombreMedicamento.HeaderText = "Nombre";
+            this.NombreMedicamento.Name = "NombreMedicamento";
+            this.NombreMedicamento.ReadOnly = true;
+            this.NombreMedicamento.Width = 200;
+            // 
+            // PrecioUnidadMedicamento
+            // 
+            this.PrecioUnidadMedicamento.DataPropertyName = "precio";
+            this.PrecioUnidadMedicamento.HeaderText = "PrecioUnidad ($)";
+            this.PrecioUnidadMedicamento.Name = "PrecioUnidadMedicamento";
+            this.PrecioUnidadMedicamento.ReadOnly = true;
+            // 
             // lbTotalAFacturar
             // 
             this.lbTotalAFacturar.AutoSize = true;
@@ -310,6 +352,15 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.grpDiagnostico.TabIndex = 8;
             this.grpDiagnostico.TabStop = false;
             this.grpDiagnostico.Text = "Diagnosticos";
+            // 
+            // lbSignoPeso1
+            // 
+            this.lbSignoPeso1.AutoSize = true;
+            this.lbSignoPeso1.Location = new System.Drawing.Point(298, 116);
+            this.lbSignoPeso1.Name = "lbSignoPeso1";
+            this.lbSignoPeso1.Size = new System.Drawing.Size(13, 13);
+            this.lbSignoPeso1.TabIndex = 15;
+            this.lbSignoPeso1.Text = "$";
             // 
             // txtSubtotalDiagnosticos
             // 
@@ -347,91 +398,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.dgvDetalleDiagnosticos.Size = new System.Drawing.Size(411, 79);
             this.dgvDetalleDiagnosticos.TabIndex = 0;
             // 
-            // btnConfirmarFacturacion
-            // 
-            this.btnConfirmarFacturacion.Location = new System.Drawing.Point(16, 567);
-            this.btnConfirmarFacturacion.Name = "btnConfirmarFacturacion";
-            this.btnConfirmarFacturacion.Size = new System.Drawing.Size(126, 23);
-            this.btnConfirmarFacturacion.TabIndex = 10;
-            this.btnConfirmarFacturacion.Text = "Confirmar";
-            this.btnConfirmarFacturacion.UseVisualStyleBackColor = true;
-            this.btnConfirmarFacturacion.Click += new System.EventHandler(this.btnConfirmarFacturacion_Click);
-            // 
-            // btnDeshacerFacturacion
-            // 
-            this.btnDeshacerFacturacion.Location = new System.Drawing.Point(325, 567);
-            this.btnDeshacerFacturacion.Name = "btnDeshacerFacturacion";
-            this.btnDeshacerFacturacion.Size = new System.Drawing.Size(126, 23);
-            this.btnDeshacerFacturacion.TabIndex = 11;
-            this.btnDeshacerFacturacion.Text = "Deshacer";
-            this.btnDeshacerFacturacion.UseVisualStyleBackColor = true;
-            this.btnDeshacerFacturacion.Click += new System.EventHandler(this.btnDeshacerFacturacion_Click);
-            // 
-            // btnBuscarConsulta
-            // 
-            this.btnBuscarConsulta.Location = new System.Drawing.Point(199, 55);
-            this.btnBuscarConsulta.Name = "btnBuscarConsulta";
-            this.btnBuscarConsulta.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarConsulta.TabIndex = 13;
-            this.btnBuscarConsulta.Text = "buscar";
-            this.btnBuscarConsulta.UseVisualStyleBackColor = true;
-            this.btnBuscarConsulta.Click += new System.EventHandler(this.btnBuscarConsulta_Click);
-            // 
-            // lbSucursal
-            // 
-            this.lbSucursal.AutoSize = true;
-            this.lbSucursal.Location = new System.Drawing.Point(237, 13);
-            this.lbSucursal.Name = "lbSucursal";
-            this.lbSucursal.Size = new System.Drawing.Size(48, 13);
-            this.lbSucursal.TabIndex = 14;
-            this.lbSucursal.Text = "Sucursal";
-            // 
-            // cmbSucursales
-            // 
-            this.cmbSucursales.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSucursales.FormattingEnabled = true;
-            this.cmbSucursales.Location = new System.Drawing.Point(240, 28);
-            this.cmbSucursales.Name = "cmbSucursales";
-            this.cmbSucursales.Size = new System.Drawing.Size(97, 21);
-            this.cmbSucursales.TabIndex = 15;
-            // 
-            // txtNroConsulta
-            // 
-            this.txtNroConsulta.Location = new System.Drawing.Point(122, 28);
-            this.txtNroConsulta.Mask = "99999";
-            this.txtNroConsulta.Name = "txtNroConsulta";
-            this.txtNroConsulta.Size = new System.Drawing.Size(100, 20);
-            this.txtNroConsulta.TabIndex = 16;
-            this.txtNroConsulta.ValidatingType = typeof(int);
-            this.txtNroConsulta.TextChanged += new System.EventHandler(this.txtNroConsulta_TextChanged);
-            // 
-            // lbSignoPeso1
-            // 
-            this.lbSignoPeso1.AutoSize = true;
-            this.lbSignoPeso1.Location = new System.Drawing.Point(298, 116);
-            this.lbSignoPeso1.Name = "lbSignoPeso1";
-            this.lbSignoPeso1.Size = new System.Drawing.Size(13, 13);
-            this.lbSignoPeso1.TabIndex = 15;
-            this.lbSignoPeso1.Text = "$";
-            // 
-            // lbSignoPeso2
-            // 
-            this.lbSignoPeso2.AutoSize = true;
-            this.lbSignoPeso2.Location = new System.Drawing.Point(298, 113);
-            this.lbSignoPeso2.Name = "lbSignoPeso2";
-            this.lbSignoPeso2.Size = new System.Drawing.Size(13, 13);
-            this.lbSignoPeso2.TabIndex = 16;
-            this.lbSignoPeso2.Text = "$";
-            // 
-            // lbSignoPeso3
-            // 
-            this.lbSignoPeso3.AutoSize = true;
-            this.lbSignoPeso3.Location = new System.Drawing.Point(304, 330);
-            this.lbSignoPeso3.Name = "lbSignoPeso3";
-            this.lbSignoPeso3.Size = new System.Drawing.Size(13, 13);
-            this.lbSignoPeso3.TabIndex = 17;
-            this.lbSignoPeso3.Text = "$";
-            // 
             // CodigoDiagnostico
             // 
             this.CodigoDiagnostico.DataPropertyName = "Id";
@@ -454,34 +420,81 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.PrecioDiagnostico.Name = "PrecioDiagnostico";
             this.PrecioDiagnostico.ReadOnly = true;
             // 
-            // CodigoMedicamento
+            // btnConfirmarFacturacion
             // 
-            this.CodigoMedicamento.DataPropertyName = "Id";
-            this.CodigoMedicamento.HeaderText = "Codigo";
-            this.CodigoMedicamento.Name = "CodigoMedicamento";
-            this.CodigoMedicamento.ReadOnly = true;
+            this.btnConfirmarFacturacion.Location = new System.Drawing.Point(16, 567);
+            this.btnConfirmarFacturacion.Name = "btnConfirmarFacturacion";
+            this.btnConfirmarFacturacion.Size = new System.Drawing.Size(126, 23);
+            this.btnConfirmarFacturacion.TabIndex = 10;
+            this.btnConfirmarFacturacion.Text = "Confirmar";
+            this.btnConfirmarFacturacion.UseVisualStyleBackColor = true;
+            this.btnConfirmarFacturacion.Click += new System.EventHandler(this.btnConfirmarFacturacion_Click);
             // 
-            // NombreMedicamento
+            // btnDeshacerFacturacion
             // 
-            this.NombreMedicamento.DataPropertyName = "Descripcion";
-            this.NombreMedicamento.HeaderText = "Nombre";
-            this.NombreMedicamento.Name = "NombreMedicamento";
-            this.NombreMedicamento.ReadOnly = true;
-            this.NombreMedicamento.Width = 200;
+            this.btnDeshacerFacturacion.Location = new System.Drawing.Point(325, 567);
+            this.btnDeshacerFacturacion.Name = "btnDeshacerFacturacion";
+            this.btnDeshacerFacturacion.Size = new System.Drawing.Size(126, 23);
+            this.btnDeshacerFacturacion.TabIndex = 11;
+            this.btnDeshacerFacturacion.Text = "Deshacer";
+            this.btnDeshacerFacturacion.UseVisualStyleBackColor = true;
+            this.btnDeshacerFacturacion.Click += new System.EventHandler(this.btnDeshacerFacturacion_Click);
             // 
-            // PrecioUnidadMedicamento
+            // btnBuscarConsulta
             // 
-            this.PrecioUnidadMedicamento.DataPropertyName = "precio";
-            this.PrecioUnidadMedicamento.HeaderText = "PrecioUnidad ($)";
-            this.PrecioUnidadMedicamento.Name = "PrecioUnidadMedicamento";
-            this.PrecioUnidadMedicamento.ReadOnly = true;
+            this.btnBuscarConsulta.Location = new System.Drawing.Point(200, 60);
+            this.btnBuscarConsulta.Name = "btnBuscarConsulta";
+            this.btnBuscarConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarConsulta.TabIndex = 13;
+            this.btnBuscarConsulta.Text = "buscar";
+            this.btnBuscarConsulta.UseVisualStyleBackColor = true;
+            this.btnBuscarConsulta.Click += new System.EventHandler(this.btnBuscarConsulta_Click);
+            // 
+            // lbSucursal
+            // 
+            this.lbSucursal.AutoSize = true;
+            this.lbSucursal.Location = new System.Drawing.Point(120, 10);
+            this.lbSucursal.Name = "lbSucursal";
+            this.lbSucursal.Size = new System.Drawing.Size(48, 13);
+            this.lbSucursal.TabIndex = 14;
+            this.lbSucursal.Text = "Sucursal";
+            // 
+            // cmbSucursales
+            // 
+            this.cmbSucursales.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSucursales.FormattingEnabled = true;
+            this.cmbSucursales.Location = new System.Drawing.Point(120, 30);
+            this.cmbSucursales.Name = "cmbSucursales";
+            this.cmbSucursales.Size = new System.Drawing.Size(97, 21);
+            this.cmbSucursales.TabIndex = 15;
+            this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
+            // 
+            // txtNroConsulta
+            // 
+            this.txtNroConsulta.Location = new System.Drawing.Point(170, 310);
+            this.txtNroConsulta.Mask = "99999";
+            this.txtNroConsulta.Name = "txtNroConsulta";
+            this.txtNroConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtNroConsulta.TabIndex = 16;
+            this.txtNroConsulta.ValidatingType = typeof(int);
+            this.txtNroConsulta.TextChanged += new System.EventHandler(this.txtNroConsulta_TextChanged);
+            // 
+            // cmbNroConsulta
+            // 
+            this.cmbNroConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNroConsulta.FormattingEnabled = true;
+            this.cmbNroConsulta.Location = new System.Drawing.Point(230, 30);
+            this.cmbNroConsulta.Name = "cmbNroConsulta";
+            this.cmbNroConsulta.Size = new System.Drawing.Size(97, 21);
+            this.cmbNroConsulta.TabIndex = 17;
+            this.cmbNroConsulta.SelectedIndexChanged += new System.EventHandler(this.cmbNroConsulta_SelectedIndexChanged);
             // 
             // FacturacionConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 602);
-            this.Controls.Add(this.txtNroConsulta);
+            this.Controls.Add(this.cmbNroConsulta);
             this.Controls.Add(this.cmbSucursales);
             this.Controls.Add(this.lbSucursal);
             this.Controls.Add(this.btnBuscarConsulta);
@@ -559,5 +572,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoDiagnostico;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionDiagnostico;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioDiagnostico;
+        private System.Windows.Forms.ComboBox cmbNroConsulta;
     }
 }

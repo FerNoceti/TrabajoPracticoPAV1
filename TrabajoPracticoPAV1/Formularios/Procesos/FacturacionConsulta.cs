@@ -24,8 +24,20 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         {
             cargarComboSucursales();
             limpiarCampos();
+            limpiarComboSucursales();
+            limpiarComboNroConsultas();
             configurarGrillas();
             resetearBotones();
+        }
+
+        private void limpiarComboNroConsultas()
+        {
+            cmbNroConsulta.SelectedIndex = -1;
+        }
+
+        private void limpiarComboSucursales()
+        {
+            cmbSucursales.SelectedIndex = -1;
         }
 
         private void resetearBotones()
@@ -73,7 +85,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
                 MessageBox.Show("Error al obtener el ultimo numero de factura");
             }
 
-            cmbSucursales.SelectedIndex = -1;
+            
 
 
             //Perro y Dueño
@@ -97,6 +109,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         private void btnDeshacerFacturacion_Click(object sender, EventArgs e)
         {
             limpiarCampos();
+            limpiarComboSucursales();
         }
 
         private void cargarDatosPerro(Perro perro)
@@ -113,11 +126,15 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
 
         private void btnBuscarConsulta_Click(object sender, EventArgs e)
         {
-            if (txtNroConsulta.Text.Equals("") || cmbSucursales.SelectedIndex == -1)
+            if (cmbNroConsulta.SelectedIndex == -1 || cmbSucursales.SelectedIndex == -1) //txtNroConsulta.Text.Equals("")
             {
                 MessageBox.Show("Ingrese correctamente los datos antes de buscar");
             }
-            else if (AD_Facturas.existeFactura(int.Parse(txtNroConsulta.Text))) 
+
+            // ESTO DE ACA POSIBLEMENTE SE PUEDA SACAR AL
+            // IMPLEMENTAR LAS CORRECCIONES DEL FORMULARIO DE FACTURACION
+
+            else if (AD_Facturas.existeFactura(int.Parse(cmbNroConsulta.SelectedValue.ToString()))) //int.Parse(txtNroConsulta.Text))
             {
                 MessageBox.Show("Ya se ha realizado la facturacion de la consulta solicitada");
             }
@@ -125,10 +142,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             {
                 try
                 {
-                    bool resultado = AD_Consulta.existeConsulta(int.Parse(txtNroConsulta.Text), int.Parse(cmbSucursales.SelectedValue.ToString()));
-                    if(resultado)
+                    bool resultado = AD_Consulta.existeConsulta(int.Parse(cmbNroConsulta.SelectedValue.ToString()), int.Parse(cmbSucursales.SelectedValue.ToString())); //int.Parse(txtNroConsulta.Text)
+                    if (resultado)
                     {
-                        Consulta consulta = AD_Consulta.ObtenerConsulta(txtNroConsulta.Text, cmbSucursales.SelectedValue.ToString());
+                        Consulta consulta = AD_Consulta.ObtenerConsulta(cmbNroConsulta.SelectedValue.ToString(), cmbSucursales.SelectedValue.ToString()); //txtNroConsulta.Text
                         Perro perro = AD_Perros.obtenerPerro(int.Parse(consulta.NroHistoriaClinica));
                         Dueño dueño = AD_Dueño.ObtenerDueño(perro.DueñoPerro.ToString());
 
@@ -213,6 +230,8 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
                 {
                     MessageBox.Show("Datos de la Factura cargados exitosamente");
                     limpiarCampos();
+                    limpiarComboSucursales();
+                    limpiarComboNroConsultas();
                     resetearBotones();
                 }
                 else
@@ -226,7 +245,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         {
             Factura factura = new Factura();
             factura.NumeroFactura = int.Parse(txtNroFactura.Text);
-            factura.IdConsulta = int.Parse(txtNroConsulta.Text);
+            factura.IdConsulta = int.Parse(cmbNroConsulta.SelectedValue.ToString()); //txtNroConsulta.Text
             factura.FechaFactura = DateTime.Now;
             factura.IdTipoFactura = 2; //POR AHORA SOLO CONSIDERAMOS QUE LA VETERINARIA SOLO EMITE FACTURAS TIPO B
 
@@ -235,6 +254,54 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
 
         private void txtNroConsulta_TextChanged(object sender, EventArgs e)
         {
+            resetearBotones();
+        }
+
+        private void cmbSucursales_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbSucursales.SelectedIndex != -1)
+            {
+                try
+                {
+                    cargarComboNroConsultasAFacturar();
+                }
+                catch (Exception)
+                {
+                    //MessageBox.Show("No se pudo cargar correctamente las consultas a facturar");
+                    
+                }
+            }
+            else
+            {
+                limpiarComboNroConsultas();
+            }
+            
+
+            resetearBotones();
+            limpiarCampos();
+        }
+
+        private void cargarComboNroConsultasAFacturar()
+        {
+            try
+            {
+                DataTable nroConsultas = AD_Consulta.ObtenerConsultasAFacturarPorSucursal(int.Parse(cmbSucursales.SelectedValue.ToString()));
+                cmbNroConsulta.DataSource = nroConsultas;
+                cmbNroConsulta.DisplayMember = "id";
+                cmbNroConsulta.ValueMember = "id";
+                cmbNroConsulta.SelectedValue = -1;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        private void cmbNroConsulta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            limpiarCampos();
             resetearBotones();
         }
     }

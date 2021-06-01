@@ -6,11 +6,6 @@ C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPra
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Properties.Resources.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.GenerateResource.cache
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csproj.CoreCompileInputs.cache
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe.config
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.exe
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\TrabajoPracticoPAV1.pdb
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.exe
-C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.pdb
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Perros.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.ABM_Usuarios.resources
 C:\Users\matia\Source\Repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.ABM.ABM_Medicamentos.resources
@@ -45,3 +40,13 @@ E:\Mis Documentos\Downloads\TrabajoPracticoPAV1-main\TrabajoPracticoPAV1\bin\Deb
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Procesos.FacturacionConsulta.resources
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.LoginVeterinaria.resources
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Menu.resources
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.SplashScreen.resources
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ElSabuesoFeliz.exe.config
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ElSabuesoFeliz.exe.manifest
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ElSabuesoFeliz.application
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ElSabuesoFeliz.exe
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ElSabuesoFeliz.pdb
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\ElSabuesoFeliz.exe.manifest
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\ElSabuesoFeliz.application
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\ElSabuesoFeliz.exe
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\ElSabuesoFeliz.pdb
