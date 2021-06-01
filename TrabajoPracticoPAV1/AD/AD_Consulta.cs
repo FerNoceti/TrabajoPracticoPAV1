@@ -296,6 +296,43 @@ namespace TrabajoPracticoPAV1.AD
 
             return resultado;
         }
+
+        internal static DataTable ObtenerConsultasAFacturarPorSucursal(int idSucursal)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "obtenerNroConsultasAFacturarPorSucursal";
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = consulta;
+                cn.Open();
+                cmd.Connection = cn;
+
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         public static bool EliminarConsulta(Consulta per)
         {
             bool resultado = false;
