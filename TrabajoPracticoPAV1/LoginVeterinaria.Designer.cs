@@ -35,7 +35,6 @@ namespace TrabajoPracticoPAV1
             this.label1 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.lkPass = new System.Windows.Forms.LinkLabel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -67,16 +66,17 @@ namespace TrabajoPracticoPAV1
             // 
             // txtUsuario
             // 
-            this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.txtUsuario.BackColor = System.Drawing.Color.White;
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
             this.txtUsuario.Location = new System.Drawing.Point(299, 123);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(361, 27);
             this.txtUsuario.TabIndex = 1;
             this.txtUsuario.Text = "USUARIO";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // label1
@@ -107,30 +107,18 @@ namespace TrabajoPracticoPAV1
             // 
             // txtContraseña
             // 
-            this.txtContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.txtContraseña.BackColor = System.Drawing.Color.White;
             this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContraseña.ForeColor = System.Drawing.Color.DimGray;
+            this.txtContraseña.ForeColor = System.Drawing.Color.Black;
             this.txtContraseña.Location = new System.Drawing.Point(299, 168);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(361, 27);
             this.txtContraseña.TabIndex = 2;
             this.txtContraseña.Text = "CONTRASEÑA";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
+            this.txtContraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContraseña_KeyPress);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
-            // 
-            // lkPass
-            // 
-            this.lkPass.ActiveLinkColor = System.Drawing.SystemColors.HotTrack;
-            this.lkPass.AutoSize = true;
-            this.lkPass.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lkPass.LinkColor = System.Drawing.Color.Black;
-            this.lkPass.Location = new System.Drawing.Point(403, 303);
-            this.lkPass.Name = "lkPass";
-            this.lkPass.Size = new System.Drawing.Size(169, 16);
-            this.lkPass.TabIndex = 0;
-            this.lkPass.TabStop = true;
-            this.lkPass.Text = "¿Ha olvidado la contraseña?";
             // 
             // btnMinimizar
             // 
@@ -158,11 +146,10 @@ namespace TrabajoPracticoPAV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(715, 343);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.lkPass);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
@@ -175,7 +162,7 @@ namespace TrabajoPracticoPAV1
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formLogin";
-            
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginVeterinaria_FormClosed);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -194,7 +181,6 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.LinkLabel lkPass;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMinimizar;
     }

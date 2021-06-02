@@ -57,7 +57,6 @@ namespace TrabajoPracticoPAV1
             this.btnABM = new System.Windows.Forms.Button();
             this.panel_logo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.horafecha = new System.Windows.Forms.Timer(this.components);
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
@@ -65,15 +64,16 @@ namespace TrabajoPracticoPAV1
             this.panel_Formularios = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_izquierda.SuspendLayout();
             this.panel_submenu_InformesEstadisticas.SuspendLayout();
             this.panel_submenu_Procesos.SuspendLayout();
             this.panel_submenu_ABM.SuspendLayout();
             this.panel_logo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel_Formularios.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_izquierda
@@ -90,7 +90,7 @@ namespace TrabajoPracticoPAV1
             this.panel_izquierda.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel_izquierda.Location = new System.Drawing.Point(0, 0);
             this.panel_izquierda.Name = "panel_izquierda";
-            this.panel_izquierda.Size = new System.Drawing.Size(250, 656);
+            this.panel_izquierda.Size = new System.Drawing.Size(250, 695);
             this.panel_izquierda.TabIndex = 0;
             // 
             // panel_submenu_InformesEstadisticas
@@ -539,16 +539,6 @@ namespace TrabajoPracticoPAV1
             this.label1.TabIndex = 1;
             this.label1.Text = "El Sabueso Feliz";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TrabajoPracticoPAV1.Properties.Resources.kisspng_dog_veterinarian_computer_icons_pet_sitting_veteri_5b0f3bae4f1fe4_3017746015277249743241__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(-42, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(191, 85);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
             // horafecha
             // 
             this.horafecha.Enabled = true;
@@ -598,7 +588,7 @@ namespace TrabajoPracticoPAV1
             this.panel_Formularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_Formularios.Location = new System.Drawing.Point(250, 0);
             this.panel_Formularios.Name = "panel_Formularios";
-            this.panel_Formularios.Size = new System.Drawing.Size(879, 656);
+            this.panel_Formularios.Size = new System.Drawing.Size(879, 695);
             this.panel_Formularios.TabIndex = 1;
             // 
             // pictureBox1
@@ -623,12 +613,22 @@ namespace TrabajoPracticoPAV1
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TrabajoPracticoPAV1.Properties.Resources.kisspng_dog_veterinarian_computer_icons_pet_sitting_veteri_5b0f3bae4f1fe4_3017746015277249743241__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(-42, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(191, 85);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1129, 656);
+            this.ClientSize = new System.Drawing.Size(1129, 695);
             this.Controls.Add(this.panel_Formularios);
             this.Controls.Add(this.panel_izquierda);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -646,11 +646,11 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_ABM.ResumeLayout(false);
             this.panel_logo.ResumeLayout(false);
             this.panel_logo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel_Formularios.ResumeLayout(false);
             this.panel_Formularios.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

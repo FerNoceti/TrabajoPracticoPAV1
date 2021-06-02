@@ -31,6 +31,8 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             cargarComboTipoDocumentos();
             cargarComboSucursales();
             limpiarCampos();
+
+            cmbTipoDocumento.BackColor = Color.Black;
         }
 
         private Empleado obtenerDatosEmpleado()
@@ -239,6 +241,16 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             {
                 MessageBox.Show("Error al eliminar el empleado seleccionado");
             }
+        }
+
+        private void lbSucursal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSucursal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

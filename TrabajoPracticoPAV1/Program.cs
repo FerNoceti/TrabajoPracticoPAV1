@@ -16,7 +16,9 @@ namespace TrabajoPracticoPAV1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginVeterinaria());
+            //Application.Run(new LoginVeterinaria());
+            Application.Run(new SplashScreen());
+
         }
     }
 }

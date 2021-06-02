@@ -15,9 +15,11 @@ namespace TrabajoPracticoPAV1
 {
     public partial class LoginVeterinaria : Form
     {
-        public LoginVeterinaria()
+        Form padre;
+        public LoginVeterinaria(Form padre)
         {
             InitializeComponent();
+            this.padre = padre;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -35,7 +37,7 @@ namespace TrabajoPracticoPAV1
             if (txtUsuario.Text == "USUARIO")
             {
                 txtUsuario.Text = "";
-                txtUsuario.ForeColor = Color.LightGray;
+                //txtUsuario.ForeColor = Color.LightGray;
             }
         }
 
@@ -53,7 +55,7 @@ namespace TrabajoPracticoPAV1
             if (txtContraseña.Text == "CONTRASEÑA")
             {
                 txtContraseña.Text = "";
-                txtContraseña.ForeColor = Color.LightGray;
+                //txtContraseña.ForeColor = Color.LightGray;
                 txtContraseña.UseSystemPasswordChar = true;
             }
         }
@@ -124,6 +126,21 @@ namespace TrabajoPracticoPAV1
             }
 
 
+        }
+
+        private void LoginVeterinaria_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            padre.Close();
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) this.btnLogin_Click(sender, e);
+        }
+
+        private void txtContraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter) this.btnLogin_Click(sender, e);
         }
     }
 }
