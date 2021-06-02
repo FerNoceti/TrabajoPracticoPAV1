@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6EBC09C-78E7-498A-AEC4-3141B9172DF1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TrabajoPracticoPAV1</RootNamespace>
+    <AssemblyName>TrabajoPracticoPAV1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AD\AD_Consulta.cs" />
+    <Compile Include="AD\AD_Diagnostico.cs" />
+    <Compile Include="AD\AD_Dueño.cs" />
+    <Compile Include="AD\AD_Empleados.cs" />
+    <Compile Include="AD\AD_Facturas.cs" />
+    <Compile Include="AD\AD_Laboratorios.cs" />
+    <Compile Include="AD\AD_Medicamentos.cs" />
+    <Compile Include="AD\AD_Perros.cs" />
+    <Compile Include="AD\AD_Razas.cs" />
+    <Compile Include="AD\AD_Sintomas.cs" />
+    <Compile Include="AD\AD_Sucursales.cs" />
+    <Compile Include="AD\AD_Usuarios.cs" />
+    <Compile Include="AD\AD_Vacunas.cs" />
+    <Compile Include="AD\AD_Varios.cs" />
+    <Compile Include="Entidades\Barrio.cs" />
+    <Compile Include="Entidades\Consulta.cs" />
+    <Compile Include="Entidades\Diagnostico.cs" />
+    <Compile Include="Entidades\Dueño.cs" />
+    <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\Laboratorios.cs" />
+    <Compile Include="Entidades\Medicamentos.cs" />
+    <Compile Include="Entidades\Perro.cs" />
+    <Compile Include="Entidades\Razas.cs" />
+    <Compile Include="Entidades\Sintomas.cs" />
+    <Compile Include="Entidades\Sucursal.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Entidades\Vacuna.cs" />
+    <Compile Include="Formularios\ABM\ABM_Barrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Barrios.Designer.cs">
+      <DependentUpon>ABM_Barrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Consultas.Designer.cs">
+      <DependentUpon>ABM_Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Dueños.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Dueños.designer.cs">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Empleados.Designer.cs">
+      <DependentUpon>ABM_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Laboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Laboratorios.Designer.cs">
+      <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Medicamentos.designer.cs">
+      <DependentUpon>ABM_Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Perros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Perros.designer.cs">
+      <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Razas.designer.cs">
+      <DependentUpon>ABM_Razas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sintomas.Designer.cs">
+      <DependentUpon>ABM_Sintomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Sucursales.Designer.cs">
+      <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Usuarios.designer.cs">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Vacunas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ABM\ABM_Vacunas.designer.cs">
+      <DependentUpon>ABM_Vacunas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ABM\Sintomas.cs" />
+    <Compile Include="Formularios\Procesos\FacturacionConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Procesos\FacturacionConsulta.Designer.cs">
+      <DependentUpon>FacturacionConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginVeterinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginVeterinaria.designer.cs">
+      <DependentUpon>LoginVeterinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenuEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuEstadisticas.designer.cs">
+      <DependentUpon>SubMenuEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuReportes.designer.cs">
+      <DependentUpon>SubMenuReportes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Barrios.resx">
+      <DependentUpon>ABM_Barrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Consultas.resx">
+      <DependentUpon>ABM_Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Dueños.resx">
+      <DependentUpon>ABM_Dueños.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Empleados.resx">
+      <DependentUpon>ABM_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Laboratorios.resx">
+      <DependentUpon>ABM_Laboratorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Medicamentos.resx">
+      <DependentUpon>ABM_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Perros.resx">
+      <DependentUpon>ABM_Perros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Razas.resx">
+      <DependentUpon>ABM_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Sintomas.resx">
+      <DependentUpon>ABM_Sintomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Sucursales.resx">
+      <DependentUpon>ABM_Sucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Usuarios.resx">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
+      <DependentUpon>ABM_Vacunas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
+      <DependentUpon>FacturacionConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginVeterinaria.resx">
+      <DependentUpon>LoginVeterinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuEstadisticas.resx">
+      <DependentUpon>SubMenuEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuReportes.resx">
+      <DependentUpon>SubMenuReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Entidades\Resources\depositphotos_76975367-stock-illustration-sign-with-domestic-pets-silhouettes.jpg" />
+    <Content Include="Entidades\Resources\iconfinder_cross_4115230 %281%29.png" />
+    <Content Include="Entidades\Resources\iconfinder_cross_4115230.png" />
+    <Content Include="Entidades\Resources\iconfinder_minus_4115236.png" />
+    <Content Include="Entidades\Resources\images.jpg" />
+    <Content Include="Entidades\Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%29.png" />
+    <Content Include="Entidades\Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%291.png" />
+    <Content Include="Entidades\Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241.jpg" />
+    <Content Include="Entidades\Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241.png" />
+    <Content Include="Entidades\Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals %281%29.png" />
+    <Content Include="Entidades\Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals.png" />
+    <Content Include="Entidades\Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals1.png" />
+    <Content Include="Entidades\Resources\png-transparent-dog-veterinarian-banfield-pet-hospital-veterinary-medicine-dog-angle-animals-text.png" />
+    <Content Include="Entidades\Resources\sticker-png-dog-and-cat-veterinarian-pets-for-vets-veterinary-medicine-veterinary-education-logo-pet-shop-sporting-group.png" />
+    <Content Include="Resources\depositphotos_76975367-stock-illustration-sign-with-domestic-pets-silhouettes.jpg" />
+    <Content Include="Resources\depositphotos_76975367-stock-illustration-sign-with-domestic-pets-silhouettes1.jpg" />
+    <Content Include="Resources\iconfinder_cross_4115230 %281%29.png" />
+    <Content Include="Resources\iconfinder_cross_4115230 %281%291.png" />
+    <Content Include="Resources\iconfinder_cross_4115230.png" />
+    <Content Include="Resources\iconfinder_minus_4115236.png" />
+    <Content Include="Resources\iconfinder_minus_41152361.png" />
+    <Content Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%29.png" />
+    <Content Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%291.png" />
+    <Content Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241 %281%292.png" />
+    <Content Include="Resources\kisspng-dog-veterinarian-computer-icons-pet-sitting-veteri-5b0f3bae4f1fe4.3017746015277249743241.png" />
+    <Content Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals %281%29.png" />
+    <Content Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals %281%291.png" />
+    <Content Include="Resources\png-clipart-dog-cat-veterinarian-pet-animal-rescue-group-dog-mammal-animals1.png" />
+    <Content Include="Resources\png-transparent-dog-veterinarian-banfield-pet-hospital-veterinary-medicine-dog-angle-animals-text.png" />
+    <Content Include="Resources\png-transparent-dog-veterinarian-banfield-pet-hospital-veterinary-medicine-dog-angle-animals-text1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
