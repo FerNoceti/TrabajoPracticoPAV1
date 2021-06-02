@@ -168,6 +168,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubMenuEstadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuEstadisticas.Designer.cs">
+      <DependentUpon>SubMenuEstadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenuReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMenuReportes.Designer.cs">
+      <DependentUpon>SubMenuReportes.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Formularios\ABM\ABM_Barrios.resx">
       <DependentUpon>ABM_Barrios.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +235,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SubMenuEstadisticas.resx">
+      <DependentUpon>SubMenuEstadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubMenuReportes.resx">
+      <DependentUpon>SubMenuReportes.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

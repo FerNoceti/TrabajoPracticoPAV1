@@ -137,7 +137,7 @@ namespace TrabajoPracticoPAV1
             this.btnInformes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnInformes.Size = new System.Drawing.Size(233, 40);
             this.btnInformes.TabIndex = 14;
-            this.btnInformes.Text = "Informes";
+            this.btnInformes.Text = "Reportes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInformes.UseVisualStyleBackColor = true;
             this.btnInformes.Click += new System.EventHandler(this.button20_Click);

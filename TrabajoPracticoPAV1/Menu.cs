@@ -211,14 +211,16 @@ namespace TrabajoPracticoPAV1
         private void button20_Click(object sender, EventArgs e)
         {
             //mostrar formulario
-
+            SubMenuReportes reportes = new SubMenuReportes();
+            reportes.ShowDialog();
             ocultarSubMenu();
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             //mostrar formulario
-
+            SubMenuEstadisticas estadisticas = new SubMenuEstadisticas();
+            estadisticas.ShowDialog();
             ocultarSubMenu();
         }
 
