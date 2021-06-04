@@ -46,6 +46,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.txtNombreDueño = new System.Windows.Forms.TextBox();
             this.grpDetalleFacturacion = new System.Windows.Forms.GroupBox();
             this.lbSignoPeso3 = new System.Windows.Forms.Label();
+            this.txtNroConsulta = new System.Windows.Forms.MaskedTextBox();
             this.txtTotalAFacturar = new System.Windows.Forms.TextBox();
             this.grpMedicamentos = new System.Windows.Forms.GroupBox();
             this.lbSignoPeso2 = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.btnBuscarConsulta = new System.Windows.Forms.Button();
             this.lbSucursal = new System.Windows.Forms.Label();
             this.cmbSucursales = new System.Windows.Forms.ComboBox();
-            this.txtNroConsulta = new System.Windows.Forms.MaskedTextBox();
             this.cmbNroConsulta = new System.Windows.Forms.ComboBox();
             this.grpPerro.SuspendLayout();
             this.grpDueño.SuspendLayout();
@@ -110,30 +110,33 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // txtFecha
             // 
             this.txtFecha.Enabled = false;
+            this.txtFecha.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtFecha.Location = new System.Drawing.Point(16, 29);
             this.txtFecha.Mask = "00/00/0000";
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(72, 20);
+            this.txtFecha.Size = new System.Drawing.Size(72, 22);
             this.txtFecha.TabIndex = 4;
             this.txtFecha.ValidatingType = typeof(System.DateTime);
             // 
             // txtNroFactura
             // 
             this.txtNroFactura.Enabled = false;
+            this.txtNroFactura.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.txtNroFactura.Location = new System.Drawing.Point(351, 29);
             this.txtNroFactura.Name = "txtNroFactura";
-            this.txtNroFactura.Size = new System.Drawing.Size(100, 20);
+            this.txtNroFactura.Size = new System.Drawing.Size(100, 22);
             this.txtNroFactura.TabIndex = 5;
             // 
             // grpPerro
             // 
+            this.grpPerro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
             this.grpPerro.Controls.Add(this.lbNroHistoriaPerro);
             this.grpPerro.Controls.Add(this.lbNombrePerro);
             this.grpPerro.Controls.Add(this.txtNroHistoriaPerro);
             this.grpPerro.Controls.Add(this.txtNombrePerro);
-            this.grpPerro.Location = new System.Drawing.Point(22, 91);
+            this.grpPerro.Location = new System.Drawing.Point(10, 90);
             this.grpPerro.Name = "grpPerro";
-            this.grpPerro.Size = new System.Drawing.Size(200, 100);
+            this.grpPerro.Size = new System.Drawing.Size(230, 100);
             this.grpPerro.TabIndex = 7;
             this.grpPerro.TabStop = false;
             this.grpPerro.Text = "Perro";
@@ -141,25 +144,27 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbNroHistoriaPerro
             // 
             this.lbNroHistoriaPerro.AutoSize = true;
-            this.lbNroHistoriaPerro.Location = new System.Drawing.Point(6, 57);
+            this.lbNroHistoriaPerro.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lbNroHistoriaPerro.Location = new System.Drawing.Point(10, 50);
             this.lbNroHistoriaPerro.Name = "lbNroHistoriaPerro";
-            this.lbNroHistoriaPerro.Size = new System.Drawing.Size(65, 13);
+            this.lbNroHistoriaPerro.Size = new System.Drawing.Size(79, 17);
             this.lbNroHistoriaPerro.TabIndex = 15;
             this.lbNroHistoriaPerro.Text = "Nro. Historia";
             // 
             // lbNombrePerro
             // 
             this.lbNombrePerro.AutoSize = true;
-            this.lbNombrePerro.Location = new System.Drawing.Point(17, 22);
+            this.lbNombrePerro.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.lbNombrePerro.Location = new System.Drawing.Point(10, 20);
             this.lbNombrePerro.Name = "lbNombrePerro";
-            this.lbNombrePerro.Size = new System.Drawing.Size(44, 13);
+            this.lbNombrePerro.Size = new System.Drawing.Size(56, 17);
             this.lbNombrePerro.TabIndex = 14;
             this.lbNombrePerro.Text = "Nombre";
             // 
             // txtNroHistoriaPerro
             // 
             this.txtNroHistoriaPerro.Enabled = false;
-            this.txtNroHistoriaPerro.Location = new System.Drawing.Point(76, 54);
+            this.txtNroHistoriaPerro.Location = new System.Drawing.Point(90, 50);
             this.txtNroHistoriaPerro.Name = "txtNroHistoriaPerro";
             this.txtNroHistoriaPerro.Size = new System.Drawing.Size(107, 20);
             this.txtNroHistoriaPerro.TabIndex = 16;
@@ -167,20 +172,21 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // txtNombrePerro
             // 
             this.txtNombrePerro.Enabled = false;
-            this.txtNombrePerro.Location = new System.Drawing.Point(76, 19);
+            this.txtNombrePerro.Location = new System.Drawing.Point(90, 20);
             this.txtNombrePerro.Name = "txtNombrePerro";
             this.txtNombrePerro.Size = new System.Drawing.Size(107, 20);
             this.txtNombrePerro.TabIndex = 14;
             // 
             // grpDueño
             // 
+            this.grpDueño.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
             this.grpDueño.Controls.Add(this.lbApellidoDueño);
             this.grpDueño.Controls.Add(this.txtApellidoDueño);
             this.grpDueño.Controls.Add(this.lbNombreDueño);
             this.grpDueño.Controls.Add(this.txtNombreDueño);
-            this.grpDueño.Location = new System.Drawing.Point(251, 91);
+            this.grpDueño.Location = new System.Drawing.Point(250, 90);
             this.grpDueño.Name = "grpDueño";
-            this.grpDueño.Size = new System.Drawing.Size(200, 100);
+            this.grpDueño.Size = new System.Drawing.Size(210, 100);
             this.grpDueño.TabIndex = 8;
             this.grpDueño.TabStop = false;
             this.grpDueño.Text = "Dueño";
@@ -188,9 +194,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbApellidoDueño
             // 
             this.lbApellidoDueño.AutoSize = true;
+            this.lbApellidoDueño.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.lbApellidoDueño.Location = new System.Drawing.Point(15, 57);
             this.lbApellidoDueño.Name = "lbApellidoDueño";
-            this.lbApellidoDueño.Size = new System.Drawing.Size(44, 13);
+            this.lbApellidoDueño.Size = new System.Drawing.Size(58, 17);
             this.lbApellidoDueño.TabIndex = 17;
             this.lbApellidoDueño.Text = "Apellido";
             // 
@@ -205,9 +212,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbNombreDueño
             // 
             this.lbNombreDueño.AutoSize = true;
+            this.lbNombreDueño.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.lbNombreDueño.Location = new System.Drawing.Point(15, 22);
             this.lbNombreDueño.Name = "lbNombreDueño";
-            this.lbNombreDueño.Size = new System.Drawing.Size(44, 13);
+            this.lbNombreDueño.Size = new System.Drawing.Size(56, 17);
             this.lbNombreDueño.TabIndex = 15;
             this.lbNombreDueño.Text = "Nombre";
             // 
@@ -221,15 +229,16 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // 
             // grpDetalleFacturacion
             // 
+            this.grpDetalleFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
             this.grpDetalleFacturacion.Controls.Add(this.lbSignoPeso3);
             this.grpDetalleFacturacion.Controls.Add(this.txtNroConsulta);
             this.grpDetalleFacturacion.Controls.Add(this.txtTotalAFacturar);
             this.grpDetalleFacturacion.Controls.Add(this.grpMedicamentos);
             this.grpDetalleFacturacion.Controls.Add(this.lbTotalAFacturar);
             this.grpDetalleFacturacion.Controls.Add(this.grpDiagnostico);
-            this.grpDetalleFacturacion.Location = new System.Drawing.Point(16, 197);
+            this.grpDetalleFacturacion.Location = new System.Drawing.Point(10, 200);
             this.grpDetalleFacturacion.Name = "grpDetalleFacturacion";
-            this.grpDetalleFacturacion.Size = new System.Drawing.Size(435, 364);
+            this.grpDetalleFacturacion.Size = new System.Drawing.Size(450, 364);
             this.grpDetalleFacturacion.TabIndex = 9;
             this.grpDetalleFacturacion.TabStop = false;
             this.grpDetalleFacturacion.Text = "Detalle de Facturacion";
@@ -242,6 +251,16 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.lbSignoPeso3.Size = new System.Drawing.Size(13, 13);
             this.lbSignoPeso3.TabIndex = 17;
             this.lbSignoPeso3.Text = "$";
+            // 
+            // txtNroConsulta
+            // 
+            this.txtNroConsulta.Location = new System.Drawing.Point(170, 310);
+            this.txtNroConsulta.Mask = "99999";
+            this.txtNroConsulta.Name = "txtNroConsulta";
+            this.txtNroConsulta.Size = new System.Drawing.Size(100, 20);
+            this.txtNroConsulta.TabIndex = 16;
+            this.txtNroConsulta.ValidatingType = typeof(int);
+            this.txtNroConsulta.TextChanged += new System.EventHandler(this.txtNroConsulta_TextChanged);
             // 
             // txtTotalAFacturar
             // 
@@ -284,9 +303,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbSubtotalMedicamentos
             // 
             this.lbSubtotalMedicamentos.AutoSize = true;
+            this.lbSubtotalMedicamentos.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.lbSubtotalMedicamentos.Location = new System.Drawing.Point(6, 113);
             this.lbSubtotalMedicamentos.Name = "lbSubtotalMedicamentos";
-            this.lbSubtotalMedicamentos.Size = new System.Drawing.Size(118, 13);
+            this.lbSubtotalMedicamentos.Size = new System.Drawing.Size(152, 17);
             this.lbSubtotalMedicamentos.TabIndex = 15;
             this.lbSubtotalMedicamentos.Text = "Subtotal Medicamentos";
             // 
@@ -334,9 +354,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbTotalAFacturar
             // 
             this.lbTotalAFacturar.AutoSize = true;
+            this.lbTotalAFacturar.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.lbTotalAFacturar.Location = new System.Drawing.Point(12, 330);
             this.lbTotalAFacturar.Name = "lbTotalAFacturar";
-            this.lbTotalAFacturar.Size = new System.Drawing.Size(82, 13);
+            this.lbTotalAFacturar.Size = new System.Drawing.Size(101, 17);
             this.lbTotalAFacturar.TabIndex = 17;
             this.lbTotalAFacturar.Text = "Total a Facturar";
             // 
@@ -373,9 +394,10 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // lbSubtotalDiagnosticos
             // 
             this.lbSubtotalDiagnosticos.AutoSize = true;
+            this.lbSubtotalDiagnosticos.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.lbSubtotalDiagnosticos.Location = new System.Drawing.Point(6, 116);
             this.lbSubtotalDiagnosticos.Name = "lbSubtotalDiagnosticos";
-            this.lbSubtotalDiagnosticos.Size = new System.Drawing.Size(110, 13);
+            this.lbSubtotalDiagnosticos.Size = new System.Drawing.Size(139, 17);
             this.lbSubtotalDiagnosticos.TabIndex = 14;
             this.lbSubtotalDiagnosticos.Text = "Subtotal Diagnosticos";
             // 
@@ -422,26 +444,33 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // 
             // btnConfirmarFacturacion
             // 
-            this.btnConfirmarFacturacion.Location = new System.Drawing.Point(16, 567);
+            this.btnConfirmarFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnConfirmarFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmarFacturacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirmarFacturacion.Location = new System.Drawing.Point(10, 570);
             this.btnConfirmarFacturacion.Name = "btnConfirmarFacturacion";
             this.btnConfirmarFacturacion.Size = new System.Drawing.Size(126, 23);
             this.btnConfirmarFacturacion.TabIndex = 10;
             this.btnConfirmarFacturacion.Text = "Confirmar";
-            this.btnConfirmarFacturacion.UseVisualStyleBackColor = true;
+            this.btnConfirmarFacturacion.UseVisualStyleBackColor = false;
             this.btnConfirmarFacturacion.Click += new System.EventHandler(this.btnConfirmarFacturacion_Click);
             // 
             // btnDeshacerFacturacion
             // 
+            this.btnDeshacerFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnDeshacerFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeshacerFacturacion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeshacerFacturacion.Location = new System.Drawing.Point(325, 567);
             this.btnDeshacerFacturacion.Name = "btnDeshacerFacturacion";
             this.btnDeshacerFacturacion.Size = new System.Drawing.Size(126, 23);
             this.btnDeshacerFacturacion.TabIndex = 11;
             this.btnDeshacerFacturacion.Text = "Deshacer";
-            this.btnDeshacerFacturacion.UseVisualStyleBackColor = true;
+            this.btnDeshacerFacturacion.UseVisualStyleBackColor = false;
             this.btnDeshacerFacturacion.Click += new System.EventHandler(this.btnDeshacerFacturacion_Click);
             // 
             // btnBuscarConsulta
             // 
+            this.btnBuscarConsulta.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.btnBuscarConsulta.Location = new System.Drawing.Point(200, 60);
             this.btnBuscarConsulta.Name = "btnBuscarConsulta";
             this.btnBuscarConsulta.Size = new System.Drawing.Size(75, 23);
@@ -462,30 +491,22 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // cmbSucursales
             // 
             this.cmbSucursales.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSucursales.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.cmbSucursales.FormattingEnabled = true;
             this.cmbSucursales.Location = new System.Drawing.Point(120, 30);
             this.cmbSucursales.Name = "cmbSucursales";
-            this.cmbSucursales.Size = new System.Drawing.Size(97, 21);
+            this.cmbSucursales.Size = new System.Drawing.Size(97, 25);
             this.cmbSucursales.TabIndex = 15;
             this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.cmbSucursales_SelectedIndexChanged);
-            // 
-            // txtNroConsulta
-            // 
-            this.txtNroConsulta.Location = new System.Drawing.Point(170, 310);
-            this.txtNroConsulta.Mask = "99999";
-            this.txtNroConsulta.Name = "txtNroConsulta";
-            this.txtNroConsulta.Size = new System.Drawing.Size(100, 20);
-            this.txtNroConsulta.TabIndex = 16;
-            this.txtNroConsulta.ValidatingType = typeof(int);
-            this.txtNroConsulta.TextChanged += new System.EventHandler(this.txtNroConsulta_TextChanged);
             // 
             // cmbNroConsulta
             // 
             this.cmbNroConsulta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNroConsulta.Font = new System.Drawing.Font("Century Gothic", 9F);
             this.cmbNroConsulta.FormattingEnabled = true;
             this.cmbNroConsulta.Location = new System.Drawing.Point(230, 30);
             this.cmbNroConsulta.Name = "cmbNroConsulta";
-            this.cmbNroConsulta.Size = new System.Drawing.Size(97, 21);
+            this.cmbNroConsulta.Size = new System.Drawing.Size(97, 25);
             this.cmbNroConsulta.TabIndex = 17;
             this.cmbNroConsulta.SelectedIndexChanged += new System.EventHandler(this.cmbNroConsulta_SelectedIndexChanged);
             // 
@@ -493,6 +514,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(472, 602);
             this.Controls.Add(this.cmbNroConsulta);
             this.Controls.Add(this.cmbSucursales);

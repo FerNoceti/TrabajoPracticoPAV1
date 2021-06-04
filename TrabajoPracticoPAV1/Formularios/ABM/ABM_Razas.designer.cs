@@ -41,7 +41,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.AlturaMacho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nota = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_cantmin = new System.Windows.Forms.Label();
-            this.lbl_agregarMedic = new System.Windows.Forms.Label();
             this.lbl_lab = new System.Windows.Forms.Label();
             this.txtNombreRaza = new System.Windows.Forms.TextBox();
             this.lbl_nom_medicamento = new System.Windows.Forms.Label();
@@ -70,6 +69,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.lbl_agregarMedic = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gdrRazas)).BeginInit();
             this.gpbSexoHembra.SuspendLayout();
             this.gpbSexoMacho.SuspendLayout();
@@ -77,18 +77,22 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // btnGuardarRaza
             // 
-            this.btnGuardarRaza.Location = new System.Drawing.Point(746, 530);
+            this.btnGuardarRaza.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnGuardarRaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarRaza.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnGuardarRaza.Location = new System.Drawing.Point(20, 460);
             this.btnGuardarRaza.Name = "btnGuardarRaza";
-            this.btnGuardarRaza.Size = new System.Drawing.Size(97, 23);
+            this.btnGuardarRaza.Size = new System.Drawing.Size(290, 30);
             this.btnGuardarRaza.TabIndex = 33;
             this.btnGuardarRaza.Text = "Guardar";
-            this.btnGuardarRaza.UseVisualStyleBackColor = true;
+            this.btnGuardarRaza.UseVisualStyleBackColor = false;
             this.btnGuardarRaza.Click += new System.EventHandler(this.btnGuardarRaza_Click);
             // 
             // gdrRazas
             // 
             this.gdrRazas.AllowUserToAddRows = false;
             this.gdrRazas.AllowUserToDeleteRows = false;
+            this.gdrRazas.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gdrRazas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gdrRazas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -100,10 +104,12 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.AlturaHembra,
             this.AlturaMacho,
             this.Nota});
-            this.gdrRazas.Location = new System.Drawing.Point(35, 297);
+            this.gdrRazas.Location = new System.Drawing.Point(320, 10);
             this.gdrRazas.Name = "gdrRazas";
             this.gdrRazas.ReadOnly = true;
-            this.gdrRazas.Size = new System.Drawing.Size(808, 207);
+            this.gdrRazas.RowHeadersVisible = false;
+            this.gdrRazas.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.gdrRazas.Size = new System.Drawing.Size(770, 560);
             this.gdrRazas.TabIndex = 32;
             this.gdrRazas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrRazas_CellClick);
             // 
@@ -181,47 +187,37 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // lbl_cantmin
             // 
             this.lbl_cantmin.AutoSize = true;
-            this.lbl_cantmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cantmin.Location = new System.Drawing.Point(31, 94);
+            this.lbl_cantmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_cantmin.Location = new System.Drawing.Point(20, 110);
             this.lbl_cantmin.Name = "lbl_cantmin";
-            this.lbl_cantmin.Size = new System.Drawing.Size(209, 18);
+            this.lbl_cantmin.Size = new System.Drawing.Size(238, 18);
             this.lbl_cantmin.TabIndex = 27;
             this.lbl_cantmin.Text = "Notas de cuidados (Opcional):";
-            // 
-            // lbl_agregarMedic
-            // 
-            this.lbl_agregarMedic.AutoSize = true;
-            this.lbl_agregarMedic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_agregarMedic.Location = new System.Drawing.Point(30, 18);
-            this.lbl_agregarMedic.Name = "lbl_agregarMedic";
-            this.lbl_agregarMedic.Size = new System.Drawing.Size(120, 20);
-            this.lbl_agregarMedic.TabIndex = 25;
-            this.lbl_agregarMedic.Text = "Agregar Raza";
             // 
             // lbl_lab
             // 
             this.lbl_lab.AutoSize = true;
-            this.lbl_lab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_lab.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.lbl_lab.Location = new System.Drawing.Point(17, 26);
             this.lbl_lab.Name = "lbl_lab";
-            this.lbl_lab.Size = new System.Drawing.Size(100, 18);
+            this.lbl_lab.Size = new System.Drawing.Size(112, 18);
             this.lbl_lab.TabIndex = 22;
             this.lbl_lab.Text = "Peso mínimo:";
             // 
             // txtNombreRaza
             // 
-            this.txtNombreRaza.Location = new System.Drawing.Point(109, 54);
+            this.txtNombreRaza.Location = new System.Drawing.Point(20, 70);
             this.txtNombreRaza.Name = "txtNombreRaza";
-            this.txtNombreRaza.Size = new System.Drawing.Size(330, 20);
+            this.txtNombreRaza.Size = new System.Drawing.Size(280, 20);
             this.txtNombreRaza.TabIndex = 21;
             // 
             // lbl_nom_medicamento
             // 
             this.lbl_nom_medicamento.AutoSize = true;
-            this.lbl_nom_medicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nom_medicamento.Location = new System.Drawing.Point(30, 54);
+            this.lbl_nom_medicamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_nom_medicamento.Location = new System.Drawing.Point(20, 40);
             this.lbl_nom_medicamento.Name = "lbl_nom_medicamento";
-            this.lbl_nom_medicamento.Size = new System.Drawing.Size(66, 18);
+            this.lbl_nom_medicamento.Size = new System.Drawing.Size(73, 18);
             this.lbl_nom_medicamento.TabIndex = 20;
             this.lbl_nom_medicamento.Text = "Nombre:";
             // 
@@ -268,10 +264,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(17, 82);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 18);
+            this.label7.Size = new System.Drawing.Size(106, 18);
             this.label7.TabIndex = 49;
             this.label7.Text = "Altura media:";
             // 
@@ -315,42 +311,51 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             // txtNotaCuidados
             // 
-            this.txtNotaCuidados.Location = new System.Drawing.Point(246, 94);
+            this.txtNotaCuidados.Location = new System.Drawing.Point(20, 130);
             this.txtNotaCuidados.Multiline = true;
             this.txtNotaCuidados.Name = "txtNotaCuidados";
-            this.txtNotaCuidados.Size = new System.Drawing.Size(597, 50);
+            this.txtNotaCuidados.Size = new System.Drawing.Size(204, 50);
             this.txtNotaCuidados.TabIndex = 55;
             // 
             // btnLimpiarDatosRaz
             // 
-            this.btnLimpiarDatosRaz.Location = new System.Drawing.Point(286, 530);
+            this.btnLimpiarDatosRaz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnLimpiarDatosRaz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarDatosRaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiarDatosRaz.Location = new System.Drawing.Point(20, 540);
             this.btnLimpiarDatosRaz.Name = "btnLimpiarDatosRaz";
-            this.btnLimpiarDatosRaz.Size = new System.Drawing.Size(99, 23);
+            this.btnLimpiarDatosRaz.Size = new System.Drawing.Size(290, 30);
             this.btnLimpiarDatosRaz.TabIndex = 58;
             this.btnLimpiarDatosRaz.Text = "Limpiar Datos";
-            this.btnLimpiarDatosRaz.UseVisualStyleBackColor = true;
+            this.btnLimpiarDatosRaz.UseVisualStyleBackColor = false;
             this.btnLimpiarDatosRaz.Click += new System.EventHandler(this.btnLimpiarDatosRaz_Click);
             // 
             // btnBorrarRaz
             // 
+            this.btnBorrarRaz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnBorrarRaz.Enabled = false;
-            this.btnBorrarRaz.Location = new System.Drawing.Point(35, 530);
+            this.btnBorrarRaz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarRaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnBorrarRaz.Location = new System.Drawing.Point(180, 500);
             this.btnBorrarRaz.Name = "btnBorrarRaz";
-            this.btnBorrarRaz.Size = new System.Drawing.Size(99, 23);
+            this.btnBorrarRaz.Size = new System.Drawing.Size(130, 30);
             this.btnBorrarRaz.TabIndex = 57;
             this.btnBorrarRaz.Text = "Borrar";
-            this.btnBorrarRaz.UseVisualStyleBackColor = true;
+            this.btnBorrarRaz.UseVisualStyleBackColor = false;
             this.btnBorrarRaz.Click += new System.EventHandler(this.btnBorrarRaz_Click);
             // 
             // btnActualizarRaz
             // 
+            this.btnActualizarRaz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnActualizarRaz.Enabled = false;
-            this.btnActualizarRaz.Location = new System.Drawing.Point(530, 530);
+            this.btnActualizarRaz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarRaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizarRaz.Location = new System.Drawing.Point(20, 500);
             this.btnActualizarRaz.Name = "btnActualizarRaz";
-            this.btnActualizarRaz.Size = new System.Drawing.Size(99, 23);
+            this.btnActualizarRaz.Size = new System.Drawing.Size(140, 30);
             this.btnActualizarRaz.TabIndex = 56;
             this.btnActualizarRaz.Text = "Actualizar";
-            this.btnActualizarRaz.UseVisualStyleBackColor = true;
+            this.btnActualizarRaz.UseVisualStyleBackColor = false;
             this.btnActualizarRaz.Click += new System.EventHandler(this.btnActualizarRaz_Click);
             // 
             // txtPesoMinHembra
@@ -389,7 +394,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(791, 20);
+            this.label11.Location = new System.Drawing.Point(253, 40);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(26, 18);
             this.label11.TabIndex = 64;
@@ -398,7 +403,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // txtIdRaz
             // 
             this.txtIdRaz.Enabled = false;
-            this.txtIdRaz.Location = new System.Drawing.Point(818, 20);
+            this.txtIdRaz.Location = new System.Drawing.Point(280, 40);
             this.txtIdRaz.Name = "txtIdRaz";
             this.txtIdRaz.Size = new System.Drawing.Size(25, 20);
             this.txtIdRaz.TabIndex = 63;
@@ -414,7 +419,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.gpbSexoHembra.Controls.Add(this.label7);
             this.gpbSexoHembra.Controls.Add(this.txtAlturaHembra);
             this.gpbSexoHembra.Controls.Add(this.label9);
-            this.gpbSexoHembra.Location = new System.Drawing.Point(101, 159);
+            this.gpbSexoHembra.Location = new System.Drawing.Point(20, 200);
             this.gpbSexoHembra.Name = "gpbSexoHembra";
             this.gpbSexoHembra.Size = new System.Drawing.Size(284, 121);
             this.gpbSexoHembra.TabIndex = 65;
@@ -424,10 +429,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(17, 54);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(104, 18);
+            this.label12.Size = new System.Drawing.Size(116, 18);
             this.label12.TabIndex = 61;
             this.label12.Text = "Peso máximo:";
             // 
@@ -442,7 +447,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.gpbSexoMacho.Controls.Add(this.label10);
             this.gpbSexoMacho.Controls.Add(this.label4);
             this.gpbSexoMacho.Controls.Add(this.label3);
-            this.gpbSexoMacho.Location = new System.Drawing.Point(479, 159);
+            this.gpbSexoMacho.Location = new System.Drawing.Point(20, 330);
             this.gpbSexoMacho.Name = "gpbSexoMacho";
             this.gpbSexoMacho.Size = new System.Drawing.Size(284, 121);
             this.gpbSexoMacho.TabIndex = 66;
@@ -452,38 +457,49 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label16.Location = new System.Drawing.Point(23, 53);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(104, 18);
+            this.label16.Size = new System.Drawing.Size(116, 18);
             this.label16.TabIndex = 62;
             this.label16.Text = "Peso máximo:";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label14.Location = new System.Drawing.Point(22, 25);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 18);
+            this.label14.Size = new System.Drawing.Size(112, 18);
             this.label14.TabIndex = 62;
             this.label14.Text = "Peso mínimo:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold);
             this.label15.Location = new System.Drawing.Point(22, 81);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(93, 18);
+            this.label15.Size = new System.Drawing.Size(106, 18);
             this.label15.TabIndex = 63;
             this.label15.Text = "Altura media:";
+            // 
+            // lbl_agregarMedic
+            // 
+            this.lbl_agregarMedic.AutoSize = true;
+            this.lbl_agregarMedic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_agregarMedic.Location = new System.Drawing.Point(150, 0);
+            this.lbl_agregarMedic.Name = "lbl_agregarMedic";
+            this.lbl_agregarMedic.Size = new System.Drawing.Size(60, 20);
+            this.lbl_agregarMedic.TabIndex = 25;
+            this.lbl_agregarMedic.Text = "Razas";
             // 
             // ABM_Razas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(867, 562);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
+            this.ClientSize = new System.Drawing.Size(1104, 588);
             this.Controls.Add(this.gpbSexoMacho);
             this.Controls.Add(this.gpbSexoHembra);
             this.Controls.Add(this.label11);
@@ -516,7 +532,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.Button btnGuardarRaza;
         private System.Windows.Forms.DataGridView gdrRazas;
         private System.Windows.Forms.Label lbl_cantmin;
-        private System.Windows.Forms.Label lbl_agregarMedic;
         private System.Windows.Forms.Label lbl_lab;
         private System.Windows.Forms.TextBox txtNombreRaza;
         private System.Windows.Forms.Label lbl_nom_medicamento;
@@ -554,5 +569,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lbl_agregarMedic;
     }
 }

@@ -29,6 +29,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gpbDueños = new System.Windows.Forms.GroupBox();
             this.btnLimpiarCampos = new System.Windows.Forms.Button();
             this.btnActualizarDueño = new System.Windows.Forms.Button();
@@ -65,109 +66,117 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.gpbDueños.Controls.Add(this.label2);
             this.gpbDueños.Controls.Add(this.txtNumIdDueño);
             this.gpbDueños.Controls.Add(this.label1);
-            this.gpbDueños.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbDueños.Location = new System.Drawing.Point(131, 12);
+            this.gpbDueños.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.gpbDueños.Location = new System.Drawing.Point(10, 10);
             this.gpbDueños.Name = "gpbDueños";
-            this.gpbDueños.Size = new System.Drawing.Size(451, 342);
+            this.gpbDueños.Size = new System.Drawing.Size(370, 270);
             this.gpbDueños.TabIndex = 0;
             this.gpbDueños.TabStop = false;
             this.gpbDueños.Text = "Datos del Dueño";
             // 
             // btnLimpiarCampos
             // 
-            this.btnLimpiarCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarCampos.Location = new System.Drawing.Point(165, 274);
+            this.btnLimpiarCampos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnLimpiarCampos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarCampos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiarCampos.Location = new System.Drawing.Point(10, 230);
             this.btnLimpiarCampos.Name = "btnLimpiarCampos";
-            this.btnLimpiarCampos.Size = new System.Drawing.Size(122, 52);
+            this.btnLimpiarCampos.Size = new System.Drawing.Size(350, 30);
             this.btnLimpiarCampos.TabIndex = 11;
             this.btnLimpiarCampos.Text = "Limpiar Campos";
-            this.btnLimpiarCampos.UseVisualStyleBackColor = true;
+            this.btnLimpiarCampos.UseVisualStyleBackColor = false;
             this.btnLimpiarCampos.Click += new System.EventHandler(this.btnLimpiarCampos_Click);
             // 
             // btnActualizarDueño
             // 
-            this.btnActualizarDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarDueño.Location = new System.Drawing.Point(301, 216);
+            this.btnActualizarDueño.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnActualizarDueño.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarDueño.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizarDueño.Location = new System.Drawing.Point(190, 190);
             this.btnActualizarDueño.Name = "btnActualizarDueño";
-            this.btnActualizarDueño.Size = new System.Drawing.Size(122, 52);
+            this.btnActualizarDueño.Size = new System.Drawing.Size(170, 30);
             this.btnActualizarDueño.TabIndex = 10;
             this.btnActualizarDueño.Text = "Actualizar Datos Dueño";
-            this.btnActualizarDueño.UseVisualStyleBackColor = true;
+            this.btnActualizarDueño.UseVisualStyleBackColor = false;
             this.btnActualizarDueño.Click += new System.EventHandler(this.btnActualizarDueño_Click);
             // 
             // btnBorrarDueño
             // 
-            this.btnBorrarDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrarDueño.Location = new System.Drawing.Point(163, 216);
+            this.btnBorrarDueño.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnBorrarDueño.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarDueño.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnBorrarDueño.Location = new System.Drawing.Point(10, 190);
             this.btnBorrarDueño.Name = "btnBorrarDueño";
-            this.btnBorrarDueño.Size = new System.Drawing.Size(122, 52);
+            this.btnBorrarDueño.Size = new System.Drawing.Size(170, 30);
             this.btnBorrarDueño.TabIndex = 9;
             this.btnBorrarDueño.Text = "Dar de Baja Dueño";
-            this.btnBorrarDueño.UseVisualStyleBackColor = true;
+            this.btnBorrarDueño.UseVisualStyleBackColor = false;
             this.btnBorrarDueño.Click += new System.EventHandler(this.btnBorrarDueño_Click);
             // 
             // btnAgregarDueño
             // 
-            this.btnAgregarDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarDueño.Location = new System.Drawing.Point(25, 216);
+            this.btnAgregarDueño.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnAgregarDueño.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarDueño.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnAgregarDueño.Location = new System.Drawing.Point(10, 150);
             this.btnAgregarDueño.Name = "btnAgregarDueño";
-            this.btnAgregarDueño.Size = new System.Drawing.Size(122, 52);
+            this.btnAgregarDueño.Size = new System.Drawing.Size(350, 30);
             this.btnAgregarDueño.TabIndex = 8;
             this.btnAgregarDueño.Text = "Agregar Dueño";
-            this.btnAgregarDueño.UseVisualStyleBackColor = true;
+            this.btnAgregarDueño.UseVisualStyleBackColor = false;
             this.btnAgregarDueño.Click += new System.EventHandler(this.btnAgregarDueño_Click);
             // 
             // txtTelefonoDueño
             // 
             this.txtTelefonoDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoDueño.Location = new System.Drawing.Point(165, 156);
+            this.txtTelefonoDueño.Location = new System.Drawing.Point(170, 110);
             this.txtTelefonoDueño.Name = "txtTelefonoDueño";
-            this.txtTelefonoDueño.Size = new System.Drawing.Size(186, 26);
+            this.txtTelefonoDueño.Size = new System.Drawing.Size(190, 26);
             this.txtTelefonoDueño.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 159);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(10, 110);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 20);
+            this.label4.Size = new System.Drawing.Size(162, 18);
             this.label4.TabIndex = 6;
             this.label4.Text = "Número de Telefono:";
             // 
             // txtApellidoDueño
             // 
             this.txtApellidoDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidoDueño.Location = new System.Drawing.Point(165, 121);
+            this.txtApellidoDueño.Location = new System.Drawing.Point(170, 80);
             this.txtApellidoDueño.Name = "txtApellidoDueño";
-            this.txtApellidoDueño.Size = new System.Drawing.Size(186, 26);
+            this.txtApellidoDueño.Size = new System.Drawing.Size(190, 26);
             this.txtApellidoDueño.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(90, 124);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(10, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 20);
+            this.label3.Size = new System.Drawing.Size(75, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "Apellido:";
             // 
             // txtNombreDueño
             // 
             this.txtNombreDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreDueño.Location = new System.Drawing.Point(165, 84);
+            this.txtNombreDueño.Location = new System.Drawing.Point(170, 50);
             this.txtNombreDueño.Name = "txtNombreDueño";
-            this.txtNombreDueño.Size = new System.Drawing.Size(186, 26);
+            this.txtNombreDueño.Size = new System.Drawing.Size(190, 26);
             this.txtNombreDueño.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 87);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(10, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(72, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre:";
             // 
@@ -175,18 +184,18 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.txtNumIdDueño.Enabled = false;
             this.txtNumIdDueño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumIdDueño.Location = new System.Drawing.Point(165, 46);
+            this.txtNumIdDueño.Location = new System.Drawing.Point(170, 20);
             this.txtNumIdDueño.Name = "txtNumIdDueño";
-            this.txtNumIdDueño.Size = new System.Drawing.Size(120, 26);
+            this.txtNumIdDueño.Size = new System.Drawing.Size(190, 26);
             this.txtNumIdDueño.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 49);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(10, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 20);
+            this.label1.Size = new System.Drawing.Size(114, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Número de ID:";
             // 
@@ -194,16 +203,27 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.gridDueños.AllowUserToAddRows = false;
             this.gridDueños.AllowUserToDeleteRows = false;
+            this.gridDueños.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDueños.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridDueños.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridDueños.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id_Dueño,
             this.Nombre_Dueño,
             this.Apellido_Dueño,
             this.Telefono_Dueño});
-            this.gridDueños.Location = new System.Drawing.Point(55, 394);
+            this.gridDueños.Location = new System.Drawing.Point(390, 10);
             this.gridDueños.Name = "gridDueños";
             this.gridDueños.ReadOnly = true;
-            this.gridDueños.Size = new System.Drawing.Size(617, 226);
+            this.gridDueños.RowHeadersVisible = false;
+            this.gridDueños.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.gridDueños.Size = new System.Drawing.Size(570, 270);
             this.gridDueños.TabIndex = 1;
             this.gridDueños.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDueños_CellClick);
             this.gridDueños.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridDueños_CellContentClick);
@@ -244,10 +264,12 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 660);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
+            this.ClientSize = new System.Drawing.Size(975, 291);
             this.Controls.Add(this.gridDueños);
             this.Controls.Add(this.gpbDueños);
             this.Name = "ABM_Dueños";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dueños";
             this.Load += new System.EventHandler(this.ABM_Dueños_Load);
             this.gpbDueños.ResumeLayout(false);
