@@ -19,11 +19,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             InitializeComponent();
         }
 
-        private void lblId_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtId_TextChanged(object sender, EventArgs e)
         {
 

@@ -29,6 +29,8 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblFecha = new System.Windows.Forms.Label();
             this.txtFechaEntrada = new System.Windows.Forms.MaskedTextBox();
             this.txtIdConsulta = new System.Windows.Forms.TextBox();
@@ -44,10 +46,6 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.label2 = new System.Windows.Forms.Label();
             this.txtFechaSalida = new System.Windows.Forms.MaskedTextBox();
             this.gridConsultas = new System.Windows.Forms.DataGridView();
-            this.btnActualizarConsulta = new System.Windows.Forms.Button();
-            this.btnLimpiarDatos = new System.Windows.Forms.Button();
-            this.btnGuardarConsulta = new System.Windows.Forms.Button();
-            this.btnEliminarConsulta = new System.Windows.Forms.Button();
             this.Nro_Consulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Historia_Clinica = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sucursal = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,136 +53,147 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Doc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnActualizarConsulta = new System.Windows.Forms.Button();
+            this.btnLimpiarDatos = new System.Windows.Forms.Button();
+            this.btnGuardarConsulta = new System.Windows.Forms.Button();
+            this.btnEliminarConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridConsultas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(393, 204);
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblFecha.Location = new System.Drawing.Point(10, 220);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(141, 20);
+            this.lblFecha.Size = new System.Drawing.Size(142, 18);
             this.lblFecha.TabIndex = 11;
             this.lblFecha.Text = "Fecha de Entrada:";
             // 
             // txtFechaEntrada
             // 
-            this.txtFechaEntrada.Location = new System.Drawing.Point(549, 204);
+            this.txtFechaEntrada.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtFechaEntrada.Location = new System.Drawing.Point(190, 220);
             this.txtFechaEntrada.Mask = "00/00/0000";
             this.txtFechaEntrada.Name = "txtFechaEntrada";
-            this.txtFechaEntrada.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaEntrada.Size = new System.Drawing.Size(100, 26);
             this.txtFechaEntrada.TabIndex = 10;
             this.txtFechaEntrada.ValidatingType = typeof(System.DateTime);
             // 
             // txtIdConsulta
             // 
             this.txtIdConsulta.Enabled = false;
-            this.txtIdConsulta.Location = new System.Drawing.Point(549, 96);
+            this.txtIdConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtIdConsulta.Location = new System.Drawing.Point(190, 50);
             this.txtIdConsulta.Name = "txtIdConsulta";
-            this.txtIdConsulta.Size = new System.Drawing.Size(182, 20);
+            this.txtIdConsulta.Size = new System.Drawing.Size(182, 26);
             this.txtIdConsulta.TabIndex = 9;
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApellido.Location = new System.Drawing.Point(376, 96);
+            this.lblApellido.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblApellido.Location = new System.Drawing.Point(10, 50);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(158, 20);
+            this.lblApellido.Size = new System.Drawing.Size(130, 18);
             this.lblApellido.TabIndex = 8;
-            this.lblApellido.Text = "Numero de Consulta:";
+            this.lblApellido.Text = "Nro de Consulta:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(459, 68);
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblNombre.Location = new System.Drawing.Point(10, 20);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(75, 20);
+            this.lblNombre.Size = new System.Drawing.Size(73, 18);
             this.lblNombre.TabIndex = 6;
             this.lblNombre.Text = "Sucursal:";
             // 
             // txtNumeroDoc
             // 
-            this.txtNumeroDoc.Location = new System.Drawing.Point(549, 178);
+            this.txtNumeroDoc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtNumeroDoc.Location = new System.Drawing.Point(190, 127);
             this.txtNumeroDoc.Mask = "99999999";
             this.txtNumeroDoc.Name = "txtNumeroDoc";
-            this.txtNumeroDoc.Size = new System.Drawing.Size(182, 20);
+            this.txtNumeroDoc.Size = new System.Drawing.Size(182, 26);
             this.txtNumeroDoc.TabIndex = 15;
             // 
             // lblNumeroDoc
             // 
             this.lblNumeroDoc.AutoSize = true;
-            this.lblNumeroDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroDoc.Location = new System.Drawing.Point(258, 178);
+            this.lblNumeroDoc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblNumeroDoc.Location = new System.Drawing.Point(10, 130);
             this.lblNumeroDoc.Name = "lblNumeroDoc";
-            this.lblNumeroDoc.Size = new System.Drawing.Size(276, 20);
+            this.lblNumeroDoc.Size = new System.Drawing.Size(149, 18);
             this.lblNumeroDoc.TabIndex = 14;
-            this.lblNumeroDoc.Text = "Numero de Documento de Empleado:";
+            this.lblNumeroDoc.Text = "NroDoc Empleado:";
             // 
             // cmbTipoDoc
             // 
             this.cmbTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoDoc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbTipoDoc.FormattingEnabled = true;
-            this.cmbTipoDoc.Location = new System.Drawing.Point(549, 151);
+            this.cmbTipoDoc.Location = new System.Drawing.Point(190, 100);
             this.cmbTipoDoc.Name = "cmbTipoDoc";
-            this.cmbTipoDoc.Size = new System.Drawing.Size(182, 21);
+            this.cmbTipoDoc.Size = new System.Drawing.Size(182, 26);
             this.cmbTipoDoc.TabIndex = 13;
             // 
             // lblTipoDoc
             // 
             this.lblTipoDoc.AutoSize = true;
-            this.lblTipoDoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoDoc.Location = new System.Drawing.Point(284, 151);
+            this.lblTipoDoc.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblTipoDoc.Location = new System.Drawing.Point(10, 100);
             this.lblTipoDoc.Name = "lblTipoDoc";
-            this.lblTipoDoc.Size = new System.Drawing.Size(250, 20);
+            this.lblTipoDoc.Size = new System.Drawing.Size(157, 18);
             this.lblTipoDoc.TabIndex = 12;
-            this.lblTipoDoc.Text = "Tipo de Documento de Empleado:";
+            this.lblTipoDoc.Text = "TipoDoc  Empleado:";
             // 
             // cmbSucursal
             // 
             this.cmbSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSucursal.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbSucursal.FormattingEnabled = true;
-            this.cmbSucursal.Location = new System.Drawing.Point(549, 68);
+            this.cmbSucursal.Location = new System.Drawing.Point(190, 20);
             this.cmbSucursal.Name = "cmbSucursal";
-            this.cmbSucursal.Size = new System.Drawing.Size(182, 21);
+            this.cmbSucursal.Size = new System.Drawing.Size(182, 26);
             this.cmbSucursal.TabIndex = 16;
             this.cmbSucursal.SelectedIndexChanged += new System.EventHandler(this.cmbSucursal_SelectedIndexChanged);
             // 
             // txtHistoriaClinica
             // 
-            this.txtHistoriaClinica.Location = new System.Drawing.Point(549, 122);
+            this.txtHistoriaClinica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtHistoriaClinica.Location = new System.Drawing.Point(190, 180);
             this.txtHistoriaClinica.Name = "txtHistoriaClinica";
-            this.txtHistoriaClinica.Size = new System.Drawing.Size(182, 20);
+            this.txtHistoriaClinica.Size = new System.Drawing.Size(182, 26);
             this.txtHistoriaClinica.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(335, 122);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(10, 180);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 20);
+            this.label1.Size = new System.Drawing.Size(152, 18);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Numero de Historia Clinica:";
+            this.label1.Text = "Nro Historia Clinica:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(406, 230);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(10, 260);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.Size = new System.Drawing.Size(132, 18);
             this.label2.TabIndex = 20;
             this.label2.Text = "Fecha de Salida:";
             // 
             // txtFechaSalida
             // 
-            this.txtFechaSalida.Location = new System.Drawing.Point(549, 230);
+            this.txtFechaSalida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.txtFechaSalida.Location = new System.Drawing.Point(190, 260);
             this.txtFechaSalida.Mask = "00/00/0000";
             this.txtFechaSalida.Name = "txtFechaSalida";
-            this.txtFechaSalida.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaSalida.Size = new System.Drawing.Size(100, 26);
             this.txtFechaSalida.TabIndex = 19;
             this.txtFechaSalida.ValidatingType = typeof(System.DateTime);
             // 
@@ -192,6 +201,15 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.gridConsultas.AllowUserToAddRows = false;
             this.gridConsultas.AllowUserToDeleteRows = false;
+            this.gridConsultas.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridConsultas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridConsultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nro_Consulta,
@@ -201,56 +219,23 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Doc,
             this.FechaE,
             this.FechaS});
-            this.gridConsultas.Location = new System.Drawing.Point(160, 360);
+            this.gridConsultas.Location = new System.Drawing.Point(400, 20);
             this.gridConsultas.Name = "gridConsultas";
             this.gridConsultas.ReadOnly = true;
-            this.gridConsultas.Size = new System.Drawing.Size(744, 223);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridConsultas.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridConsultas.RowHeadersVisible = false;
+            this.gridConsultas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridConsultas.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.gridConsultas.Size = new System.Drawing.Size(700, 400);
             this.gridConsultas.TabIndex = 21;
             this.gridConsultas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridConsultas_CellClick);
-            // 
-            // btnActualizarConsulta
-            // 
-            this.btnActualizarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarConsulta.Location = new System.Drawing.Point(428, 280);
-            this.btnActualizarConsulta.Name = "btnActualizarConsulta";
-            this.btnActualizarConsulta.Size = new System.Drawing.Size(115, 49);
-            this.btnActualizarConsulta.TabIndex = 29;
-            this.btnActualizarConsulta.Text = "Actualizar Consulta";
-            this.btnActualizarConsulta.UseVisualStyleBackColor = true;
-            this.btnActualizarConsulta.Click += new System.EventHandler(this.btnActualizarConsulta_Click);
-            // 
-            // btnLimpiarDatos
-            // 
-            this.btnLimpiarDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarDatos.Location = new System.Drawing.Point(304, 280);
-            this.btnLimpiarDatos.Name = "btnLimpiarDatos";
-            this.btnLimpiarDatos.Size = new System.Drawing.Size(115, 49);
-            this.btnLimpiarDatos.TabIndex = 28;
-            this.btnLimpiarDatos.Text = "Limpiar Datos";
-            this.btnLimpiarDatos.UseVisualStyleBackColor = true;
-            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
-            // 
-            // btnGuardarConsulta
-            // 
-            this.btnGuardarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarConsulta.Location = new System.Drawing.Point(549, 280);
-            this.btnGuardarConsulta.Name = "btnGuardarConsulta";
-            this.btnGuardarConsulta.Size = new System.Drawing.Size(115, 49);
-            this.btnGuardarConsulta.TabIndex = 27;
-            this.btnGuardarConsulta.Text = "Guardar Consulta";
-            this.btnGuardarConsulta.UseVisualStyleBackColor = true;
-            this.btnGuardarConsulta.Click += new System.EventHandler(this.btnGuardarConsulta_Click);
-            // 
-            // btnEliminarConsulta
-            // 
-            this.btnEliminarConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarConsulta.Location = new System.Drawing.Point(670, 280);
-            this.btnEliminarConsulta.Name = "btnEliminarConsulta";
-            this.btnEliminarConsulta.Size = new System.Drawing.Size(115, 49);
-            this.btnEliminarConsulta.TabIndex = 30;
-            this.btnEliminarConsulta.Text = "Eliminar Consulta";
-            this.btnEliminarConsulta.UseVisualStyleBackColor = true;
-            this.btnEliminarConsulta.Click += new System.EventHandler(this.btnEliminarConsulta_Click);
             // 
             // Nro_Consulta
             // 
@@ -301,11 +286,64 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.FechaS.Name = "FechaS";
             this.FechaS.ReadOnly = true;
             // 
+            // btnActualizarConsulta
+            // 
+            this.btnActualizarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnActualizarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnActualizarConsulta.Location = new System.Drawing.Point(10, 350);
+            this.btnActualizarConsulta.Name = "btnActualizarConsulta";
+            this.btnActualizarConsulta.Size = new System.Drawing.Size(180, 30);
+            this.btnActualizarConsulta.TabIndex = 29;
+            this.btnActualizarConsulta.Text = "Actualizar Consulta";
+            this.btnActualizarConsulta.UseVisualStyleBackColor = false;
+            this.btnActualizarConsulta.Click += new System.EventHandler(this.btnActualizarConsulta_Click);
+            // 
+            // btnLimpiarDatos
+            // 
+            this.btnLimpiarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnLimpiarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarDatos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnLimpiarDatos.Location = new System.Drawing.Point(10, 390);
+            this.btnLimpiarDatos.Name = "btnLimpiarDatos";
+            this.btnLimpiarDatos.Size = new System.Drawing.Size(370, 30);
+            this.btnLimpiarDatos.TabIndex = 28;
+            this.btnLimpiarDatos.Text = "Limpiar Datos";
+            this.btnLimpiarDatos.UseVisualStyleBackColor = false;
+            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
+            // 
+            // btnGuardarConsulta
+            // 
+            this.btnGuardarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnGuardarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnGuardarConsulta.Location = new System.Drawing.Point(10, 310);
+            this.btnGuardarConsulta.Name = "btnGuardarConsulta";
+            this.btnGuardarConsulta.Size = new System.Drawing.Size(370, 30);
+            this.btnGuardarConsulta.TabIndex = 27;
+            this.btnGuardarConsulta.Text = "Guardar Consulta";
+            this.btnGuardarConsulta.UseVisualStyleBackColor = false;
+            this.btnGuardarConsulta.Click += new System.EventHandler(this.btnGuardarConsulta_Click);
+            // 
+            // btnEliminarConsulta
+            // 
+            this.btnEliminarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnEliminarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
+            this.btnEliminarConsulta.Location = new System.Drawing.Point(200, 350);
+            this.btnEliminarConsulta.Name = "btnEliminarConsulta";
+            this.btnEliminarConsulta.Size = new System.Drawing.Size(180, 30);
+            this.btnEliminarConsulta.TabIndex = 30;
+            this.btnEliminarConsulta.Text = "Eliminar Consulta";
+            this.btnEliminarConsulta.UseVisualStyleBackColor = false;
+            this.btnEliminarConsulta.Click += new System.EventHandler(this.btnEliminarConsulta_Click);
+            // 
             // ABM_Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 605);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
+            this.ClientSize = new System.Drawing.Size(1116, 432);
             this.Controls.Add(this.btnEliminarConsulta);
             this.Controls.Add(this.btnActualizarConsulta);
             this.Controls.Add(this.btnLimpiarDatos);
