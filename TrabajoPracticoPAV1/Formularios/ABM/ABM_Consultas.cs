@@ -31,7 +31,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         }
         private bool VerificarCamposLlenos()
         {
-            if (cmbSucursal.SelectedIndex > 0 && txtIdConsulta.Text.Length > 0 && txtNumeroDoc.Text.Length >0 && txtHistoriaClinica.Text.Length > 0 && txtFechaEntrada.Text.Length > 0 && txtFechaSalida.Text.Length > 0 && cmbTipoDoc.SelectedIndex > 0)
+            if (cmbSucursal.SelectedIndex != -1 && txtIdConsulta.Text.Length > 0
+                && txtNumeroDoc.Text.Length >0 && txtHistoriaClinica.Text.Length > 0 
+                && txtFechaEntrada.Text.Length > 0 && txtFechaSalida.Text.Length > 0 
+                && cmbTipoDoc.SelectedIndex != -1)
             {
                 return true;
             }
