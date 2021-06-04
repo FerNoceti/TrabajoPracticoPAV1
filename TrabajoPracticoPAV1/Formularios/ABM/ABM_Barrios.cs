@@ -26,6 +26,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         public ABM_Barrios()
         {
+            InitializeComponent();
         }
 
         private void ABM_Barrios_Load(object sender, EventArgs e)

@@ -40,9 +40,7 @@ namespace TrabajoPracticoPAV1
             this.btnFacturacionConsultas = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.panel_submenu_ABM = new System.Windows.Forms.Panel();
-            this.btnCalendario = new System.Windows.Forms.Button();
             this.btnConsultas = new System.Windows.Forms.Button();
-            this.btnDiagnostico = new System.Windows.Forms.Button();
             this.btnBarrios = new System.Windows.Forms.Button();
             this.btnVacunas = new System.Windows.Forms.Button();
             this.btnDueños = new System.Windows.Forms.Button();
@@ -99,7 +97,7 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_InformesEstadisticas.Controls.Add(this.btnEstadisticas);
             this.panel_submenu_InformesEstadisticas.Controls.Add(this.btnInformes);
             this.panel_submenu_InformesEstadisticas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_submenu_InformesEstadisticas.Location = new System.Drawing.Point(0, 843);
+            this.panel_submenu_InformesEstadisticas.Location = new System.Drawing.Point(0, 751);
             this.panel_submenu_InformesEstadisticas.Name = "panel_submenu_InformesEstadisticas";
             this.panel_submenu_InformesEstadisticas.Size = new System.Drawing.Size(233, 77);
             this.panel_submenu_InformesEstadisticas.TabIndex = 6;
@@ -151,7 +149,7 @@ namespace TrabajoPracticoPAV1
             this.btnInformesEstadisticas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformesEstadisticas.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformesEstadisticas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
-            this.btnInformesEstadisticas.Location = new System.Drawing.Point(0, 792);
+            this.btnInformesEstadisticas.Location = new System.Drawing.Point(0, 700);
             this.btnInformesEstadisticas.Name = "btnInformesEstadisticas";
             this.btnInformesEstadisticas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnInformesEstadisticas.Size = new System.Drawing.Size(233, 51);
@@ -166,7 +164,7 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_Procesos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.panel_submenu_Procesos.Controls.Add(this.btnFacturacionConsultas);
             this.panel_submenu_Procesos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_submenu_Procesos.Location = new System.Drawing.Point(0, 754);
+            this.panel_submenu_Procesos.Location = new System.Drawing.Point(0, 662);
             this.panel_submenu_Procesos.Name = "panel_submenu_Procesos";
             this.panel_submenu_Procesos.Size = new System.Drawing.Size(233, 38);
             this.panel_submenu_Procesos.TabIndex = 4;
@@ -199,7 +197,7 @@ namespace TrabajoPracticoPAV1
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
-            this.btnProcesos.Location = new System.Drawing.Point(0, 703);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 611);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnProcesos.Size = new System.Drawing.Size(233, 51);
@@ -212,9 +210,7 @@ namespace TrabajoPracticoPAV1
             // panel_submenu_ABM
             // 
             this.panel_submenu_ABM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.panel_submenu_ABM.Controls.Add(this.btnCalendario);
             this.panel_submenu_ABM.Controls.Add(this.btnConsultas);
-            this.panel_submenu_ABM.Controls.Add(this.btnDiagnostico);
             this.panel_submenu_ABM.Controls.Add(this.btnBarrios);
             this.panel_submenu_ABM.Controls.Add(this.btnVacunas);
             this.panel_submenu_ABM.Controls.Add(this.btnDueños);
@@ -229,27 +225,8 @@ namespace TrabajoPracticoPAV1
             this.panel_submenu_ABM.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_submenu_ABM.Location = new System.Drawing.Point(0, 139);
             this.panel_submenu_ABM.Name = "panel_submenu_ABM";
-            this.panel_submenu_ABM.Size = new System.Drawing.Size(233, 564);
+            this.panel_submenu_ABM.Size = new System.Drawing.Size(233, 472);
             this.panel_submenu_ABM.TabIndex = 2;
-            // 
-            // btnCalendario
-            // 
-            this.btnCalendario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCalendario.FlatAppearance.BorderSize = 0;
-            this.btnCalendario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.btnCalendario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalendario.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalendario.ForeColor = System.Drawing.Color.White;
-            this.btnCalendario.Location = new System.Drawing.Point(0, 520);
-            this.btnCalendario.Name = "btnCalendario";
-            this.btnCalendario.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnCalendario.Size = new System.Drawing.Size(233, 40);
-            this.btnCalendario.TabIndex = 13;
-            this.btnCalendario.Text = "Calendario de Vacunas";
-            this.btnCalendario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCalendario.UseVisualStyleBackColor = true;
-            this.btnCalendario.Click += new System.EventHandler(this.button14_Click);
             // 
             // btnConsultas
             // 
@@ -260,7 +237,7 @@ namespace TrabajoPracticoPAV1
             this.btnConsultas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConsultas.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultas.ForeColor = System.Drawing.Color.White;
-            this.btnConsultas.Location = new System.Drawing.Point(0, 480);
+            this.btnConsultas.Location = new System.Drawing.Point(0, 440);
             this.btnConsultas.Name = "btnConsultas";
             this.btnConsultas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnConsultas.Size = new System.Drawing.Size(233, 40);
@@ -269,25 +246,6 @@ namespace TrabajoPracticoPAV1
             this.btnConsultas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsultas.UseVisualStyleBackColor = true;
             this.btnConsultas.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // btnDiagnostico
-            // 
-            this.btnDiagnostico.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDiagnostico.FlatAppearance.BorderSize = 0;
-            this.btnDiagnostico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.btnDiagnostico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiagnostico.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnostico.ForeColor = System.Drawing.Color.White;
-            this.btnDiagnostico.Location = new System.Drawing.Point(0, 440);
-            this.btnDiagnostico.Name = "btnDiagnostico";
-            this.btnDiagnostico.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDiagnostico.Size = new System.Drawing.Size(233, 40);
-            this.btnDiagnostico.TabIndex = 11;
-            this.btnDiagnostico.Text = "Diagnóstico";
-            this.btnDiagnostico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDiagnostico.UseVisualStyleBackColor = true;
-            this.btnDiagnostico.Click += new System.EventHandler(this.button12_Click);
             // 
             // btnBarrios
             // 
@@ -664,9 +622,7 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.Button btnEmpleados;
         private System.Windows.Forms.Button btnABM;
         private System.Windows.Forms.Panel panel_logo;
-        private System.Windows.Forms.Button btnCalendario;
         private System.Windows.Forms.Button btnConsultas;
-        private System.Windows.Forms.Button btnDiagnostico;
         private System.Windows.Forms.Button btnBarrios;
         private System.Windows.Forms.Button btnVacunas;
         private System.Windows.Forms.Button btnDueños;

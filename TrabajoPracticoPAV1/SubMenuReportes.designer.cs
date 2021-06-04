@@ -59,38 +59,44 @@ namespace TrabajoPracticoPAV1
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
+            this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
             // perrosToolStripMenuItem
             // 
             this.perrosToolStripMenuItem.Name = "perrosToolStripMenuItem";
-            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.perrosToolStripMenuItem.Size = new System.Drawing.Size(64, 22);
             this.perrosToolStripMenuItem.Text = "Perros";
+            this.perrosToolStripMenuItem.Click += new System.EventHandler(this.perrosToolStripMenuItem_Click);
             // 
             // razasToolStripMenuItem
             // 
             this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
-            this.razasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.razasToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.razasToolStripMenuItem.Text = "Razas";
+            this.razasToolStripMenuItem.Click += new System.EventHandler(this.razasToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
             this.consultasToolStripMenuItem.Text = "Consultas";
+            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
             // laboratoriosToolStripMenuItem
             // 
             this.laboratoriosToolStripMenuItem.Name = "laboratoriosToolStripMenuItem";
-            this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.laboratoriosToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.laboratoriosToolStripMenuItem.Text = "Laboratorios";
+            this.laboratoriosToolStripMenuItem.Click += new System.EventHandler(this.laboratoriosToolStripMenuItem_Click);
             // 
             // medicamentosToolStripMenuItem
             // 
             this.medicamentosToolStripMenuItem.Name = "medicamentosToolStripMenuItem";
-            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.medicamentosToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.medicamentosToolStripMenuItem.Text = "Medicamentos";
+            this.medicamentosToolStripMenuItem.Click += new System.EventHandler(this.medicamentosToolStripMenuItem_Click);
             // 
             // SubMenuReportes
             // 

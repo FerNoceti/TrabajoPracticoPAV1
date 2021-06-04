@@ -176,6 +176,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Controls.Add(this.btnLimpiarDatos);
             this.Controls.Add(this.label5);
             this.Name = "ABM_Sintomas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM_Sintomas";
             this.Load += new System.EventHandler(this.ABM_Sintomas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSintomas)).EndInit();

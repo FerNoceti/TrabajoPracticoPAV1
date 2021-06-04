@@ -148,11 +148,65 @@
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos.Designer.cs">
+      <DependentUpon>Estadisticas_Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros.Designer.cs">
+      <DependentUpon>Estadisticas_Perros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Procesos\FacturacionConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Procesos\FacturacionConsulta.Designer.cs">
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Consultas.Designer.cs">
+      <DependentUpon>Reporte_Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Empleados.Designer.cs">
+      <DependentUpon>Reporte_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Laboratorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Laboratorios.Designer.cs">
+      <DependentUpon>Reporte_Laboratorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Medicamentos.Designer.cs">
+      <DependentUpon>Reporte_Medicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Perros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Perros.Designer.cs">
+      <DependentUpon>Reporte_Perros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Reportes\Reporte_Razas.Designer.cs">
+      <DependentUpon>Reporte_Razas.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginVeterinaria.cs">
       <SubType>Form</SubType>

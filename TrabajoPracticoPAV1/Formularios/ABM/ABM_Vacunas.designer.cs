@@ -258,6 +258,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Controls.Add(this.gridVacunas);
             this.Controls.Add(this.gpbVacunas);
             this.Name = "ABM_Vacunas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ABM_Vacunas";
             this.Load += new System.EventHandler(this.ABM_Vacunas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridVacunas)).EndInit();

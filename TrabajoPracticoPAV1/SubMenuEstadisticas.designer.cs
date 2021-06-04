@@ -66,20 +66,23 @@ namespace TrabajoPracticoPAV1
             // consultasToolStripMenuItem
             // 
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(128, 20);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.consultasToolStripMenuItem.Text = "Consultas Realizadas";
+            this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
             // perrosRegistradosToolStripMenuItem
             // 
             this.perrosRegistradosToolStripMenuItem.Name = "perrosRegistradosToolStripMenuItem";
-            this.perrosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.perrosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.perrosRegistradosToolStripMenuItem.Text = "Perros Registrados";
+            this.perrosRegistradosToolStripMenuItem.Click += new System.EventHandler(this.perrosRegistradosToolStripMenuItem_Click);
             // 
             // ingresosObtenidosToolStripMenuItem
             // 
             this.ingresosObtenidosToolStripMenuItem.Name = "ingresosObtenidosToolStripMenuItem";
-            this.ingresosObtenidosToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
+            this.ingresosObtenidosToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.ingresosObtenidosToolStripMenuItem.Text = "Ingresos Obtenidos";
+            this.ingresosObtenidosToolStripMenuItem.Click += new System.EventHandler(this.ingresosObtenidosToolStripMenuItem_Click);
             // 
             // SubMenuEstadisticas
             // 
