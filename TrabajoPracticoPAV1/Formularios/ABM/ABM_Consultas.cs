@@ -14,27 +14,60 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 {
     public partial class ABM_Consultas : Form
     {
+        private bool formCargado = false;
+
         public ABM_Consultas()
         {
             InitializeComponent();
         }
+
+        private void ABM_Consultas_Load(object sender, EventArgs e)
+        {
+            CargarCombosSucursal();
+            resetearBotones();
+            LimpiarCampos();
+            resetearComboSucursal();
+            resetearCombEmpleado();
+            CargarGrilla();
+            formCargado = true;
+        }
+
+        private void resetearBotones()
+        {
+            btnActualizarConsulta.Enabled = false;
+            btnEliminarConsulta.Enabled = false;
+        }
+
+        private void resetearCombEmpleado()
+        {
+            cmbEmpleados.SelectedIndex = -1;
+        }
+
+        private void resetearComboSucursal()
+        {
+            cmbSucursal.SelectedIndex = -1;
+        }
+
         private void LimpiarCampos()
         {
             txtIdConsulta.Text = "";
-            txtHistoriaClinica.Text = "";
+            //txtHistoriaClinica.Text = "";
             txtNumeroDoc.Text = "";
             txtFechaEntrada.Text = "";
             txtFechaSalida.Text = "";
-            cmbSucursal.SelectedIndex = -1; 
-            cmbTipoDoc.SelectedIndex = -1;
+            txtTipoDoc.Text = ""; //cmbTipoDoc.SelectedIndex = -1;
+            resetearComboSucursal();
+            resetearCombEmpleado();
+
 
         }
         private bool VerificarCamposLlenos()
         {
             if (cmbSucursal.SelectedIndex != -1 && txtIdConsulta.Text.Length > 0
-                && txtNumeroDoc.Text.Length >0 && txtHistoriaClinica.Text.Length > 0 
-                && txtFechaEntrada.Text.Length > 0 && txtFechaSalida.Text.Length > 0 
-                && cmbTipoDoc.SelectedIndex != -1)
+                && txtNumeroDoc.Text.Length >0 /*&& txtHistoriaClinica.Text.Length > 0*/ 
+                && !(txtFechaEntrada.Text.Equals("  /  /")) && !(txtFechaSalida.Text.Equals("  /  /"))
+                && txtTipoDoc.Text.Length > 0 && cmbPerros.SelectedIndex != -1
+                /*&& cmbTipoDoc.SelectedIndex != -1*/)
             {
                 return true;
             }
@@ -43,22 +76,22 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
                 return false;
             }
         }
-        private void CargarComboTipoDoc()
-        {
-            try
-            {
-                cmbTipoDoc.DataSource = AD_Consulta.ObtenerTipoDocumento();
-                cmbTipoDoc.DisplayMember = "Nombre";
-                cmbTipoDoc.ValueMember = "Id";
-                cmbTipoDoc.SelectedIndex = -1;
-            }
-            catch (Exception)
-            {
+        //private void CargarComboTipoDoc()
+        //{
+        //    try
+        //    {
+        //        //cmbTipoDoc.DataSource = AD_Consulta.ObtenerTipoDocumento();
+        //        //cmbTipoDoc.DisplayMember = "Nombre";
+        //        //cmbTipoDoc.ValueMember = "Id";
+        //        //cmbTipoDoc.SelectedIndex = -1;
+        //    }
+        //    catch (Exception)
+        //    {
 
-                throw;
-            }
+        //        throw;
+        //    }
 
-        }
+        //}
         private void CargarCombosSucursal()
         {
             try
@@ -88,8 +121,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
                     MessageBox.Show("Consulta guardada con exito.");
                     //HAGO ESTO PARA QUE UNA VEZ CARGADO EL USUARIO SE ME LIMPIEN LOS CAMPOS
                     LimpiarCampos();
-                    CargarComboTipoDoc();
-                    CargarCombosSucursal();
+                    resetearComboSucursal();
+                    resetearCombEmpleado();
+                    resetearBotones();
                     CargarGrilla();
                 }
                 else
@@ -124,8 +158,8 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
            
             p.Id_Sucursal = (int)cmbSucursal.SelectedValue;
             p.Id_Consulta = txtIdConsulta.Text.Trim();
-            p.NroHistoriaClinica = txtHistoriaClinica.Text.Trim();
-            p.TipoDocumentoEmpleado = (int)cmbTipoDoc.SelectedValue;
+            p.NroHistoriaClinica = cmbPerros.SelectedValue.ToString();/*txtHistoriaClinica.Text.Trim();*/
+            p.TipoDocumentoEmpleado = int.Parse(txtTipoDoc.Text); //p.TipoDocumentoEmpleado = (int)cmbTipoDoc.SelectedValue;
             p.NumeroDeDocumento = txtNumeroDoc.Text.Trim();
             //DateParse ME TRANSFORMA UN string A FORMATO date
             p.FechaDeEntrada = DateTime.Parse(txtFechaEntrada.Text);
@@ -155,19 +189,11 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             int id = AD_Consulta.ObtenerUltimoIdConsulta(a);
             txtIdConsulta.Text = (id + 1).ToString();
         }
-        private void ABM_Consultas_Load(object sender, EventArgs e)
-        {
-            btnActualizarConsulta.Enabled = false;
-            btnEliminarConsulta.Enabled = false;
-            CargarComboTipoDoc();
-            CargarCombosSucursal();
-            LimpiarCampos();
-            CargarGrilla();
-        }
+
         private void CargarConsultas(Consulta c)
         {
             txtIdConsulta.Text = c.Id_Consulta;
-            txtHistoriaClinica.Text = c.NroHistoriaClinica;
+            //txtHistoriaClinica.Text = c.NroHistoriaClinica;
             txtNumeroDoc.Text = c.NumeroDeDocumento;
             DateTime fechaEntrada = c.FechaDeEntrada;
             string diaE = "";
@@ -205,7 +231,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
 
             txtFechaSalida.Text = diaF + mesF + añoF;
-            cmbTipoDoc.SelectedValue = c.TipoDocumentoEmpleado;
+            txtTipoDoc.Text = (c.TipoDocumentoEmpleado).ToString();
             cmbSucursal.SelectedValue = c.Id_Sucursal;
 
 
@@ -214,8 +240,53 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
 
         private void cmbSucursal_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string a = cmbSucursal.SelectedIndex.ToString();
-            ObtenerUltimaConsulta(a);
+            if(cmbSucursal.SelectedIndex != -1 && formCargado)
+            {
+                try
+                {
+                    string a = cmbSucursal.SelectedValue.ToString();
+                    ObtenerUltimaConsulta(a);
+                    cargarComboEmpleados(int.Parse(cmbSucursal.SelectedValue.ToString()));
+                    cargarComboPerros(int.Parse(cmbSucursal.SelectedValue.ToString()));
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al obtener los datos de la sucursal seleccionada");
+                    //throw ex;
+                }
+            }
+        }
+
+        private void cargarComboPerros(int idSucursal)
+        {
+            try
+            {
+                cmbPerros.DataSource = AD_Perros.obtenerPerrosPorSucursal(idSucursal);
+                cmbPerros.DisplayMember = "Nombre";
+                cmbPerros.ValueMember = "NroHistoriaClinica";
+                cmbPerros.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        private void cargarComboEmpleados(int idSucursal)
+        {
+            try
+            {
+                cmbEmpleados.DataSource = AD_Empleados.obtenerDatosEmpleadosPorSucursal(idSucursal);
+                cmbEmpleados.DisplayMember = "Nombre";
+                cmbEmpleados.SelectedIndex = -1;
+                LimpiarCamposEmpleado();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         private void btnActualizarConsulta_Click(object sender, EventArgs e)
@@ -269,6 +340,33 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private void btnLimpiarDatos_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+        }
+
+        private void cmbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbEmpleados.SelectedIndex != -1 )
+            {
+                cargarCamposEmpleado();
+            }
+            else
+            {
+                LimpiarCamposEmpleado();
+            }
+        }
+
+        private void LimpiarCamposEmpleado()
+        {
+            txtNumeroDoc.Text = "";
+            txtTipoDoc.Text = "";
+        }
+
+        private void cargarCamposEmpleado()
+        {
+            DataTable tabla = (DataTable)cmbEmpleados.DataSource;
+            DataRow fila = tabla.Rows[cmbEmpleados.SelectedIndex];
+            //txtTipoDoc.Text = tabla.Rows[cmbEmpleados.SelectedIndex][1];
+            txtTipoDoc.Text = fila[1].ToString();
+            txtNumeroDoc.Text = fila[2].ToString();
         }
     }
 }

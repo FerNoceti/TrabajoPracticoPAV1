@@ -71,7 +71,7 @@ namespace TrabajoPracticoPAV1.AD
             
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 MessageBox.Show("Asegurese de haber seleccionado el DNI de un empleado ya registrado y un numero de historia clinica ya registrado");
                 

@@ -18,6 +18,7 @@ namespace TrabajoPracticoPAV1
 {
     public partial class Menu : Form
     {
+        private bool finCargaForm;
         public Menu(Usuario usu)
         {
             InitializeComponent();
