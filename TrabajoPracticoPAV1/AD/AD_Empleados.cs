@@ -263,6 +263,44 @@ namespace TrabajoPracticoPAV1.AD
             return resultado;
         }
 
+        internal static DataTable obtenerDatosEmpleadosPorSucursal(int idSucursal)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string storedProcedure = "getEmpleadosPorSucursal";
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
+
         public static bool eliminarEmpleado(Empleado empl)
         {
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];

@@ -143,5 +143,46 @@ namespace TrabajoPracticoPAV1.AD
 
             return resultado;
         }
+
+        internal static DataTable obtenerPerrosPorSucursal(int idSucursal)
+        {
+            DataTable resultado;
+            string cadena = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadena);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string storedProcedure = "getPerrosPorSucursal";
+
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idSucursal", idSucursal);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+
+
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                resultado = tabla;
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return resultado;
+        }
     }
 }
