@@ -16,5 +16,11 @@ namespace TrabajoPracticoPAV1.Formularios.Reportes
         {
             InitializeComponent();
         }
+
+        private void Reporte_Empleados_Load(object sender, EventArgs e)
+        {
+
+            this.rvEmpleados.RefreshReport();
+        }
     }
 }
