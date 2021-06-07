@@ -111,6 +111,61 @@ namespace TrabajoPracticoPAV1.AD
             return resultado;
         }
 
+        internal static DataTable ObtenerDatosEmpleadosPorFiltros(bool esMatriculado, int idSucursal)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string query = "SELECT E.* FROM Empleados E ";
+
+            //Aplicaciones de Filtros
+            if (esMatriculado)
+            {
+                query += "JOIN Matriculas M ON (E.TipoDocumento = M.IdTipoDocumento AND E.NroDocumento = M.NroDocumento)";
+            }
+
+            // Condicion neutra para permitirme utilizar AND para los demas filtros
+            query += "WHERE 1 = 1 ";
+            if(!esMatriculado)
+            {
+                query += "AND NOT EXISTS(SELECT Em.* FROM Empleados Em JOIN Matriculas Ma ON (Em.TipoDocumento = Ma.IdTipoDocumento AND Em.NroDocumento = Ma.NroDocumento) WHERE Em.TipoDocumento = E.TipoDocumento  AND Em.NroDocumento = E.NroDocumento) ";
+            }
+            if(idSucursal != -1)
+            {
+                query += $"AND idSucursal = {idSucursal} ";
+            }
+
+
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
+
         public static DataTable obtenerDatosEmpleados()
         {
             DataTable tabla = new DataTable();
@@ -143,6 +198,41 @@ namespace TrabajoPracticoPAV1.AD
                 cn.Close();
             }
             
+            return tabla;
+        }
+
+        public static DataTable obtenerEmpleados()
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string storedProcedure = "getEmpleados";
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
             return tabla;
         }
 
