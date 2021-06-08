@@ -55,20 +55,43 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarConsulta = new System.Windows.Forms.Button();
             this.btnEliminarConsulta = new System.Windows.Forms.Button();
             this.cmbEmpleados = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpConsultor = new System.Windows.Forms.GroupBox();
             this.txtTipoDoc = new System.Windows.Forms.TextBox();
             this.txtNumeroDoc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbPerros = new System.Windows.Forms.ComboBox();
+            this.grpMedicamentos = new System.Windows.Forms.GroupBox();
+            this.btnModificarMedicamento = new System.Windows.Forms.Button();
+            this.btnEliminarMedicamento = new System.Windows.Forms.Button();
+            this.dgvMedicamentosSelec = new System.Windows.Forms.DataGridView();
+            this.CodMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregarMedicamento = new System.Windows.Forms.Button();
+            this.cmbMedicamentos = new System.Windows.Forms.ComboBox();
+            this.grpDiagnosticos = new System.Windows.Forms.GroupBox();
+            this.btnModificarDiagnostico = new System.Windows.Forms.Button();
+            this.btnEliminarDiagnostico = new System.Windows.Forms.Button();
+            this.dgvDiagnosticosSelec = new System.Windows.Forms.DataGridView();
+            this.CodDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAgregarDiagnosticos = new System.Windows.Forms.Button();
+            this.cmbDiagnosticos = new System.Windows.Forms.ComboBox();
+            this.lbCantidadMedicamentos = new System.Windows.Forms.Label();
+            this.txtCantidadMedicamento = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridConsultas)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.grpConsultor.SuspendLayout();
+            this.grpMedicamentos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosSelec)).BeginInit();
+            this.grpDiagnosticos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiagnosticosSelec)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.lblFecha.Location = new System.Drawing.Point(20, 290);
+            this.lblFecha.Location = new System.Drawing.Point(10, 130);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(142, 18);
             this.lblFecha.TabIndex = 11;
@@ -77,7 +100,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // txtFechaEntrada
             // 
             this.txtFechaEntrada.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtFechaEntrada.Location = new System.Drawing.Point(200, 290);
+            this.txtFechaEntrada.Location = new System.Drawing.Point(280, 130);
             this.txtFechaEntrada.Mask = "00/00/0000";
             this.txtFechaEntrada.Name = "txtFechaEntrada";
             this.txtFechaEntrada.Size = new System.Drawing.Size(100, 26);
@@ -148,7 +171,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(20, 250);
+            this.label1.Location = new System.Drawing.Point(10, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 18);
             this.label1.TabIndex = 17;
@@ -158,7 +181,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(20, 330);
+            this.label2.Location = new System.Drawing.Point(10, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 18);
             this.label2.TabIndex = 20;
@@ -167,7 +190,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             // txtFechaSalida
             // 
             this.txtFechaSalida.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.txtFechaSalida.Location = new System.Drawing.Point(200, 330);
+            this.txtFechaSalida.Location = new System.Drawing.Point(280, 170);
             this.txtFechaSalida.Mask = "00/00/0000";
             this.txtFechaSalida.Name = "txtFechaSalida";
             this.txtFechaSalida.Size = new System.Drawing.Size(100, 26);
@@ -196,7 +219,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Doc,
             this.FechaE,
             this.FechaS});
-            this.gridConsultas.Location = new System.Drawing.Point(400, 20);
+            this.gridConsultas.Location = new System.Drawing.Point(410, 160);
             this.gridConsultas.Name = "gridConsultas";
             this.gridConsultas.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -210,7 +233,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.gridConsultas.RowHeadersVisible = false;
             this.gridConsultas.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridConsultas.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.gridConsultas.Size = new System.Drawing.Size(700, 460);
+            this.gridConsultas.Size = new System.Drawing.Size(690, 510);
             this.gridConsultas.TabIndex = 21;
             this.gridConsultas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridConsultas_CellClick);
             // 
@@ -268,9 +291,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnActualizarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnActualizarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnActualizarConsulta.Location = new System.Drawing.Point(10, 410);
+            this.btnActualizarConsulta.Location = new System.Drawing.Point(810, 90);
             this.btnActualizarConsulta.Name = "btnActualizarConsulta";
-            this.btnActualizarConsulta.Size = new System.Drawing.Size(180, 30);
+            this.btnActualizarConsulta.Size = new System.Drawing.Size(130, 50);
             this.btnActualizarConsulta.TabIndex = 29;
             this.btnActualizarConsulta.Text = "Actualizar Consulta";
             this.btnActualizarConsulta.UseVisualStyleBackColor = false;
@@ -281,9 +304,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnLimpiarDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnLimpiarDatos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiarDatos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnLimpiarDatos.Location = new System.Drawing.Point(10, 450);
+            this.btnLimpiarDatos.Location = new System.Drawing.Point(960, 20);
             this.btnLimpiarDatos.Name = "btnLimpiarDatos";
-            this.btnLimpiarDatos.Size = new System.Drawing.Size(370, 30);
+            this.btnLimpiarDatos.Size = new System.Drawing.Size(130, 50);
             this.btnLimpiarDatos.TabIndex = 28;
             this.btnLimpiarDatos.Text = "Limpiar Datos";
             this.btnLimpiarDatos.UseVisualStyleBackColor = false;
@@ -294,9 +317,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnGuardarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnGuardarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnGuardarConsulta.Location = new System.Drawing.Point(10, 370);
+            this.btnGuardarConsulta.Location = new System.Drawing.Point(810, 20);
             this.btnGuardarConsulta.Name = "btnGuardarConsulta";
-            this.btnGuardarConsulta.Size = new System.Drawing.Size(370, 30);
+            this.btnGuardarConsulta.Size = new System.Drawing.Size(130, 50);
             this.btnGuardarConsulta.TabIndex = 27;
             this.btnGuardarConsulta.Text = "Guardar Consulta";
             this.btnGuardarConsulta.UseVisualStyleBackColor = false;
@@ -307,9 +330,9 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnEliminarConsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
             this.btnEliminarConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarConsulta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarConsulta.Location = new System.Drawing.Point(200, 410);
+            this.btnEliminarConsulta.Location = new System.Drawing.Point(960, 90);
             this.btnEliminarConsulta.Name = "btnEliminarConsulta";
-            this.btnEliminarConsulta.Size = new System.Drawing.Size(180, 30);
+            this.btnEliminarConsulta.Size = new System.Drawing.Size(130, 50);
             this.btnEliminarConsulta.TabIndex = 30;
             this.btnEliminarConsulta.Text = "Eliminar Consulta";
             this.btnEliminarConsulta.UseVisualStyleBackColor = false;
@@ -326,20 +349,20 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.cmbEmpleados.TabIndex = 31;
             this.cmbEmpleados.SelectedIndexChanged += new System.EventHandler(this.cmbEmpleados_SelectedIndexChanged);
             // 
-            // groupBox1
+            // grpConsultor
             // 
-            this.groupBox1.Controls.Add(this.txtTipoDoc);
-            this.groupBox1.Controls.Add(this.txtNumeroDoc);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.cmbEmpleados);
-            this.groupBox1.Controls.Add(this.lblTipoDoc);
-            this.groupBox1.Controls.Add(this.lblNumeroDoc);
-            this.groupBox1.Location = new System.Drawing.Point(10, 80);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(380, 150);
-            this.groupBox1.TabIndex = 32;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Profesional Consultor";
+            this.grpConsultor.Controls.Add(this.txtTipoDoc);
+            this.grpConsultor.Controls.Add(this.txtNumeroDoc);
+            this.grpConsultor.Controls.Add(this.label3);
+            this.grpConsultor.Controls.Add(this.cmbEmpleados);
+            this.grpConsultor.Controls.Add(this.lblTipoDoc);
+            this.grpConsultor.Controls.Add(this.lblNumeroDoc);
+            this.grpConsultor.Location = new System.Drawing.Point(410, 0);
+            this.grpConsultor.Name = "grpConsultor";
+            this.grpConsultor.Size = new System.Drawing.Size(380, 150);
+            this.grpConsultor.TabIndex = 32;
+            this.grpConsultor.TabStop = false;
+            this.grpConsultor.Text = "Profesional Consultor";
             // 
             // txtTipoDoc
             // 
@@ -374,19 +397,237 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.cmbPerros.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPerros.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold);
             this.cmbPerros.FormattingEnabled = true;
-            this.cmbPerros.Location = new System.Drawing.Point(190, 250);
+            this.cmbPerros.Location = new System.Drawing.Point(190, 90);
             this.cmbPerros.Name = "cmbPerros";
             this.cmbPerros.Size = new System.Drawing.Size(190, 26);
             this.cmbPerros.TabIndex = 33;
+            // 
+            // grpMedicamentos
+            // 
+            this.grpMedicamentos.Controls.Add(this.lbCantidadMedicamentos);
+            this.grpMedicamentos.Controls.Add(this.txtCantidadMedicamento);
+            this.grpMedicamentos.Controls.Add(this.btnModificarMedicamento);
+            this.grpMedicamentos.Controls.Add(this.btnEliminarMedicamento);
+            this.grpMedicamentos.Controls.Add(this.dgvMedicamentosSelec);
+            this.grpMedicamentos.Controls.Add(this.btnAgregarMedicamento);
+            this.grpMedicamentos.Controls.Add(this.cmbMedicamentos);
+            this.grpMedicamentos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMedicamentos.Location = new System.Drawing.Point(10, 210);
+            this.grpMedicamentos.Name = "grpMedicamentos";
+            this.grpMedicamentos.Size = new System.Drawing.Size(380, 240);
+            this.grpMedicamentos.TabIndex = 34;
+            this.grpMedicamentos.TabStop = false;
+            this.grpMedicamentos.Text = "Medicamentos";
+            // 
+            // btnModificarMedicamento
+            // 
+            this.btnModificarMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnModificarMedicamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarMedicamento.Location = new System.Drawing.Point(220, 210);
+            this.btnModificarMedicamento.Name = "btnModificarMedicamento";
+            this.btnModificarMedicamento.Size = new System.Drawing.Size(150, 23);
+            this.btnModificarMedicamento.TabIndex = 5;
+            this.btnModificarMedicamento.Text = "Modificar";
+            this.btnModificarMedicamento.UseVisualStyleBackColor = false;
+            this.btnModificarMedicamento.Click += new System.EventHandler(this.btnModificarMedicamento_Click);
+            // 
+            // btnEliminarMedicamento
+            // 
+            this.btnEliminarMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnEliminarMedicamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarMedicamento.Location = new System.Drawing.Point(10, 210);
+            this.btnEliminarMedicamento.Name = "btnEliminarMedicamento";
+            this.btnEliminarMedicamento.Size = new System.Drawing.Size(150, 23);
+            this.btnEliminarMedicamento.TabIndex = 4;
+            this.btnEliminarMedicamento.Text = "Eliminar";
+            this.btnEliminarMedicamento.UseVisualStyleBackColor = false;
+            this.btnEliminarMedicamento.Click += new System.EventHandler(this.btnEliminarMedicamento_Click);
+            // 
+            // dgvMedicamentosSelec
+            // 
+            this.dgvMedicamentosSelec.AllowUserToAddRows = false;
+            this.dgvMedicamentosSelec.AllowUserToDeleteRows = false;
+            this.dgvMedicamentosSelec.AllowUserToResizeColumns = false;
+            this.dgvMedicamentosSelec.AllowUserToResizeRows = false;
+            this.dgvMedicamentosSelec.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvMedicamentosSelec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMedicamentosSelec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodMedicamento,
+            this.NombreMedicamento,
+            this.CantidadMedicamento});
+            this.dgvMedicamentosSelec.Location = new System.Drawing.Point(10, 80);
+            this.dgvMedicamentosSelec.Name = "dgvMedicamentosSelec";
+            this.dgvMedicamentosSelec.ReadOnly = true;
+            this.dgvMedicamentosSelec.RowHeadersVisible = false;
+            this.dgvMedicamentosSelec.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvMedicamentosSelec.Size = new System.Drawing.Size(360, 120);
+            this.dgvMedicamentosSelec.TabIndex = 3;
+            this.dgvMedicamentosSelec.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMedicamentosSelec_CellClick);
+            // 
+            // CodMedicamento
+            // 
+            this.CodMedicamento.HeaderText = "Cod";
+            this.CodMedicamento.Name = "CodMedicamento";
+            this.CodMedicamento.ReadOnly = true;
+            this.CodMedicamento.Width = 50;
+            // 
+            // NombreMedicamento
+            // 
+            this.NombreMedicamento.HeaderText = "Nombre";
+            this.NombreMedicamento.Name = "NombreMedicamento";
+            this.NombreMedicamento.ReadOnly = true;
+            this.NombreMedicamento.Width = 210;
+            // 
+            // CantidadMedicamento
+            // 
+            this.CantidadMedicamento.HeaderText = "Cantidad";
+            this.CantidadMedicamento.Name = "CantidadMedicamento";
+            this.CantidadMedicamento.ReadOnly = true;
+            this.CantidadMedicamento.Width = 95;
+            // 
+            // btnAgregarMedicamento
+            // 
+            this.btnAgregarMedicamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnAgregarMedicamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarMedicamento.Location = new System.Drawing.Point(220, 20);
+            this.btnAgregarMedicamento.Name = "btnAgregarMedicamento";
+            this.btnAgregarMedicamento.Size = new System.Drawing.Size(150, 23);
+            this.btnAgregarMedicamento.TabIndex = 2;
+            this.btnAgregarMedicamento.Text = "Agregar";
+            this.btnAgregarMedicamento.UseVisualStyleBackColor = false;
+            this.btnAgregarMedicamento.Click += new System.EventHandler(this.btnAgregarMedicamento_Click);
+            // 
+            // cmbMedicamentos
+            // 
+            this.cmbMedicamentos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMedicamentos.FormattingEnabled = true;
+            this.cmbMedicamentos.Location = new System.Drawing.Point(10, 20);
+            this.cmbMedicamentos.Name = "cmbMedicamentos";
+            this.cmbMedicamentos.Size = new System.Drawing.Size(200, 24);
+            this.cmbMedicamentos.TabIndex = 0;
+            // 
+            // grpDiagnosticos
+            // 
+            this.grpDiagnosticos.Controls.Add(this.btnModificarDiagnostico);
+            this.grpDiagnosticos.Controls.Add(this.btnEliminarDiagnostico);
+            this.grpDiagnosticos.Controls.Add(this.dgvDiagnosticosSelec);
+            this.grpDiagnosticos.Controls.Add(this.btnAgregarDiagnosticos);
+            this.grpDiagnosticos.Controls.Add(this.cmbDiagnosticos);
+            this.grpDiagnosticos.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpDiagnosticos.Location = new System.Drawing.Point(10, 450);
+            this.grpDiagnosticos.Name = "grpDiagnosticos";
+            this.grpDiagnosticos.Size = new System.Drawing.Size(380, 210);
+            this.grpDiagnosticos.TabIndex = 35;
+            this.grpDiagnosticos.TabStop = false;
+            this.grpDiagnosticos.Text = "Diagnosticos";
+            // 
+            // btnModificarDiagnostico
+            // 
+            this.btnModificarDiagnostico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnModificarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarDiagnostico.Location = new System.Drawing.Point(220, 180);
+            this.btnModificarDiagnostico.Name = "btnModificarDiagnostico";
+            this.btnModificarDiagnostico.Size = new System.Drawing.Size(150, 23);
+            this.btnModificarDiagnostico.TabIndex = 5;
+            this.btnModificarDiagnostico.Text = "Modificar";
+            this.btnModificarDiagnostico.UseVisualStyleBackColor = false;
+            this.btnModificarDiagnostico.Click += new System.EventHandler(this.btnModificarDiagnostico_Click);
+            // 
+            // btnEliminarDiagnostico
+            // 
+            this.btnEliminarDiagnostico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnEliminarDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarDiagnostico.Location = new System.Drawing.Point(10, 180);
+            this.btnEliminarDiagnostico.Name = "btnEliminarDiagnostico";
+            this.btnEliminarDiagnostico.Size = new System.Drawing.Size(150, 23);
+            this.btnEliminarDiagnostico.TabIndex = 4;
+            this.btnEliminarDiagnostico.Text = "Eliminar";
+            this.btnEliminarDiagnostico.UseVisualStyleBackColor = false;
+            this.btnEliminarDiagnostico.Click += new System.EventHandler(this.btnEliminarDiagnostico_Click);
+            // 
+            // dgvDiagnosticosSelec
+            // 
+            this.dgvDiagnosticosSelec.AllowUserToAddRows = false;
+            this.dgvDiagnosticosSelec.AllowUserToDeleteRows = false;
+            this.dgvDiagnosticosSelec.AllowUserToResizeColumns = false;
+            this.dgvDiagnosticosSelec.AllowUserToResizeRows = false;
+            this.dgvDiagnosticosSelec.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvDiagnosticosSelec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDiagnosticosSelec.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodDiagnostico,
+            this.NombreDiagnostico});
+            this.dgvDiagnosticosSelec.Location = new System.Drawing.Point(10, 50);
+            this.dgvDiagnosticosSelec.Name = "dgvDiagnosticosSelec";
+            this.dgvDiagnosticosSelec.ReadOnly = true;
+            this.dgvDiagnosticosSelec.RowHeadersVisible = false;
+            this.dgvDiagnosticosSelec.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvDiagnosticosSelec.Size = new System.Drawing.Size(360, 120);
+            this.dgvDiagnosticosSelec.TabIndex = 3;
+            this.dgvDiagnosticosSelec.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDiagnosticosSelec_CellClick);
+            // 
+            // CodDiagnostico
+            // 
+            this.CodDiagnostico.HeaderText = "Cod";
+            this.CodDiagnostico.Name = "CodDiagnostico";
+            this.CodDiagnostico.ReadOnly = true;
+            this.CodDiagnostico.Width = 50;
+            // 
+            // NombreDiagnostico
+            // 
+            this.NombreDiagnostico.HeaderText = "Nombre";
+            this.NombreDiagnostico.Name = "NombreDiagnostico";
+            this.NombreDiagnostico.ReadOnly = true;
+            this.NombreDiagnostico.Width = 305;
+            // 
+            // btnAgregarDiagnosticos
+            // 
+            this.btnAgregarDiagnosticos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(148)))), ((int)(((byte)(27)))));
+            this.btnAgregarDiagnosticos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarDiagnosticos.Location = new System.Drawing.Point(220, 20);
+            this.btnAgregarDiagnosticos.Name = "btnAgregarDiagnosticos";
+            this.btnAgregarDiagnosticos.Size = new System.Drawing.Size(150, 23);
+            this.btnAgregarDiagnosticos.TabIndex = 2;
+            this.btnAgregarDiagnosticos.Text = "Agregar";
+            this.btnAgregarDiagnosticos.UseVisualStyleBackColor = false;
+            this.btnAgregarDiagnosticos.Click += new System.EventHandler(this.btnAgregarDiagnosticos_Click);
+            // 
+            // cmbDiagnosticos
+            // 
+            this.cmbDiagnosticos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDiagnosticos.FormattingEnabled = true;
+            this.cmbDiagnosticos.Location = new System.Drawing.Point(20, 20);
+            this.cmbDiagnosticos.Name = "cmbDiagnosticos";
+            this.cmbDiagnosticos.Size = new System.Drawing.Size(181, 24);
+            this.cmbDiagnosticos.TabIndex = 0;
+            // 
+            // lbCantidadMedicamentos
+            // 
+            this.lbCantidadMedicamentos.AutoSize = true;
+            this.lbCantidadMedicamentos.Location = new System.Drawing.Point(10, 50);
+            this.lbCantidadMedicamentos.Name = "lbCantidadMedicamentos";
+            this.lbCantidadMedicamentos.Size = new System.Drawing.Size(62, 16);
+            this.lbCantidadMedicamentos.TabIndex = 7;
+            this.lbCantidadMedicamentos.Text = "Cantidad";
+            // 
+            // txtCantidadMedicamento
+            // 
+            this.txtCantidadMedicamento.Location = new System.Drawing.Point(80, 50);
+            this.txtCantidadMedicamento.Mask = "99999";
+            this.txtCantidadMedicamento.Name = "txtCantidadMedicamento";
+            this.txtCantidadMedicamento.Size = new System.Drawing.Size(50, 21);
+            this.txtCantidadMedicamento.TabIndex = 6;
+            this.txtCantidadMedicamento.ValidatingType = typeof(int);
             // 
             // ABM_Consultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(209)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(1116, 496);
+            this.ClientSize = new System.Drawing.Size(1116, 665);
+            this.Controls.Add(this.grpDiagnosticos);
+            this.Controls.Add(this.grpMedicamentos);
             this.Controls.Add(this.cmbPerros);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpConsultor);
             this.Controls.Add(this.btnEliminarConsulta);
             this.Controls.Add(this.btnActualizarConsulta);
             this.Controls.Add(this.btnLimpiarDatos);
@@ -406,8 +647,13 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.ABM_Consultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridConsultas)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpConsultor.ResumeLayout(false);
+            this.grpConsultor.PerformLayout();
+            this.grpMedicamentos.ResumeLayout(false);
+            this.grpMedicamentos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMedicamentosSelec)).EndInit();
+            this.grpDiagnosticos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiagnosticosSelec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,10 +685,29 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaE;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaS;
         private System.Windows.Forms.ComboBox cmbEmpleados;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpConsultor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtNumeroDoc;
         private System.Windows.Forms.TextBox txtTipoDoc;
         private System.Windows.Forms.ComboBox cmbPerros;
+        private System.Windows.Forms.GroupBox grpMedicamentos;
+        private System.Windows.Forms.Button btnModificarMedicamento;
+        private System.Windows.Forms.Button btnEliminarMedicamento;
+        private System.Windows.Forms.DataGridView dgvMedicamentosSelec;
+        private System.Windows.Forms.Button btnAgregarMedicamento;
+        private System.Windows.Forms.ComboBox cmbMedicamentos;
+        private System.Windows.Forms.GroupBox grpDiagnosticos;
+        private System.Windows.Forms.Button btnModificarDiagnostico;
+        private System.Windows.Forms.Button btnEliminarDiagnostico;
+        private System.Windows.Forms.DataGridView dgvDiagnosticosSelec;
+        private System.Windows.Forms.Button btnAgregarDiagnosticos;
+        private System.Windows.Forms.ComboBox cmbDiagnosticos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CantidadMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodDiagnostico;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreDiagnostico;
+        private System.Windows.Forms.Label lbCantidadMedicamentos;
+        private System.Windows.Forms.MaskedTextBox txtCantidadMedicamento;
     }
 }

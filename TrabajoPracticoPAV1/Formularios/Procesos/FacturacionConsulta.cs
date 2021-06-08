@@ -72,8 +72,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // fecha
             txtFecha.Text = DateTime.Now.ToString();
 
-            //NroConsulta
-            txtNroConsulta.Text = "";
 
             try
             {
@@ -166,7 +164,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
                         MessageBox.Show("No existe la consulta que intenta facturar");
                     }
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     MessageBox.Show("Error al intentar buscar el numero de consulta");
                 }
@@ -187,7 +185,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             {
                 DataGridViewRow fila = dgvDetalleMedicamentos.Rows[i];
                 precioUnidad = int.Parse(fila.Cells["PrecioUnidadMedicamento"].Value.ToString());
-                precioTotal += precioUnidad;
+                precioTotal += precioUnidad * int.Parse(fila.Cells["CantMedicamento"].Value.ToString());
             }
 
             txtSubtotalMedicamentos.Text = precioTotal.ToString();
@@ -303,6 +301,11 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         {
             limpiarCampos();
             resetearBotones();
+        }
+
+        private void grpDiagnostico_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

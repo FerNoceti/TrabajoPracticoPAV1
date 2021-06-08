@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoPracticoPAV1.Entidades_ABM__Dueño__Consulta__Vacuna_;
+using TrabajoPracticoPAV1.Entidades;
 
 namespace TrabajoPracticoPAV1.AD
 {
@@ -19,7 +20,7 @@ namespace TrabajoPracticoPAV1.AD
             try
             {
                 SqlCommand cmd = new SqlCommand();
-                string consulta = "SELECT MAX(Id) FROM Consultas WHERE IdSucursal like @sucursal";
+                string consulta = "SELECT MAX(Id) FROM Consultas "; //WHERE IdSucursal like @sucursal
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@sucursal", id_Sucursal);
                 cmd.CommandType = CommandType.Text;
@@ -80,10 +81,86 @@ namespace TrabajoPracticoPAV1.AD
             {
                 cn.Close();
             }
-
-
             return resultado;
         }
+
+        public static bool AgregarPersonaABD(Consulta per, List<MedicamentoPorConsulta> listMedicamentos, List<DiagnosticoPorConsulta> listDiagnostico)
+        {
+            bool resultado = false;
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "INSERT INTO Consultas (NroHistoriaClinica, IdSucursal, TipoDocumentoEmpl, NroDocumentoEmpl, FechaEntrada, FechaSalida) VALUES (@historiaClinica, @sucursal, @tipoDoc, @numDoc, @fechaE, @fechaS)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@sucursal", per.Id_Sucursal);
+                cmd.Parameters.AddWithValue("@historiaClinica", per.NroHistoriaClinica);
+                cmd.Parameters.AddWithValue("@tipoDoc", per.TipoDocumentoEmpleado);
+                cmd.Parameters.AddWithValue("@numDoc", per.NumeroDeDocumento);
+                cmd.Parameters.AddWithValue("@fechaE", per.FechaDeEntrada);
+                cmd.Parameters.AddWithValue("@fechaS", per.FechaDeSalida);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+
+                cmd.Connection = cn;
+                cmd.ExecuteNonQuery();
+
+                SqlTransaction objTransaccion = cn.BeginTransaction("AltaConsulta");
+                cmd.Transaction = objTransaccion;
+
+
+
+                foreach (var med in listMedicamentos)
+                {
+                    string qMedicamento = "insertMedicamentoXConsulta";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@idConsulta", per.Id_Consulta);
+                    cmd.Parameters.AddWithValue("@IdMedicamento", med.IdMedicamento);
+                    cmd.Parameters.AddWithValue("@dosis", med.Dosis);
+                    cmd.Parameters.AddWithValue("@periodicidad", med.Periodicidad);
+
+
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = qMedicamento;
+                    cmd.ExecuteNonQuery();
+
+                }
+
+                foreach (var diag in listDiagnostico)
+                {
+                    string consultaCurso = "insertDiagnostcosXConsulta";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@idConsulta", per.Id_Consulta);
+                    cmd.Parameters.AddWithValue("@idDiagnostico", diag.IdDiagnostico);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandText = consultaCurso;
+                    cmd.ExecuteNonQuery();
+
+                }
+
+                objTransaccion.Commit();
+                resultado = true;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Asegurese de haber seleccionado el DNI de un empleado ya registrado y un numero de historia clinica ya registrado");
+
+            }
+            finally
+            {
+                cn.Close();
+            }
+            return resultado;
+        }
+
         public static DataTable ObtenerTipoDocumento()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
