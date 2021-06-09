@@ -46,7 +46,7 @@ namespace TrabajoPracticoPAV1.AD
 
         }
 
-        internal static object ObtenerListadoLaboratorios()
+        public static DataTable ObtenerListadoLaboratorios()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);

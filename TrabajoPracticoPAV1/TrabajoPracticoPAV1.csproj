@@ -340,8 +340,12 @@
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\Empleados\reportEmpleados.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\reporteLaboratorios.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Reporte_Empleados.resx">
       <DependentUpon>Reporte_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Laboratorios.resx">
+      <DependentUpon>Reporte_Laboratorios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginVeterinaria.resx">
       <DependentUpon>LoginVeterinaria.cs</DependentUpon>
