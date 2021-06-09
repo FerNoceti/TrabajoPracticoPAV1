@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajoPracticoPAV1.AD;
 using TrabajoPracticoPAV1.Entidades_ABM__Dueño__Consulta__Vacuna_;
+using TrabajoPracticoPAV1.Entidades;
 
 namespace TrabajoPracticoPAV1.Formularios.ABM
 {
     public partial class ABM_Consultas : Form
     {
         private bool formCargado = false;
+        private int indiceDiagSelec;
+        private int indiceMedSelec;
 
         public ABM_Consultas()
         {
@@ -29,7 +32,66 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             resetearComboSucursal();
             resetearCombEmpleado();
             CargarGrilla();
+            cargarComboMedicamentos();
+            cargarComboDiagnosticos();
+            limpiarCamposMedicamentos();
+            limpiarCamposDagnosticos();
+            resetearBotonesMedicamentos();
+            resetearBotonesDiagnosticos();
             formCargado = true;
+        }
+
+        private void limpiarCamposMedicamentos()
+        {
+            resetearComboMedicamentos();
+            txtCantidadMedicamento.Text = "";
+        }
+
+        private void limpiarCamposDagnosticos()
+        {
+            resetearComboDiagnosticos();
+
+        }
+
+        private void resetearBotonesMedicamentos()
+        {
+            btnAgregarMedicamento.Enabled = true;
+            btnEliminarMedicamento.Enabled = false;
+            btnModificarMedicamento.Enabled = false;
+
+        }
+
+        private void resetearBotonesDiagnosticos()
+        {
+            btnAgregarDiagnosticos.Enabled = true;
+            btnEliminarDiagnostico.Enabled = false;
+            btnModificarDiagnostico.Enabled = false;
+        }
+
+        private void cargarComboDiagnosticos()
+        {
+            cmbDiagnosticos.DataSource = AD_Diagnostico.obtenerDatosDiagnosticos();
+            cmbDiagnosticos.DisplayMember = "Descripcion";
+            cmbDiagnosticos.ValueMember = "Id";
+            cmbDiagnosticos.SelectedIndex = -1;
+        }
+
+        private void resetearComboDiagnosticos()
+        {
+            cmbDiagnosticos.SelectedIndex = -1;
+        }
+
+        private void cargarComboMedicamentos()
+        {
+            cmbMedicamentos.DataSource = AD_Medicamentos.obtenerDatosMedicamentos();
+            cmbMedicamentos.DisplayMember = "Descripcion";
+            cmbMedicamentos.ValueMember = "Id";
+            cmbMedicamentos.SelectedIndex = -1;
+        }
+
+        private void resetearComboMedicamentos()
+        {
+            cmbMedicamentos.SelectedIndex = -1;
         }
 
         private void resetearBotones()
@@ -113,22 +175,18 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         {
             if (VerificarCamposLlenos())
             {
-                Consulta p = ObtenerDatosConsulta();
-
-                bool resultado = AD_Consulta.AgregarPersonaABD(p);
-                if (resultado)
+                if (dgvDiagnosticosSelec.Rows.Count == 0 || dgvMedicamentosSelec.Rows.Count == 0)
                 {
-                    MessageBox.Show("Consulta guardada con exito.");
-                    //HAGO ESTO PARA QUE UNA VEZ CARGADO EL USUARIO SE ME LIMPIEN LOS CAMPOS
-                    LimpiarCampos();
-                    resetearComboSucursal();
-                    resetearCombEmpleado();
-                    resetearBotones();
-                    CargarGrilla();
+                    DialogResult resultadoU = MessageBox.Show("¿Omitir medicamentos y diagnosticos?", "Atencion", MessageBoxButtons.YesNo);
+                    if (resultadoU == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        guardarConsulta();
+                    }
+
                 }
                 else
                 {
-                    MessageBox.Show("No se pudo guardar la consulta con exito.");
+                    guardarConsulta();
                 }
             }
             else
@@ -139,6 +197,69 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
                 
             
         }
+
+        private void guardarConsulta()
+        {
+            Consulta consulta = ObtenerDatosConsulta();
+            if (dgvDiagnosticosSelec.Rows.Count == 0 || dgvMedicamentosSelec.Rows.Count == 0)
+            {
+                AD_Consulta.AgregarPersonaABD(consulta);
+            }
+            else
+            {
+                List<MedicamentoPorConsulta> medicamentos = ObtenerDatosMedicamentosPorConsulta();
+                List<DiagnosticoPorConsulta> diagnosticos = ObtenerDatosDiagnosticosPorConsulta();
+                bool resultOp = AD_Consulta.AgregarPersonaABD(consulta, medicamentos, diagnosticos);
+
+                if(resultOp)
+                {
+                    MessageBox.Show("Consulta guardada con exito.");
+                    LimpiarCampos();
+                    resetearComboSucursal();
+                    resetearCombEmpleado();
+                    resetearBotones();
+                    CargarGrilla();
+                }
+                else
+                {
+                    MessageBox.Show("Se produjo un error mientras se intentaba guardar los datos");
+                }
+            }
+
+
+
+        }
+
+        private List<DiagnosticoPorConsulta> ObtenerDatosDiagnosticosPorConsulta()
+        {
+            List<DiagnosticoPorConsulta> listDiag = new List<DiagnosticoPorConsulta>();
+            for (int i = 0; i < dgvDiagnosticosSelec.Rows.Count; i++)
+            {
+                DiagnosticoPorConsulta diag = new DiagnosticoPorConsulta();
+                diag.IdDiagnostico = int.Parse(dgvDiagnosticosSelec.Rows[i].Cells["CodDiagnostico"].Value.ToString());
+
+                listDiag.Add(diag);
+            }
+
+            return listDiag;
+        }
+
+        private List<MedicamentoPorConsulta> ObtenerDatosMedicamentosPorConsulta()
+        {
+            List<MedicamentoPorConsulta> listMed = new List<MedicamentoPorConsulta>();
+            for (int i = 0; i < dgvMedicamentosSelec.Rows.Count; i++)
+            {
+                MedicamentoPorConsulta med = new MedicamentoPorConsulta();
+                med.IdMedicamento = int.Parse(dgvMedicamentosSelec.Rows[i].Cells["CodMedicamento"].Value.ToString());
+                med.Dosis = int.Parse(txtCantidadMedicamento.Text);
+                med.Periodicidad = 1; // SE PODRA EXPANDIR SI ES NECESARIO, EN NUEVAS ACTUALIZACIONES
+
+                listMed.Add(med);
+            }
+            return listMed;
+
+        }
+
         private void CargarGrilla()
         {
             try
@@ -340,6 +461,21 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
         private void btnLimpiarDatos_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+            limpiarCamposDagnosticos();
+            resetearGrillaDiagnosticos();
+            limpiarCamposMedicamentos();
+            resetearGrillaMedicamentos();
+            
+        }
+
+        private void resetearGrillaMedicamentos()
+        {
+            dgvMedicamentosSelec.Rows.Clear();
+        }
+
+        private void resetearGrillaDiagnosticos()
+        {
+            dgvDiagnosticosSelec.Rows.Clear();
         }
 
         private void cmbEmpleados_SelectedIndexChanged(object sender, EventArgs e)
@@ -368,5 +504,142 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             txtTipoDoc.Text = fila[1].ToString();
             txtNumeroDoc.Text = fila[2].ToString();
         }
+
+        private void btnModificarDiagnostico_Click(object sender, EventArgs e)
+        {
+            dgvDiagnosticosSelec.Rows[indiceDiagSelec].Cells[0].Value = cmbDiagnosticos.SelectedValue.ToString();
+            dgvDiagnosticosSelec.Rows[indiceDiagSelec].Cells[1].Value = cmbDiagnosticos.Text;
+            resetearBotonesDiagnosticos();
+        }
+
+        private void btnAgregarMedicamento_Click(object sender, EventArgs e)
+        {
+            if (cmbMedicamentos.SelectedIndex != -1 && txtCantidadMedicamento.Text != "" 
+                && txtCantidadMedicamento.Text != "0" && noRepiteMedicamento())
+            {
+                dgvMedicamentosSelec.Rows.Add(1);
+                int cantFilas = dgvMedicamentosSelec.Rows.Count;
+                dgvMedicamentosSelec.Rows[cantFilas -1].Cells[0].Value = cmbMedicamentos.SelectedValue.ToString();
+                dgvMedicamentosSelec.Rows[cantFilas -1].Cells[1].Value = cmbMedicamentos.Text;
+                dgvMedicamentosSelec.Rows[cantFilas -1].Cells[2].Value = txtCantidadMedicamento.Text;
+
+                resetearBotonesMedicamentos();
+
+            }
+            else
+            {
+                MessageBox.Show("Complete todos los campos del medicamento que quiere ingresar");
+            }
+        }
+
+        private bool noRepiteMedicamento()
+        {
+            for (int i = 0; i < dgvMedicamentosSelec.Rows.Count; i++)
+            {
+                if (dgvMedicamentosSelec.Rows[i].Cells[0].Value.ToString().Equals(cmbMedicamentos.SelectedValue.ToString()))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private void btnAgregarDiagnosticos_Click(object sender, EventArgs e)
+        {
+            if (cmbDiagnosticos.SelectedIndex != -1 && noRepiteDiagnostico())
+            {
+                dgvDiagnosticosSelec.Rows.Add(1);
+                int cantFilas = dgvDiagnosticosSelec.Rows.Count;
+                dgvDiagnosticosSelec.Rows[cantFilas - 1].Cells[0].Value = cmbDiagnosticos.SelectedValue.ToString();
+                dgvDiagnosticosSelec.Rows[cantFilas - 1].Cells[1].Value = cmbDiagnosticos.Text;
+
+                resetearBotonesDiagnosticos();
+            }
+            else
+            {
+                MessageBox.Show("Complete todos los campos del diagnostico que quiere ingresar");
+            }
+        }
+
+        private bool noRepiteDiagnostico()
+        {
+            for (int i = 0; i < dgvDiagnosticosSelec.Rows.Count; i++)
+            {
+                if (dgvDiagnosticosSelec.Rows[i].Cells[0].Value.ToString().Equals(cmbDiagnosticos.SelectedValue.ToString()))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        private void dgvMedicamentosSelec_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow fila = dgvMedicamentosSelec.Rows[e.RowIndex];
+                cmbMedicamentos.SelectedValue = fila.Cells[0].Value.ToString();
+                txtCantidadMedicamento.Text = fila.Cells[2].Value.ToString();
+
+                this.indiceMedSelec = e.RowIndex;
+
+                btnEliminarMedicamento.Enabled = true;
+                btnModificarMedicamento.Enabled = true;
+            }
+        }
+
+        private void dgvDiagnosticosSelec_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1)
+            {
+                DataGridViewRow fila = dgvDiagnosticosSelec.Rows[e.RowIndex];
+                cmbDiagnosticos.SelectedValue = fila.Cells[0].Value.ToString();
+
+                this.indiceDiagSelec = e.RowIndex;
+
+                btnModificarDiagnostico.Enabled = true;
+                btnEliminarDiagnostico.Enabled = true;
+            }
+        }
+
+        private void btnEliminarMedicamento_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dgvMedicamentosSelec.Rows.Count; i++)
+            {
+                DataGridViewRow fila = dgvMedicamentosSelec.Rows[i];
+                if(fila.Cells[0].Value.ToString().Equals(cmbMedicamentos.SelectedValue.ToString()))
+                {
+                    dgvMedicamentosSelec.Rows.Remove(fila);
+                }
+            }
+
+            resetearBotonesMedicamentos();
+        }
+
+        private void btnModificarMedicamento_Click(object sender, EventArgs e)
+        {
+            dgvMedicamentosSelec.Rows[indiceMedSelec].Cells[0].Value = cmbMedicamentos.SelectedValue.ToString();
+            dgvMedicamentosSelec.Rows[indiceMedSelec].Cells[1].Value = cmbMedicamentos.Text;
+            dgvMedicamentosSelec.Rows[indiceMedSelec].Cells[2].Value = txtCantidadMedicamento.Text;
+            resetearBotonesMedicamentos();
+        }
+
+        private void btnEliminarDiagnostico_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dgvDiagnosticosSelec.Rows.Count; i++)
+            {
+                DataGridViewRow fila = dgvDiagnosticosSelec.Rows[i];
+                if (fila.Cells[0].Value.ToString().Equals(cmbDiagnosticos.SelectedValue.ToString()))
+                {
+                    dgvDiagnosticosSelec.Rows.Remove(fila);
+                }
+            }
+
+            resetearBotonesDiagnosticos();
+        }
+
+
     }
 }

@@ -116,3 +116,5 @@ C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPra
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\RdlCompile.cache
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\RdlCompile.compiled

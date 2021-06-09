@@ -46,31 +46,31 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.txtNombreDueño = new System.Windows.Forms.TextBox();
             this.grpDetalleFacturacion = new System.Windows.Forms.GroupBox();
             this.lbSignoPeso3 = new System.Windows.Forms.Label();
-            this.txtNroConsulta = new System.Windows.Forms.MaskedTextBox();
             this.txtTotalAFacturar = new System.Windows.Forms.TextBox();
             this.grpMedicamentos = new System.Windows.Forms.GroupBox();
             this.lbSignoPeso2 = new System.Windows.Forms.Label();
             this.txtSubtotalMedicamentos = new System.Windows.Forms.TextBox();
             this.lbSubtotalMedicamentos = new System.Windows.Forms.Label();
             this.dgvDetalleMedicamentos = new System.Windows.Forms.DataGridView();
-            this.CodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioUnidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbTotalAFacturar = new System.Windows.Forms.Label();
             this.grpDiagnostico = new System.Windows.Forms.GroupBox();
             this.lbSignoPeso1 = new System.Windows.Forms.Label();
             this.txtSubtotalDiagnosticos = new System.Windows.Forms.TextBox();
             this.lbSubtotalDiagnosticos = new System.Windows.Forms.Label();
             this.dgvDetalleDiagnosticos = new System.Windows.Forms.DataGridView();
-            this.CodigoDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnConfirmarFacturacion = new System.Windows.Forms.Button();
             this.btnDeshacerFacturacion = new System.Windows.Forms.Button();
             this.btnBuscarConsulta = new System.Windows.Forms.Button();
             this.lbSucursal = new System.Windows.Forms.Label();
             this.cmbSucursales = new System.Windows.Forms.ComboBox();
             this.cmbNroConsulta = new System.Windows.Forms.ComboBox();
+            this.CodigoDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioDiagnostico = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CodigoMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioUnidadMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CantMedicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpPerro.SuspendLayout();
             this.grpDueño.SuspendLayout();
             this.grpDetalleFacturacion.SuspendLayout();
@@ -231,7 +231,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             // 
             this.grpDetalleFacturacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
             this.grpDetalleFacturacion.Controls.Add(this.lbSignoPeso3);
-            this.grpDetalleFacturacion.Controls.Add(this.txtNroConsulta);
             this.grpDetalleFacturacion.Controls.Add(this.txtTotalAFacturar);
             this.grpDetalleFacturacion.Controls.Add(this.grpMedicamentos);
             this.grpDetalleFacturacion.Controls.Add(this.lbTotalAFacturar);
@@ -252,16 +251,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.lbSignoPeso3.TabIndex = 17;
             this.lbSignoPeso3.Text = "$";
             // 
-            // txtNroConsulta
-            // 
-            this.txtNroConsulta.Location = new System.Drawing.Point(170, 310);
-            this.txtNroConsulta.Mask = "99999";
-            this.txtNroConsulta.Name = "txtNroConsulta";
-            this.txtNroConsulta.Size = new System.Drawing.Size(100, 20);
-            this.txtNroConsulta.TabIndex = 16;
-            this.txtNroConsulta.ValidatingType = typeof(int);
-            this.txtNroConsulta.TextChanged += new System.EventHandler(this.txtNroConsulta_TextChanged);
-            // 
             // txtTotalAFacturar
             // 
             this.txtTotalAFacturar.Enabled = false;
@@ -278,7 +267,7 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.grpMedicamentos.Controls.Add(this.dgvDetalleMedicamentos);
             this.grpMedicamentos.Location = new System.Drawing.Point(6, 169);
             this.grpMedicamentos.Name = "grpMedicamentos";
-            this.grpMedicamentos.Size = new System.Drawing.Size(423, 146);
+            this.grpMedicamentos.Size = new System.Drawing.Size(434, 146);
             this.grpMedicamentos.TabIndex = 9;
             this.grpMedicamentos.TabStop = false;
             this.grpMedicamentos.Text = "Medicamentos";
@@ -320,7 +309,8 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.dgvDetalleMedicamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CodigoMedicamento,
             this.NombreMedicamento,
-            this.PrecioUnidadMedicamento});
+            this.PrecioUnidadMedicamento,
+            this.CantMedicamento});
             this.dgvDetalleMedicamentos.Enabled = false;
             this.dgvDetalleMedicamentos.Location = new System.Drawing.Point(6, 19);
             this.dgvDetalleMedicamentos.Name = "dgvDetalleMedicamentos";
@@ -328,28 +318,6 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.dgvDetalleMedicamentos.RowHeadersVisible = false;
             this.dgvDetalleMedicamentos.Size = new System.Drawing.Size(411, 79);
             this.dgvDetalleMedicamentos.TabIndex = 1;
-            // 
-            // CodigoMedicamento
-            // 
-            this.CodigoMedicamento.DataPropertyName = "Id";
-            this.CodigoMedicamento.HeaderText = "Codigo";
-            this.CodigoMedicamento.Name = "CodigoMedicamento";
-            this.CodigoMedicamento.ReadOnly = true;
-            // 
-            // NombreMedicamento
-            // 
-            this.NombreMedicamento.DataPropertyName = "Descripcion";
-            this.NombreMedicamento.HeaderText = "Nombre";
-            this.NombreMedicamento.Name = "NombreMedicamento";
-            this.NombreMedicamento.ReadOnly = true;
-            this.NombreMedicamento.Width = 200;
-            // 
-            // PrecioUnidadMedicamento
-            // 
-            this.PrecioUnidadMedicamento.DataPropertyName = "precio";
-            this.PrecioUnidadMedicamento.HeaderText = "PrecioUnidad ($)";
-            this.PrecioUnidadMedicamento.Name = "PrecioUnidadMedicamento";
-            this.PrecioUnidadMedicamento.ReadOnly = true;
             // 
             // lbTotalAFacturar
             // 
@@ -369,10 +337,11 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.grpDiagnostico.Controls.Add(this.dgvDetalleDiagnosticos);
             this.grpDiagnostico.Location = new System.Drawing.Point(6, 17);
             this.grpDiagnostico.Name = "grpDiagnostico";
-            this.grpDiagnostico.Size = new System.Drawing.Size(423, 146);
+            this.grpDiagnostico.Size = new System.Drawing.Size(434, 146);
             this.grpDiagnostico.TabIndex = 8;
             this.grpDiagnostico.TabStop = false;
             this.grpDiagnostico.Text = "Diagnosticos";
+            this.grpDiagnostico.Enter += new System.EventHandler(this.grpDiagnostico_Enter);
             // 
             // lbSignoPeso1
             // 
@@ -417,30 +386,9 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.dgvDetalleDiagnosticos.Name = "dgvDetalleDiagnosticos";
             this.dgvDetalleDiagnosticos.ReadOnly = true;
             this.dgvDetalleDiagnosticos.RowHeadersVisible = false;
-            this.dgvDetalleDiagnosticos.Size = new System.Drawing.Size(411, 79);
+            this.dgvDetalleDiagnosticos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dgvDetalleDiagnosticos.Size = new System.Drawing.Size(354, 79);
             this.dgvDetalleDiagnosticos.TabIndex = 0;
-            // 
-            // CodigoDiagnostico
-            // 
-            this.CodigoDiagnostico.DataPropertyName = "Id";
-            this.CodigoDiagnostico.HeaderText = "Codigo";
-            this.CodigoDiagnostico.Name = "CodigoDiagnostico";
-            this.CodigoDiagnostico.ReadOnly = true;
-            // 
-            // DescripcionDiagnostico
-            // 
-            this.DescripcionDiagnostico.DataPropertyName = "Descripcion";
-            this.DescripcionDiagnostico.HeaderText = "Descripcion";
-            this.DescripcionDiagnostico.Name = "DescripcionDiagnostico";
-            this.DescripcionDiagnostico.ReadOnly = true;
-            this.DescripcionDiagnostico.Width = 200;
-            // 
-            // PrecioDiagnostico
-            // 
-            this.PrecioDiagnostico.DataPropertyName = "precio";
-            this.PrecioDiagnostico.HeaderText = "PrecioUnidad ($)";
-            this.PrecioDiagnostico.Name = "PrecioDiagnostico";
-            this.PrecioDiagnostico.ReadOnly = true;
             // 
             // btnConfirmarFacturacion
             // 
@@ -509,6 +457,61 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
             this.cmbNroConsulta.Size = new System.Drawing.Size(97, 25);
             this.cmbNroConsulta.TabIndex = 17;
             this.cmbNroConsulta.SelectedIndexChanged += new System.EventHandler(this.cmbNroConsulta_SelectedIndexChanged);
+            // 
+            // CodigoDiagnostico
+            // 
+            this.CodigoDiagnostico.DataPropertyName = "Id";
+            this.CodigoDiagnostico.HeaderText = "Codigo";
+            this.CodigoDiagnostico.Name = "CodigoDiagnostico";
+            this.CodigoDiagnostico.ReadOnly = true;
+            this.CodigoDiagnostico.Width = 75;
+            // 
+            // DescripcionDiagnostico
+            // 
+            this.DescripcionDiagnostico.DataPropertyName = "Descripcion";
+            this.DescripcionDiagnostico.HeaderText = "Descripcion";
+            this.DescripcionDiagnostico.Name = "DescripcionDiagnostico";
+            this.DescripcionDiagnostico.ReadOnly = true;
+            this.DescripcionDiagnostico.Width = 200;
+            // 
+            // PrecioDiagnostico
+            // 
+            this.PrecioDiagnostico.DataPropertyName = "precio";
+            this.PrecioDiagnostico.HeaderText = "PrecioUnidad ($)";
+            this.PrecioDiagnostico.Name = "PrecioDiagnostico";
+            this.PrecioDiagnostico.ReadOnly = true;
+            this.PrecioDiagnostico.Width = 75;
+            // 
+            // CodigoMedicamento
+            // 
+            this.CodigoMedicamento.DataPropertyName = "Id";
+            this.CodigoMedicamento.HeaderText = "Codigo";
+            this.CodigoMedicamento.Name = "CodigoMedicamento";
+            this.CodigoMedicamento.ReadOnly = true;
+            this.CodigoMedicamento.Width = 50;
+            // 
+            // NombreMedicamento
+            // 
+            this.NombreMedicamento.DataPropertyName = "Descripcion";
+            this.NombreMedicamento.HeaderText = "Nombre";
+            this.NombreMedicamento.Name = "NombreMedicamento";
+            this.NombreMedicamento.ReadOnly = true;
+            this.NombreMedicamento.Width = 200;
+            // 
+            // PrecioUnidadMedicamento
+            // 
+            this.PrecioUnidadMedicamento.DataPropertyName = "precio";
+            this.PrecioUnidadMedicamento.HeaderText = "PrecioUnidad ($)";
+            this.PrecioUnidadMedicamento.Name = "PrecioUnidadMedicamento";
+            this.PrecioUnidadMedicamento.ReadOnly = true;
+            // 
+            // CantMedicamento
+            // 
+            this.CantMedicamento.DataPropertyName = "Dosis";
+            this.CantMedicamento.HeaderText = "Cantidad";
+            this.CantMedicamento.Name = "CantMedicamento";
+            this.CantMedicamento.ReadOnly = true;
+            this.CantMedicamento.Width = 50;
             // 
             // FacturacionConsulta
             // 
@@ -584,16 +587,16 @@ namespace TrabajoPracticoPAV1.Formularios.Procesos
         private System.Windows.Forms.DataGridView dgvDetalleDiagnosticos;
         private System.Windows.Forms.Label lbSucursal;
         private System.Windows.Forms.ComboBox cmbSucursales;
-        private System.Windows.Forms.MaskedTextBox txtNroConsulta;
         private System.Windows.Forms.Label lbSignoPeso3;
         private System.Windows.Forms.Label lbSignoPeso2;
         private System.Windows.Forms.Label lbSignoPeso1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoMedicamento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreMedicamento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnidadMedicamento;
+        private System.Windows.Forms.ComboBox cmbNroConsulta;
         private System.Windows.Forms.DataGridViewTextBoxColumn CodigoDiagnostico;
         private System.Windows.Forms.DataGridViewTextBoxColumn DescripcionDiagnostico;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioDiagnostico;
-        private System.Windows.Forms.ComboBox cmbNroConsulta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnidadMedicamento;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CantMedicamento;
     }
 }

@@ -690,14 +690,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TrabajoPracticoPAV1.exe" size="338400">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TrabajoPracticoPAV1.exe" size="979936">
       <assemblyIdentity name="TrabajoPracticoPAV1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Cgh4elWZaQo/qna/aQagr8lGi1AuPBEO8kS/NxDSyp4=</dsig:DigestValue>
+        <dsig:DigestValue>c4uz9+W0L1BDTvg+6G21paR/HGKCDQS7TnCIWiPesFo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1016,13 +1016,13 @@
       <dsig:DigestValue>rLztN4VXMw69Q6b6MX/FIYxzyxMKuwcEaaz4TnqMk8A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TrabajoPracticoPAV1.exe.config" size="369">
+  <file name="TrabajoPracticoPAV1.exe.config" size="989">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>b9q3CuCVQMMZSFwOFW7FP6x2puUCNHLQ+4dAISa+TzM=</dsig:DigestValue>
+      <dsig:DigestValue>XyZ2jJz3yWQVNJAAqHWd9FRWlcN/3P9iA4HsxfzivcQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

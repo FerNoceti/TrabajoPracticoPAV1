@@ -116,11 +116,13 @@
     <Compile Include="Entidades\Barrio.cs" />
     <Compile Include="Entidades\Consulta.cs" />
     <Compile Include="Entidades\Diagnostico.cs" />
+    <Compile Include="Entidades\DiagnosticoPorConsulta.cs" />
     <Compile Include="Entidades\Dueño.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Factura.cs" />
     <Compile Include="Entidades\Laboratorios.cs" />
     <Compile Include="Entidades\Medicamentos.cs" />
+    <Compile Include="Entidades\MedicamentoPorConsulta.cs" />
     <Compile Include="Entidades\Perro.cs" />
     <Compile Include="Entidades\Razas.cs" />
     <Compile Include="Entidades\Sintomas.cs" />
