@@ -131,6 +131,7 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             this.btnLimpiarDatos.TabIndex = 28;
             this.btnLimpiarDatos.Text = "Limpiar datos";
             this.btnLimpiarDatos.UseVisualStyleBackColor = false;
+            this.btnLimpiarDatos.Click += new System.EventHandler(this.btnLimpiarDatos_Click);
             // 
             // label5
             // 
