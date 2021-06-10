@@ -84,6 +84,62 @@ namespace TrabajoPracticoPAV1.AD
             return resultado;
         }
 
+        internal static DataTable ObtenerConsultasPorSucursal(int idSucursal)
+        {
+            
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+
+
+            if (idSucursal != -1)
+            {               
+
+                try
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    string consulta = "SELECT * FROM Consultas WHERE IdSucursal like @sucursal";                    
+                    
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@sucursal", idSucursal);
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = consulta;
+
+                    cn.Open();
+                    cmd.Connection = cn;
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    da.Fill(tabla);
+
+                    return tabla;
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
+                finally
+                {
+                    cn.Close();
+                }
+
+                return tabla;
+
+            }
+
+            else
+            {
+                MessageBox.Show("ingrese una sucursal");
+                return tabla;
+            }
+
+
+
+            
+            
+        }
+
         public static bool AgregarPersonaABD(Consulta per, List<MedicamentoPorConsulta> listMedicamentos, List<DiagnosticoPorConsulta> listDiagnostico)
         {
             bool resultado = false;
@@ -214,7 +270,7 @@ namespace TrabajoPracticoPAV1.AD
 
                 SqlCommand cmd = new SqlCommand();
 
-                string consulta = "SELECT Id, NroHistoriaClinica, IdSucursal, TipoDocumentoEmpl, NroDocumentoEmpl, FechaEntrada, FechaSalida FROM Consultas";
+                string consulta = "SELECT * FROM Consultas";
 
                 cmd.Parameters.Clear();
                 cmd.CommandType = CommandType.Text;

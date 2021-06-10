@@ -111,5 +111,10 @@ namespace TrabajoPracticoPAV1.Formularios.ABM
             txtId.Text = sin.IdSintomas.ToString();
             txtNombre.Text = sin.NombreSintomas.ToString();
         }
+
+        private void btnLimpiarDatos_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
     }
 }

@@ -339,7 +339,11 @@
     <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\Consultas\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\Empleados\reportEmpleados.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Consultas.resx">
+      <DependentUpon>Reporte_Consultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Reporte_Empleados.resx">
       <DependentUpon>Reporte_Empleados.cs</DependentUpon>
     </EmbeddedResource>
@@ -458,7 +462,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Formularios\Reportes\RDLCs\Consultas\" />
     <Folder Include="Formularios\Reportes\RDLCs\Laboratorios\" />
     <Folder Include="Formularios\Reportes\RDLCs\Medicamentos\" />
     <Folder Include="Formularios\Reportes\RDLCs\Perros\" />
