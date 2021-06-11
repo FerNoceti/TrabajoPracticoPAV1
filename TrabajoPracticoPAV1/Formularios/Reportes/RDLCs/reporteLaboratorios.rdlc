@@ -430,7 +430,7 @@
             <DataSetName>DatosLaboratorios</DataSetName>
             <Top>1.71252cm</Top>
             <Left>3.42412cm</Left>
-            <Height>2.31125cm</Height>
+            <Height>2.31124cm</Height>
             <Width>15.72792cm</Width>
             <Style>
               <Border>
@@ -458,7 +458,7 @@
   <Width>8.61458in</Width>
   <Page>
     <PageFooter>
-      <Height>2.54cm</Height>
+      <Height>2.11667cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -483,6 +483,38 @@
           <Left>18.46474cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="ReportName">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Informe de Laboratorios</Value>
+                  <Style>
+                    <FontFamily>Century Gothic</FontFamily>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>ReportName</rd:DefaultName>
+          <Top>0.17639cm</Top>
+          <Left>0.47307cm</Left>
+          <Height>0.6cm</Height>
+          <Width>4.405cm</Width>
+          <ZIndex>1</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
