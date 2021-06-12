@@ -400,6 +400,54 @@ namespace TrabajoPracticoPAV1.AD
             return tabla;
         }
 
+        internal static DataTable ObtenerDatosMedicamentosPorFiltros(int filtro, string letra)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string query = "SELECT * FROM Medicamentos ";
+
+            //Aplicaciones de Filtros
+            if (filtro == 1)
+            {
+                query += "WHERE Descripcion LIKE '" + letra + "%'";
+            }
+            if (filtro == 2)
+            {
+                query += "WHERE Descripcion LIKE '%" + letra + "'";
+            }
+
+
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
+
     }
 }
 

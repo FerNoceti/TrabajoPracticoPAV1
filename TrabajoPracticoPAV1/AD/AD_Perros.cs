@@ -92,17 +92,17 @@ namespace TrabajoPracticoPAV1.AD
         public static Perro obtenerPerro(int idHistoriaClinica)
         {
 
-        //private string Nombre;
-        //private int Peso;
-        //private int Altura;
-        //private DateTime FechaNacimiento;
-        //private int IdSexo;
-        //private int IdRaza;
-        //private int IdDueño;
-        //private int IdSucursal;
-        //private int HistClinica;
+            //private string Nombre;
+            //private int Peso;
+            //private int Altura;
+            //private DateTime FechaNacimiento;
+            //private int IdSexo;
+            //private int IdRaza;
+            //private int IdDueño;
+            //private int IdSucursal;
+            //private int HistClinica;
 
-        Perro resultado = new Perro();
+            Perro resultado = new Perro();
             string cadena = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadena);
             try
@@ -183,6 +183,92 @@ namespace TrabajoPracticoPAV1.AD
             }
 
             return resultado;
+        }
+
+        public static DataTable ObtenerListadoPerros()
+        {
+            string cadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaDB);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Perros";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerListadoPerrosPorFiltros(int IdRaz, int IdDueño)
+        {
+            DataTable tabla = new DataTable();
+            string cadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaDB);
+            string consulta = "SELECT p.* FROM Perros p";
+            if (IdRaz != -1)
+            {
+                consulta += $" WHERE IdRaza={ IdRaz }";
+            }
+            if (IdDueño != -1)
+            {
+                consulta += $" AND IdDueño={ IdDueño }";
+            }
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+
+
         }
     }
 }

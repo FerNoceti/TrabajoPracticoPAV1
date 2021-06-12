@@ -317,5 +317,77 @@ namespace TrabajoPracticoPAV1.AD
 
         }
 
+        public static DataTable ObtenerDatosRazasMacho()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT Id, Nombre, PesoMinimoMacho, PesoMaximoMacho, AlturaMediaMacho FROM Razas";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        public static DataTable ObtenerDatosRazasHembra()
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT Id, Nombre, PesoMinimoHembra, PesoMaximoHembra, AlturaMediaHembra FROM Razas";
+
+                cmd.Parameters.Clear();
+
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
     }
 }

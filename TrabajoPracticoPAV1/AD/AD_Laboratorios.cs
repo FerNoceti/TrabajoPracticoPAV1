@@ -46,7 +46,7 @@ namespace TrabajoPracticoPAV1.AD
 
         }
 
-        internal static object ObtenerListadoLaboratorios()
+        internal static DataTable ObtenerListadoLaboratorios()
         {
             string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
             SqlConnection cn = new SqlConnection(cadenaConexion);
@@ -168,6 +168,119 @@ namespace TrabajoPracticoPAV1.AD
                 cn.Close();
             }
             return lab;
+        }
+
+
+        public static DataTable ObtenerListadoLaboratoriosId(string id)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Laboratorios where Id like @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static DataTable ObtenerListadoLaboratoriosRS(string rs)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Laboratorios where RazonSocial like @rs";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@rs", rs);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public static DataTable ObtenerListadoLaboratoriosIdBarrio(string id)
+        {
+            string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(cadenaConexion);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "SELECT * FROM Laboratorios where idBarrio like @idB";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@idB", id);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
     }
     

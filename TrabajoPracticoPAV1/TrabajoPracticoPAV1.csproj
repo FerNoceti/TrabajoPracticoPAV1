@@ -341,12 +341,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\Consultas\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\Empleados\reportEmpleados.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeMedicamentos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasCompleto.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasHembras.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasMachos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\reporteLaboratorios.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Reporte_Consultas.resx">
       <DependentUpon>Reporte_Consultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Reportes\Reporte_Empleados.resx">
       <DependentUpon>Reporte_Empleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Laboratorios.resx">
+      <DependentUpon>Reporte_Laboratorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Medicamentos.resx">
+      <DependentUpon>Reporte_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Perros.resx">
+      <DependentUpon>Reporte_Perros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Reportes\Reporte_Razas.resx">
+      <DependentUpon>Reporte_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoPerros.rdlc" />
     <EmbeddedResource Include="LoginVeterinaria.resx">
       <DependentUpon>LoginVeterinaria.cs</DependentUpon>
     </EmbeddedResource>
@@ -363,6 +381,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportesPerrosDatos.rdlc" />
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
