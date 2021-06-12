@@ -76,7 +76,12 @@ namespace TrabajoPracticoPAV1.Formularios.Reportes
                 indice = int.Parse(cmbSucursal.SelectedValue.ToString());
             }
             DataTable tabla = AD_Consulta.ObtenerConsultasPorSucursal(indice);
-            cargarReporteConsulta(tabla);
+            ReportDataSource ds = new ReportDataSource("DatosConsultas", tabla);
+
+            reportViewerConsultas.LocalReport.DataSources.Clear();
+            reportViewerConsultas.LocalReport.DataSources.Add(ds);
+            reportViewerConsultas.LocalReport.Refresh();
+            reportViewerConsultas.RefreshReport();
         }
     }
 }
