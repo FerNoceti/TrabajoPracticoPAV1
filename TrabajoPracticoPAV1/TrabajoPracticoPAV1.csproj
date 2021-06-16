@@ -202,6 +202,21 @@
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\ABM\Sintomas.cs" />
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosConsultas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosIngresos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosPerros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosPerros.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -336,6 +351,12 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas.resx">
+      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresos.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportPerros.rdlc" />
     <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +422,39 @@
     </None>
     <None Include="BD3K7G11_2021DataSet.xss">
       <DependentUpon>BD3K7G11_2021DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.xsc">
+      <DependentUpon>DatosConsultas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosConsultas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.xss">
+      <DependentUpon>DatosConsultas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.xsc">
+      <DependentUpon>DatosIngresos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosIngresos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.xss">
+      <DependentUpon>DatosIngresos.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosPerros.xsc">
+      <DependentUpon>DatosPerros.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosPerros.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosPerros.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosPerros.xss">
+      <DependentUpon>DatosPerros.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

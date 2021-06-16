@@ -16,5 +16,11 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
         {
             InitializeComponent();
         }
+
+        private void Estadisticas_Consultas_Load(object sender, EventArgs e)
+        {
+
+            this.reportViewer1.RefreshReport();
+        }
     }
 }
