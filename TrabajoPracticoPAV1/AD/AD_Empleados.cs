@@ -59,7 +59,7 @@ namespace TrabajoPracticoPAV1.AD
         {
             DataTable tabla = new DataTable();
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
-            string query = "SELECT  FROM Empleados E JOIN Sucursales S ON (S.Id = E.IdSucursal) GROUP BY S.Id, S.Nombre";
+            string query = "SELECT (YEAR(GETDATE()) - YEAR(E.FechaNacimiento)) as 'Edad', COUNT(*) as 'CantEmpleados' FROM Empleados E GROUP BY YEAR(E.FechaNacimiento)";
 
             SqlConnection cn = new SqlConnection(CadenaDB);
 
@@ -89,6 +89,7 @@ namespace TrabajoPracticoPAV1.AD
                 cn.Close();
             }
 
+
             return tabla;
         }
 
@@ -96,7 +97,7 @@ namespace TrabajoPracticoPAV1.AD
         {
             DataTable tabla = new DataTable();
             string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
-            string query = "SELECT S.Id, S.Nombre, COUNT(*) FROM Empleados E JOIN Sucursales S ON (S.Id = E.IdSucursal) GROUP BY S.Id, S.Nombre";
+            string query = "SELECT S.Id, S.Nombre as 'Sucursal', COUNT(*) as 'CantEmpleados' FROM Empleados E JOIN Sucursales S ON (S.Id = E.IdSucursal) GROUP BY S.Id, S.Nombre";
 
             SqlConnection cn = new SqlConnection(CadenaDB);
 
