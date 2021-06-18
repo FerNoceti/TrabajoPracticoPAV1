@@ -36,6 +36,9 @@ namespace TrabajoPracticoPAV1
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perrosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosObtenidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.empleadosPorSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +59,8 @@ namespace TrabajoPracticoPAV1
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultasToolStripMenuItem,
             this.perrosRegistradosToolStripMenuItem,
-            this.ingresosObtenidosToolStripMenuItem});
+            this.ingresosObtenidosToolStripMenuItem,
+            this.empleadosPorSucursalToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 26);
@@ -84,6 +88,30 @@ namespace TrabajoPracticoPAV1
             this.ingresosObtenidosToolStripMenuItem.Text = "Ingresos Obtenidos";
             this.ingresosObtenidosToolStripMenuItem.Click += new System.EventHandler(this.ingresosObtenidosToolStripMenuItem_Click);
             // 
+            // empleadosPorSucursalToolStripMenuItem
+            // 
+            this.empleadosPorSucursalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.porSucursalToolStripMenuItem,
+            this.porEdadToolStripMenuItem});
+            this.empleadosPorSucursalToolStripMenuItem.Name = "empleadosPorSucursalToolStripMenuItem";
+            this.empleadosPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(194, 22);
+            this.empleadosPorSucursalToolStripMenuItem.Text = "Empleados Por Sucursal";
+            this.empleadosPorSucursalToolStripMenuItem.Click += new System.EventHandler(this.empleadosPorSucursalToolStripMenuItem_Click);
+            // 
+            // porSucursalToolStripMenuItem
+            // 
+            this.porSucursalToolStripMenuItem.Name = "porSucursalToolStripMenuItem";
+            this.porSucursalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porSucursalToolStripMenuItem.Text = "Por Sucursal";
+            this.porSucursalToolStripMenuItem.Click += new System.EventHandler(this.porSucursalToolStripMenuItem_Click);
+            // 
+            // porEdadToolStripMenuItem
+            // 
+            this.porEdadToolStripMenuItem.Name = "porEdadToolStripMenuItem";
+            this.porEdadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porEdadToolStripMenuItem.Text = "Por Edad";
+            this.porEdadToolStripMenuItem.Click += new System.EventHandler(this.porEdadToolStripMenuItem_Click);
+            // 
             // SubMenuEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,5 +137,8 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem perrosRegistradosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresosObtenidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem empleadosPorSucursalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem porSucursalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem porEdadToolStripMenuItem;
     }
 }

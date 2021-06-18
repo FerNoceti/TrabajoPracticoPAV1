@@ -234,6 +234,18 @@
     <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.Designer.cs">
       <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.Designer.cs">
+      <DependentUpon>Estadisticas_Empleados_Edad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.Designer.cs">
+      <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -365,7 +377,15 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas.resx">
       <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.resx">
+      <DependentUpon>Estadisticas_Empleados_Edad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.resx">
+      <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoSucursal.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresos.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportPerros.rdlc" />
     <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
