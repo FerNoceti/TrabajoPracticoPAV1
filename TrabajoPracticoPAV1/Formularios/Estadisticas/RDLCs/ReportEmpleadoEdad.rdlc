@@ -19,11 +19,11 @@
       <Fields>
         <Field Name="Edad">
           <DataField>Edad</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="CantEmpleados">
           <DataField>CantEmpleados</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -71,7 +71,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!CantEmpleados.Value)</Y>
+                        <Y>=Sum(Fields!CantEmpleados.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -386,7 +386,7 @@
             </ChartNoDataMessage>
             <DataSetName>DSEmpleadosEdad</DataSetName>
             <Top>1.13453cm</Top>
-            <Left>5.26203cm</Left>
+            <Left>4.57411cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
             <Style>

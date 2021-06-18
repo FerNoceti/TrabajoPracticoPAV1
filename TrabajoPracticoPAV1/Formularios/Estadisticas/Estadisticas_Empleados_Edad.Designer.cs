@@ -35,7 +35,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
             // rpEmpleadoEdad
             // 
             this.rpEmpleadoEdad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rpEmpleadoEdad.LocalReport.ReportEmbeddedResource = "TrabajoPracticoPAV1.Formularios.Estadisticas.RDLCs.ReportEmpleadoMatricula.rdlc";
+            this.rpEmpleadoEdad.LocalReport.ReportEmbeddedResource = "TrabajoPracticoPAV1.Formularios.Estadisticas.RDLCs.ReportEmpleadoEdad.rdlc";
             this.rpEmpleadoEdad.Location = new System.Drawing.Point(0, 0);
             this.rpEmpleadoEdad.Name = "rpEmpleadoEdad";
             this.rpEmpleadoEdad.ServerReport.BearerToken = null;

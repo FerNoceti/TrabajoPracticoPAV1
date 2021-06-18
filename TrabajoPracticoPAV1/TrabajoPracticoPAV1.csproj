@@ -383,6 +383,7 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.resx">
       <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoSucursal.rdlc" />

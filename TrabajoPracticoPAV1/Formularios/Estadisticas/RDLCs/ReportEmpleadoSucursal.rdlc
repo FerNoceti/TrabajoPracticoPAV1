@@ -23,7 +23,7 @@
         </Field>
         <Field Name="CantEmpleados">
           <DataField>CantEmpleados</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
