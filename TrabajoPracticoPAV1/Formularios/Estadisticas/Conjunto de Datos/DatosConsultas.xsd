@@ -1,16 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
-<xs:schema id="DatosConsultas" 
-                  targetNamespace="http://tempuri.org/DatosConsultas.xsd"
-                  elementFormDefault="qualified"
-                  attributeFormDefault="qualified"
-                  xmlns="http://tempuri.org/DatosConsultas.xsd"
-                  xmlns:mstns="http://tempuri.org/DatosConsultas.xsd"
-                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
-                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
-    <xs:element name="DatosConsultas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true">
-        <xs:complexType>
-            <xs:choice minOccurs="0" maxOccurs="unbounded"></xs:choice>
-        </xs:complexType>
-    </xs:element>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatosConsultas" targetNamespace="http://tempuri.org/DatosConsultas.xsd" xmlns:mstns="http://tempuri.org/DatosConsultas.xsd" xmlns="http://tempuri.org/DatosConsultas.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatosConsultas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosConsultas" msprop:Generator_UserDSName="DatosConsultas">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConsultaSucursal" msprop:Generator_TableClassName="ConsultaSucursalDataTable" msprop:Generator_TableVarName="tableConsultaSucursal" msprop:Generator_TablePropName="ConsultaSucursal" msprop:Generator_RowDeletingName="ConsultaSucursalRowDeleting" msprop:Generator_RowChangingName="ConsultaSucursalRowChanging" msprop:Generator_RowEvHandlerName="ConsultaSucursalRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultaSucursalRowDeleted" msprop:Generator_UserTableName="ConsultaSucursal" msprop:Generator_RowChangedName="ConsultaSucursalRowChanged" msprop:Generator_RowEvArgName="ConsultaSucursalRowChangeEvent" msprop:Generator_RowClassName="ConsultaSucursalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sucursal" msprop:Generator_ColumnVarNameInTable="columnSucursal" msprop:Generator_ColumnPropNameInRow="Sucursal" msprop:Generator_ColumnPropNameInTable="SucursalColumn" msprop:Generator_UserColumnName="Sucursal" type="xs:string" minOccurs="0" />
+              <xs:element name="CantConsultas" msprop:Generator_ColumnVarNameInTable="columnCantConsultas" msprop:Generator_ColumnPropNameInRow="CantConsultas" msprop:Generator_ColumnPropNameInTable="CantConsultasColumn" msprop:Generator_UserColumnName="CantConsultas" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

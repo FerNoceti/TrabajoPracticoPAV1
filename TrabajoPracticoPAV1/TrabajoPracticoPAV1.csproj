@@ -207,6 +207,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosConsultas.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosEmpleados.cs">
+      <DependentUpon>DatosEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosEmpleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosEmpleados.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.cs">
+      <DependentUpon>DatosIngresos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -433,6 +444,17 @@
     </None>
     <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.xss">
       <DependentUpon>DatosConsultas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosEmpleados.xsc">
+      <DependentUpon>DatosEmpleados.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosEmpleados.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosEmpleados.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosEmpleados.xss">
+      <DependentUpon>DatosEmpleados.xsd</DependentUpon>
     </None>
     <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosIngresos.xsc">
       <DependentUpon>DatosIngresos.xsd</DependentUpon>
