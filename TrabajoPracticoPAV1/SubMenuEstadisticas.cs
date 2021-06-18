@@ -35,5 +35,20 @@ namespace TrabajoPracticoPAV1
             Estadisticas_Ingresos ingresos = new Estadisticas_Ingresos();
             ingresos.ShowDialog();
         }
+
+        private void empleadosPorSucursalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void porEdadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Estadisticas_Empleados_Edad()).ShowDialog();
+        }
+
+        private void porSucursalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            (new Estadisticas_Empleados_Sucursal()).ShowDialog();
+        }
     }
 }

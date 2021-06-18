@@ -20,21 +20,21 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DatosPerros")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DatosEmpleados")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DatosPerros : global::System.Data.DataSet {
+    public partial class DatosEmpleados : global::System.Data.DataSet {
         
-        private PerroSexoDataTable tablePerroSexo;
+        private EmpleadosMatriculaDataTable tableEmpleadosMatricula;
         
-        private PerroAlturaDataTable tablePerroAltura;
+        private EmpleadoSucursalDataTable tableEmpleadoSucursal;
         
-        private PerroRazaDataTable tablePerroRaza;
+        private EmpleadoEdadDataTable tableEmpleadoEdad;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DatosPerros() {
+        public DatosEmpleados() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -45,7 +45,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DatosPerros(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DatosEmpleados(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -58,14 +58,14 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["PerroSexo"] != null)) {
-                    base.Tables.Add(new PerroSexoDataTable(ds.Tables["PerroSexo"]));
+                if ((ds.Tables["EmpleadosMatricula"] != null)) {
+                    base.Tables.Add(new EmpleadosMatriculaDataTable(ds.Tables["EmpleadosMatricula"]));
                 }
-                if ((ds.Tables["PerroAltura"] != null)) {
-                    base.Tables.Add(new PerroAlturaDataTable(ds.Tables["PerroAltura"]));
+                if ((ds.Tables["EmpleadoSucursal"] != null)) {
+                    base.Tables.Add(new EmpleadoSucursalDataTable(ds.Tables["EmpleadoSucursal"]));
                 }
-                if ((ds.Tables["PerroRaza"] != null)) {
-                    base.Tables.Add(new PerroRazaDataTable(ds.Tables["PerroRaza"]));
+                if ((ds.Tables["EmpleadoEdad"] != null)) {
+                    base.Tables.Add(new EmpleadoEdadDataTable(ds.Tables["EmpleadoEdad"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -89,9 +89,9 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PerroSexoDataTable PerroSexo {
+        public EmpleadosMatriculaDataTable EmpleadosMatricula {
             get {
-                return this.tablePerroSexo;
+                return this.tableEmpleadosMatricula;
             }
         }
         
@@ -99,9 +99,9 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PerroAlturaDataTable PerroAltura {
+        public EmpleadoSucursalDataTable EmpleadoSucursal {
             get {
-                return this.tablePerroAltura;
+                return this.tableEmpleadoSucursal;
             }
         }
         
@@ -109,9 +109,9 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public PerroRazaDataTable PerroRaza {
+        public EmpleadoEdadDataTable EmpleadoEdad {
             get {
-                return this.tablePerroRaza;
+                return this.tableEmpleadoEdad;
             }
         }
         
@@ -157,7 +157,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DatosPerros cln = ((DatosPerros)(base.Clone()));
+            DatosEmpleados cln = ((DatosEmpleados)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -182,14 +182,14 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["PerroSexo"] != null)) {
-                    base.Tables.Add(new PerroSexoDataTable(ds.Tables["PerroSexo"]));
+                if ((ds.Tables["EmpleadosMatricula"] != null)) {
+                    base.Tables.Add(new EmpleadosMatriculaDataTable(ds.Tables["EmpleadosMatricula"]));
                 }
-                if ((ds.Tables["PerroAltura"] != null)) {
-                    base.Tables.Add(new PerroAlturaDataTable(ds.Tables["PerroAltura"]));
+                if ((ds.Tables["EmpleadoSucursal"] != null)) {
+                    base.Tables.Add(new EmpleadoSucursalDataTable(ds.Tables["EmpleadoSucursal"]));
                 }
-                if ((ds.Tables["PerroRaza"] != null)) {
-                    base.Tables.Add(new PerroRazaDataTable(ds.Tables["PerroRaza"]));
+                if ((ds.Tables["EmpleadoEdad"] != null)) {
+                    base.Tables.Add(new EmpleadoEdadDataTable(ds.Tables["EmpleadoEdad"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -224,22 +224,22 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tablePerroSexo = ((PerroSexoDataTable)(base.Tables["PerroSexo"]));
+            this.tableEmpleadosMatricula = ((EmpleadosMatriculaDataTable)(base.Tables["EmpleadosMatricula"]));
             if ((initTable == true)) {
-                if ((this.tablePerroSexo != null)) {
-                    this.tablePerroSexo.InitVars();
+                if ((this.tableEmpleadosMatricula != null)) {
+                    this.tableEmpleadosMatricula.InitVars();
                 }
             }
-            this.tablePerroAltura = ((PerroAlturaDataTable)(base.Tables["PerroAltura"]));
+            this.tableEmpleadoSucursal = ((EmpleadoSucursalDataTable)(base.Tables["EmpleadoSucursal"]));
             if ((initTable == true)) {
-                if ((this.tablePerroAltura != null)) {
-                    this.tablePerroAltura.InitVars();
+                if ((this.tableEmpleadoSucursal != null)) {
+                    this.tableEmpleadoSucursal.InitVars();
                 }
             }
-            this.tablePerroRaza = ((PerroRazaDataTable)(base.Tables["PerroRaza"]));
+            this.tableEmpleadoEdad = ((EmpleadoEdadDataTable)(base.Tables["EmpleadoEdad"]));
             if ((initTable == true)) {
-                if ((this.tablePerroRaza != null)) {
-                    this.tablePerroRaza.InitVars();
+                if ((this.tableEmpleadoEdad != null)) {
+                    this.tableEmpleadoEdad.InitVars();
                 }
             }
         }
@@ -247,34 +247,34 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DatosPerros";
+            this.DataSetName = "DatosEmpleados";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DatosPerros.xsd";
+            this.Namespace = "http://tempuri.org/DatosEmpleados.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tablePerroSexo = new PerroSexoDataTable();
-            base.Tables.Add(this.tablePerroSexo);
-            this.tablePerroAltura = new PerroAlturaDataTable();
-            base.Tables.Add(this.tablePerroAltura);
-            this.tablePerroRaza = new PerroRazaDataTable();
-            base.Tables.Add(this.tablePerroRaza);
+            this.tableEmpleadosMatricula = new EmpleadosMatriculaDataTable();
+            base.Tables.Add(this.tableEmpleadosMatricula);
+            this.tableEmpleadoSucursal = new EmpleadoSucursalDataTable();
+            base.Tables.Add(this.tableEmpleadoSucursal);
+            this.tableEmpleadoEdad = new EmpleadoEdadDataTable();
+            base.Tables.Add(this.tableEmpleadoEdad);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializePerroSexo() {
+        private bool ShouldSerializeEmpleadosMatricula() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializePerroAltura() {
+        private bool ShouldSerializeEmpleadoSucursal() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializePerroRaza() {
+        private bool ShouldSerializeEmpleadoEdad() {
             return false;
         }
         
@@ -289,7 +289,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DatosPerros ds = new DatosPerros();
+            DatosEmpleados ds = new DatosEmpleados();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -334,29 +334,29 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void PerroSexoRowChangeEventHandler(object sender, PerroSexoRowChangeEvent e);
+        public delegate void EmpleadosMatriculaRowChangeEventHandler(object sender, EmpleadosMatriculaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void PerroAlturaRowChangeEventHandler(object sender, PerroAlturaRowChangeEvent e);
+        public delegate void EmpleadoSucursalRowChangeEventHandler(object sender, EmpleadoSucursalRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void PerroRazaRowChangeEventHandler(object sender, PerroRazaRowChangeEvent e);
+        public delegate void EmpleadoEdadRowChangeEventHandler(object sender, EmpleadoEdadRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PerroSexoDataTable : global::System.Data.TypedTableBase<PerroSexoRow> {
+        public partial class EmpleadosMatriculaDataTable : global::System.Data.TypedTableBase<EmpleadosMatriculaRow> {
             
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnMatricula;
             
-            private global::System.Data.DataColumn columnSexo;
+            private global::System.Data.DataColumn columnCantEmpleados;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoDataTable() {
-                this.TableName = "PerroSexo";
+            public EmpleadosMatriculaDataTable() {
+                this.TableName = "EmpleadosMatricula";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -364,7 +364,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroSexoDataTable(global::System.Data.DataTable table) {
+            internal EmpleadosMatriculaDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -381,24 +381,24 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected PerroSexoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected EmpleadosMatriculaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
+            public global::System.Data.DataColumn MatriculaColumn {
                 get {
-                    return this.columnNombre;
+                    return this.columnMatricula;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn SexoColumn {
+            public global::System.Data.DataColumn CantEmpleadosColumn {
                 get {
-                    return this.columnSexo;
+                    return this.columnCantEmpleados;
                 }
             }
             
@@ -413,46 +413,46 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoRow this[int index] {
+            public EmpleadosMatriculaRow this[int index] {
                 get {
-                    return ((PerroSexoRow)(this.Rows[index]));
+                    return ((EmpleadosMatriculaRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroSexoRowChangeEventHandler PerroSexoRowChanging;
+            public event EmpleadosMatriculaRowChangeEventHandler EmpleadosMatriculaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroSexoRowChangeEventHandler PerroSexoRowChanged;
+            public event EmpleadosMatriculaRowChangeEventHandler EmpleadosMatriculaRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroSexoRowChangeEventHandler PerroSexoRowDeleting;
+            public event EmpleadosMatriculaRowChangeEventHandler EmpleadosMatriculaRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroSexoRowChangeEventHandler PerroSexoRowDeleted;
+            public event EmpleadosMatriculaRowChangeEventHandler EmpleadosMatriculaRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddPerroSexoRow(PerroSexoRow row) {
+            public void AddEmpleadosMatriculaRow(EmpleadosMatriculaRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoRow AddPerroSexoRow(string Nombre, string Sexo) {
-                PerroSexoRow rowPerroSexoRow = ((PerroSexoRow)(this.NewRow()));
+            public EmpleadosMatriculaRow AddEmpleadosMatriculaRow(string Matricula, int CantEmpleados) {
+                EmpleadosMatriculaRow rowEmpleadosMatriculaRow = ((EmpleadosMatriculaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Nombre,
-                        Sexo};
-                rowPerroSexoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPerroSexoRow);
-                return rowPerroSexoRow;
+                        Matricula,
+                        CantEmpleados};
+                rowEmpleadosMatriculaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowEmpleadosMatriculaRow);
+                return rowEmpleadosMatriculaRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PerroSexoDataTable cln = ((PerroSexoDataTable)(base.Clone()));
+                EmpleadosMatriculaDataTable cln = ((EmpleadosMatriculaDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -460,49 +460,49 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PerroSexoDataTable();
+                return new EmpleadosMatriculaDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnSexo = base.Columns["Sexo"];
+                this.columnMatricula = base.Columns["Matricula"];
+                this.columnCantEmpleados = base.Columns["CantEmpleados"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnSexo = new global::System.Data.DataColumn("Sexo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSexo);
+                this.columnMatricula = new global::System.Data.DataColumn("Matricula", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMatricula);
+                this.columnCantEmpleados = new global::System.Data.DataColumn("CantEmpleados", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantEmpleados);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoRow NewPerroSexoRow() {
-                return ((PerroSexoRow)(this.NewRow()));
+            public EmpleadosMatriculaRow NewEmpleadosMatriculaRow() {
+                return ((EmpleadosMatriculaRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PerroSexoRow(builder);
+                return new EmpleadosMatriculaRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PerroSexoRow);
+                return typeof(EmpleadosMatriculaRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PerroSexoRowChanged != null)) {
-                    this.PerroSexoRowChanged(this, new PerroSexoRowChangeEvent(((PerroSexoRow)(e.Row)), e.Action));
+                if ((this.EmpleadosMatriculaRowChanged != null)) {
+                    this.EmpleadosMatriculaRowChanged(this, new EmpleadosMatriculaRowChangeEvent(((EmpleadosMatriculaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -510,8 +510,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PerroSexoRowChanging != null)) {
-                    this.PerroSexoRowChanging(this, new PerroSexoRowChangeEvent(((PerroSexoRow)(e.Row)), e.Action));
+                if ((this.EmpleadosMatriculaRowChanging != null)) {
+                    this.EmpleadosMatriculaRowChanging(this, new EmpleadosMatriculaRowChangeEvent(((EmpleadosMatriculaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -519,8 +519,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PerroSexoRowDeleted != null)) {
-                    this.PerroSexoRowDeleted(this, new PerroSexoRowChangeEvent(((PerroSexoRow)(e.Row)), e.Action));
+                if ((this.EmpleadosMatriculaRowDeleted != null)) {
+                    this.EmpleadosMatriculaRowDeleted(this, new EmpleadosMatriculaRowChangeEvent(((EmpleadosMatriculaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -528,14 +528,14 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PerroSexoRowDeleting != null)) {
-                    this.PerroSexoRowDeleting(this, new PerroSexoRowChangeEvent(((PerroSexoRow)(e.Row)), e.Action));
+                if ((this.EmpleadosMatriculaRowDeleting != null)) {
+                    this.EmpleadosMatriculaRowDeleting(this, new EmpleadosMatriculaRowChangeEvent(((EmpleadosMatriculaRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovePerroSexoRow(PerroSexoRow row) {
+            public void RemoveEmpleadosMatriculaRow(EmpleadosMatriculaRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -544,7 +544,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatosPerros ds = new DatosPerros();
+                DatosEmpleados ds = new DatosEmpleados();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -562,7 +562,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PerroSexoDataTable";
+                attribute2.FixedValue = "EmpleadosMatriculaDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -608,18 +608,16 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PerroAlturaDataTable : global::System.Data.TypedTableBase<PerroAlturaRow> {
+        public partial class EmpleadoSucursalDataTable : global::System.Data.TypedTableBase<EmpleadoSucursalRow> {
             
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnSucursal;
             
-            private global::System.Data.DataColumn columnAlturaMax;
-            
-            private global::System.Data.DataColumn columnAlturaMin;
+            private global::System.Data.DataColumn columnCantEmpleados;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaDataTable() {
-                this.TableName = "PerroAltura";
+            public EmpleadoSucursalDataTable() {
+                this.TableName = "EmpleadoSucursal";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -627,7 +625,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroAlturaDataTable(global::System.Data.DataTable table) {
+            internal EmpleadoSucursalDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -644,32 +642,24 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected PerroAlturaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected EmpleadoSucursalDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
+            public global::System.Data.DataColumn SucursalColumn {
                 get {
-                    return this.columnNombre;
+                    return this.columnSucursal;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AlturaMaxColumn {
+            public global::System.Data.DataColumn CantEmpleadosColumn {
                 get {
-                    return this.columnAlturaMax;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn AlturaMinColumn {
-                get {
-                    return this.columnAlturaMin;
+                    return this.columnCantEmpleados;
                 }
             }
             
@@ -684,47 +674,46 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaRow this[int index] {
+            public EmpleadoSucursalRow this[int index] {
                 get {
-                    return ((PerroAlturaRow)(this.Rows[index]));
+                    return ((EmpleadoSucursalRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroAlturaRowChangeEventHandler PerroAlturaRowChanging;
+            public event EmpleadoSucursalRowChangeEventHandler EmpleadoSucursalRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroAlturaRowChangeEventHandler PerroAlturaRowChanged;
+            public event EmpleadoSucursalRowChangeEventHandler EmpleadoSucursalRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroAlturaRowChangeEventHandler PerroAlturaRowDeleting;
+            public event EmpleadoSucursalRowChangeEventHandler EmpleadoSucursalRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroAlturaRowChangeEventHandler PerroAlturaRowDeleted;
+            public event EmpleadoSucursalRowChangeEventHandler EmpleadoSucursalRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddPerroAlturaRow(PerroAlturaRow row) {
+            public void AddEmpleadoSucursalRow(EmpleadoSucursalRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaRow AddPerroAlturaRow(string Nombre, string AlturaMax, string AlturaMin) {
-                PerroAlturaRow rowPerroAlturaRow = ((PerroAlturaRow)(this.NewRow()));
+            public EmpleadoSucursalRow AddEmpleadoSucursalRow(string Sucursal, int CantEmpleados) {
+                EmpleadoSucursalRow rowEmpleadoSucursalRow = ((EmpleadoSucursalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Nombre,
-                        AlturaMax,
-                        AlturaMin};
-                rowPerroAlturaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPerroAlturaRow);
-                return rowPerroAlturaRow;
+                        Sucursal,
+                        CantEmpleados};
+                rowEmpleadoSucursalRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowEmpleadoSucursalRow);
+                return rowEmpleadoSucursalRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PerroAlturaDataTable cln = ((PerroAlturaDataTable)(base.Clone()));
+                EmpleadoSucursalDataTable cln = ((EmpleadoSucursalDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -732,52 +721,49 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PerroAlturaDataTable();
+                return new EmpleadoSucursalDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnAlturaMax = base.Columns["AlturaMax"];
-                this.columnAlturaMin = base.Columns["AlturaMin"];
+                this.columnSucursal = base.Columns["Sucursal"];
+                this.columnCantEmpleados = base.Columns["CantEmpleados"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnAlturaMax = new global::System.Data.DataColumn("AlturaMax", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAlturaMax);
-                this.columnAlturaMin = new global::System.Data.DataColumn("AlturaMin", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAlturaMin);
+                this.columnSucursal = new global::System.Data.DataColumn("Sucursal", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSucursal);
+                this.columnCantEmpleados = new global::System.Data.DataColumn("CantEmpleados", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantEmpleados);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaRow NewPerroAlturaRow() {
-                return ((PerroAlturaRow)(this.NewRow()));
+            public EmpleadoSucursalRow NewEmpleadoSucursalRow() {
+                return ((EmpleadoSucursalRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PerroAlturaRow(builder);
+                return new EmpleadoSucursalRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PerroAlturaRow);
+                return typeof(EmpleadoSucursalRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PerroAlturaRowChanged != null)) {
-                    this.PerroAlturaRowChanged(this, new PerroAlturaRowChangeEvent(((PerroAlturaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoSucursalRowChanged != null)) {
+                    this.EmpleadoSucursalRowChanged(this, new EmpleadoSucursalRowChangeEvent(((EmpleadoSucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -785,8 +771,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PerroAlturaRowChanging != null)) {
-                    this.PerroAlturaRowChanging(this, new PerroAlturaRowChangeEvent(((PerroAlturaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoSucursalRowChanging != null)) {
+                    this.EmpleadoSucursalRowChanging(this, new EmpleadoSucursalRowChangeEvent(((EmpleadoSucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -794,8 +780,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PerroAlturaRowDeleted != null)) {
-                    this.PerroAlturaRowDeleted(this, new PerroAlturaRowChangeEvent(((PerroAlturaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoSucursalRowDeleted != null)) {
+                    this.EmpleadoSucursalRowDeleted(this, new EmpleadoSucursalRowChangeEvent(((EmpleadoSucursalRow)(e.Row)), e.Action));
                 }
             }
             
@@ -803,14 +789,14 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PerroAlturaRowDeleting != null)) {
-                    this.PerroAlturaRowDeleting(this, new PerroAlturaRowChangeEvent(((PerroAlturaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoSucursalRowDeleting != null)) {
+                    this.EmpleadoSucursalRowDeleting(this, new EmpleadoSucursalRowChangeEvent(((EmpleadoSucursalRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovePerroAlturaRow(PerroAlturaRow row) {
+            public void RemoveEmpleadoSucursalRow(EmpleadoSucursalRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -819,7 +805,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatosPerros ds = new DatosPerros();
+                DatosEmpleados ds = new DatosEmpleados();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -837,7 +823,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PerroAlturaDataTable";
+                attribute2.FixedValue = "EmpleadoSucursalDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -883,16 +869,16 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class PerroRazaDataTable : global::System.Data.TypedTableBase<PerroRazaRow> {
+        public partial class EmpleadoEdadDataTable : global::System.Data.TypedTableBase<EmpleadoEdadRow> {
             
-            private global::System.Data.DataColumn columnNombre;
+            private global::System.Data.DataColumn columnEdad;
             
-            private global::System.Data.DataColumn columnRaza;
+            private global::System.Data.DataColumn columnCantEmpleados;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaDataTable() {
-                this.TableName = "PerroRaza";
+            public EmpleadoEdadDataTable() {
+                this.TableName = "EmpleadoEdad";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -900,7 +886,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroRazaDataTable(global::System.Data.DataTable table) {
+            internal EmpleadoEdadDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -917,24 +903,24 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected PerroRazaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected EmpleadoEdadDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn NombreColumn {
+            public global::System.Data.DataColumn EdadColumn {
                 get {
-                    return this.columnNombre;
+                    return this.columnEdad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn RazaColumn {
+            public global::System.Data.DataColumn CantEmpleadosColumn {
                 get {
-                    return this.columnRaza;
+                    return this.columnCantEmpleados;
                 }
             }
             
@@ -949,46 +935,46 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaRow this[int index] {
+            public EmpleadoEdadRow this[int index] {
                 get {
-                    return ((PerroRazaRow)(this.Rows[index]));
+                    return ((EmpleadoEdadRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroRazaRowChangeEventHandler PerroRazaRowChanging;
+            public event EmpleadoEdadRowChangeEventHandler EmpleadoEdadRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroRazaRowChangeEventHandler PerroRazaRowChanged;
+            public event EmpleadoEdadRowChangeEventHandler EmpleadoEdadRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroRazaRowChangeEventHandler PerroRazaRowDeleting;
+            public event EmpleadoEdadRowChangeEventHandler EmpleadoEdadRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event PerroRazaRowChangeEventHandler PerroRazaRowDeleted;
+            public event EmpleadoEdadRowChangeEventHandler EmpleadoEdadRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddPerroRazaRow(PerroRazaRow row) {
+            public void AddEmpleadoEdadRow(EmpleadoEdadRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaRow AddPerroRazaRow(string Nombre, string Raza) {
-                PerroRazaRow rowPerroRazaRow = ((PerroRazaRow)(this.NewRow()));
+            public EmpleadoEdadRow AddEmpleadoEdadRow(int Edad, int CantEmpleados) {
+                EmpleadoEdadRow rowEmpleadoEdadRow = ((EmpleadoEdadRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Nombre,
-                        Raza};
-                rowPerroRazaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowPerroRazaRow);
-                return rowPerroRazaRow;
+                        Edad,
+                        CantEmpleados};
+                rowEmpleadoEdadRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowEmpleadoEdadRow);
+                return rowEmpleadoEdadRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                PerroRazaDataTable cln = ((PerroRazaDataTable)(base.Clone()));
+                EmpleadoEdadDataTable cln = ((EmpleadoEdadDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -996,49 +982,49 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new PerroRazaDataTable();
+                return new EmpleadoEdadDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnNombre = base.Columns["Nombre"];
-                this.columnRaza = base.Columns["Raza"];
+                this.columnEdad = base.Columns["Edad"];
+                this.columnCantEmpleados = base.Columns["CantEmpleados"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre);
-                this.columnRaza = new global::System.Data.DataColumn("Raza", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRaza);
+                this.columnEdad = new global::System.Data.DataColumn("Edad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEdad);
+                this.columnCantEmpleados = new global::System.Data.DataColumn("CantEmpleados", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantEmpleados);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaRow NewPerroRazaRow() {
-                return ((PerroRazaRow)(this.NewRow()));
+            public EmpleadoEdadRow NewEmpleadoEdadRow() {
+                return ((EmpleadoEdadRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new PerroRazaRow(builder);
+                return new EmpleadoEdadRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(PerroRazaRow);
+                return typeof(EmpleadoEdadRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.PerroRazaRowChanged != null)) {
-                    this.PerroRazaRowChanged(this, new PerroRazaRowChangeEvent(((PerroRazaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoEdadRowChanged != null)) {
+                    this.EmpleadoEdadRowChanged(this, new EmpleadoEdadRowChangeEvent(((EmpleadoEdadRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1046,8 +1032,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.PerroRazaRowChanging != null)) {
-                    this.PerroRazaRowChanging(this, new PerroRazaRowChangeEvent(((PerroRazaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoEdadRowChanging != null)) {
+                    this.EmpleadoEdadRowChanging(this, new EmpleadoEdadRowChangeEvent(((EmpleadoEdadRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1055,8 +1041,8 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.PerroRazaRowDeleted != null)) {
-                    this.PerroRazaRowDeleted(this, new PerroRazaRowChangeEvent(((PerroRazaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoEdadRowDeleted != null)) {
+                    this.EmpleadoEdadRowDeleted(this, new EmpleadoEdadRowChangeEvent(((EmpleadoEdadRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1064,14 +1050,14 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.PerroRazaRowDeleting != null)) {
-                    this.PerroRazaRowDeleting(this, new PerroRazaRowChangeEvent(((PerroRazaRow)(e.Row)), e.Action));
+                if ((this.EmpleadoEdadRowDeleting != null)) {
+                    this.EmpleadoEdadRowDeleting(this, new EmpleadoEdadRowChangeEvent(((EmpleadoEdadRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemovePerroRazaRow(PerroRazaRow row) {
+            public void RemoveEmpleadoEdadRow(EmpleadoEdadRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1080,7 +1066,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatosPerros ds = new DatosPerros();
+                DatosEmpleados ds = new DatosEmpleados();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1098,7 +1084,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "PerroRazaDataTable";
+                attribute2.FixedValue = "EmpleadoEdadDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1142,241 +1128,214 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PerroSexoRow : global::System.Data.DataRow {
+        public partial class EmpleadosMatriculaRow : global::System.Data.DataRow {
             
-            private PerroSexoDataTable tablePerroSexo;
+            private EmpleadosMatriculaDataTable tableEmpleadosMatricula;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroSexoRow(global::System.Data.DataRowBuilder rb) : 
+            internal EmpleadosMatriculaRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePerroSexo = ((PerroSexoDataTable)(this.Table));
+                this.tableEmpleadosMatricula = ((EmpleadosMatriculaDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre {
+            public string Matricula {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroSexo.NombreColumn]));
+                        return ((string)(this[this.tableEmpleadosMatricula.MatriculaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'PerroSexo\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Matricula\' de la tabla \'EmpleadosMatricula\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePerroSexo.NombreColumn] = value;
+                    this[this.tableEmpleadosMatricula.MatriculaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Sexo {
+            public int CantEmpleados {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroSexo.SexoColumn]));
+                        return ((int)(this[this.tableEmpleadosMatricula.CantEmpleadosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Sexo\' de la tabla \'PerroSexo\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantEmpleados\' de la tabla \'EmpleadosMatricula\' es DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tablePerroSexo.SexoColumn] = value;
+                    this[this.tableEmpleadosMatricula.CantEmpleadosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tablePerroSexo.NombreColumn);
+            public bool IsMatriculaNull() {
+                return this.IsNull(this.tableEmpleadosMatricula.MatriculaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tablePerroSexo.NombreColumn] = global::System.Convert.DBNull;
+            public void SetMatriculaNull() {
+                this[this.tableEmpleadosMatricula.MatriculaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsSexoNull() {
-                return this.IsNull(this.tablePerroSexo.SexoColumn);
+            public bool IsCantEmpleadosNull() {
+                return this.IsNull(this.tableEmpleadosMatricula.CantEmpleadosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetSexoNull() {
-                this[this.tablePerroSexo.SexoColumn] = global::System.Convert.DBNull;
+            public void SetCantEmpleadosNull() {
+                this[this.tableEmpleadosMatricula.CantEmpleadosColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PerroAlturaRow : global::System.Data.DataRow {
+        public partial class EmpleadoSucursalRow : global::System.Data.DataRow {
             
-            private PerroAlturaDataTable tablePerroAltura;
+            private EmpleadoSucursalDataTable tableEmpleadoSucursal;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroAlturaRow(global::System.Data.DataRowBuilder rb) : 
+            internal EmpleadoSucursalRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePerroAltura = ((PerroAlturaDataTable)(this.Table));
+                this.tableEmpleadoSucursal = ((EmpleadoSucursalDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre {
+            public string Sucursal {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroAltura.NombreColumn]));
+                        return ((string)(this[this.tableEmpleadoSucursal.SucursalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'PerroAltura\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Sucursal\' de la tabla \'EmpleadoSucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePerroAltura.NombreColumn] = value;
+                    this[this.tableEmpleadoSucursal.SucursalColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string AlturaMax {
+            public int CantEmpleados {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroAltura.AlturaMaxColumn]));
+                        return ((int)(this[this.tableEmpleadoSucursal.CantEmpleadosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'AlturaMax\' de la tabla \'PerroAltura\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantEmpleados\' de la tabla \'EmpleadoSucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePerroAltura.AlturaMaxColumn] = value;
+                    this[this.tableEmpleadoSucursal.CantEmpleadosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string AlturaMin {
-                get {
-                    try {
-                        return ((string)(this[this.tablePerroAltura.AlturaMinColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'AlturaMin\' de la tabla \'PerroAltura\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tablePerroAltura.AlturaMinColumn] = value;
-                }
+            public bool IsSucursalNull() {
+                return this.IsNull(this.tableEmpleadoSucursal.SucursalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tablePerroAltura.NombreColumn);
+            public void SetSucursalNull() {
+                this[this.tableEmpleadoSucursal.SucursalColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tablePerroAltura.NombreColumn] = global::System.Convert.DBNull;
+            public bool IsCantEmpleadosNull() {
+                return this.IsNull(this.tableEmpleadoSucursal.CantEmpleadosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsAlturaMaxNull() {
-                return this.IsNull(this.tablePerroAltura.AlturaMaxColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetAlturaMaxNull() {
-                this[this.tablePerroAltura.AlturaMaxColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsAlturaMinNull() {
-                return this.IsNull(this.tablePerroAltura.AlturaMinColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetAlturaMinNull() {
-                this[this.tablePerroAltura.AlturaMinColumn] = global::System.Convert.DBNull;
+            public void SetCantEmpleadosNull() {
+                this[this.tableEmpleadoSucursal.CantEmpleadosColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class PerroRazaRow : global::System.Data.DataRow {
+        public partial class EmpleadoEdadRow : global::System.Data.DataRow {
             
-            private PerroRazaDataTable tablePerroRaza;
+            private EmpleadoEdadDataTable tableEmpleadoEdad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal PerroRazaRow(global::System.Data.DataRowBuilder rb) : 
+            internal EmpleadoEdadRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tablePerroRaza = ((PerroRazaDataTable)(this.Table));
+                this.tableEmpleadoEdad = ((EmpleadoEdadDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre {
+            public int Edad {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroRaza.NombreColumn]));
+                        return ((int)(this[this.tableEmpleadoEdad.EdadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'PerroRaza\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Edad\' de la tabla \'EmpleadoEdad\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePerroRaza.NombreColumn] = value;
+                    this[this.tableEmpleadoEdad.EdadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Raza {
+            public int CantEmpleados {
                 get {
                     try {
-                        return ((string)(this[this.tablePerroRaza.RazaColumn]));
+                        return ((int)(this[this.tableEmpleadoEdad.CantEmpleadosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Raza\' de la tabla \'PerroRaza\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantEmpleados\' de la tabla \'EmpleadoEdad\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePerroRaza.RazaColumn] = value;
+                    this[this.tableEmpleadoEdad.CantEmpleadosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombreNull() {
-                return this.IsNull(this.tablePerroRaza.NombreColumn);
+            public bool IsEdadNull() {
+                return this.IsNull(this.tableEmpleadoEdad.EdadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombreNull() {
-                this[this.tablePerroRaza.NombreColumn] = global::System.Convert.DBNull;
+            public void SetEdadNull() {
+                this[this.tableEmpleadoEdad.EdadColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsRazaNull() {
-                return this.IsNull(this.tablePerroRaza.RazaColumn);
+            public bool IsCantEmpleadosNull() {
+                return this.IsNull(this.tableEmpleadoEdad.CantEmpleadosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetRazaNull() {
-                this[this.tablePerroRaza.RazaColumn] = global::System.Convert.DBNull;
+            public void SetCantEmpleadosNull() {
+                this[this.tableEmpleadoEdad.CantEmpleadosColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1384,22 +1343,22 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class PerroSexoRowChangeEvent : global::System.EventArgs {
+        public class EmpleadosMatriculaRowChangeEvent : global::System.EventArgs {
             
-            private PerroSexoRow eventRow;
+            private EmpleadosMatriculaRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoRowChangeEvent(PerroSexoRow row, global::System.Data.DataRowAction action) {
+            public EmpleadosMatriculaRowChangeEvent(EmpleadosMatriculaRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroSexoRow Row {
+            public EmpleadosMatriculaRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1418,22 +1377,22 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class PerroAlturaRowChangeEvent : global::System.EventArgs {
+        public class EmpleadoSucursalRowChangeEvent : global::System.EventArgs {
             
-            private PerroAlturaRow eventRow;
+            private EmpleadoSucursalRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaRowChangeEvent(PerroAlturaRow row, global::System.Data.DataRowAction action) {
+            public EmpleadoSucursalRowChangeEvent(EmpleadoSucursalRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroAlturaRow Row {
+            public EmpleadoSucursalRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1452,22 +1411,22 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class PerroRazaRowChangeEvent : global::System.EventArgs {
+        public class EmpleadoEdadRowChangeEvent : global::System.EventArgs {
             
-            private PerroRazaRow eventRow;
+            private EmpleadoEdadRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaRowChangeEvent(PerroRazaRow row, global::System.Data.DataRowAction action) {
+            public EmpleadoEdadRowChangeEvent(EmpleadoEdadRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PerroRazaRow Row {
+            public EmpleadoEdadRow Row {
                 get {
                     return this.eventRow;
                 }
