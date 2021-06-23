@@ -589,8 +589,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DSSucursales</DataSetName>
-            <Top>6.53203cm</Top>
-            <Left>0.52599cm</Left>
+            <Top>0.42898cm</Top>
+            <Left>9.62766cm</Left>
             <Height>1.2cm</Height>
             <Width>5cm</Width>
             <ZIndex>1</ZIndex>
@@ -601,31 +601,11 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.68601in</Height>
+        <Height>2.26934in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
       <Page>
-        <PageHeader>
-          <Height>2.54cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageHeader>
-        <PageFooter>
-          <Height>2.54cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>

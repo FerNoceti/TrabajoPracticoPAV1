@@ -45,7 +45,7 @@ namespace TrabajoPracticoPAV1
 
         private void porSucursalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            (new Estadisticas_Empleados_Sucursal()).ShowDialog();
+            (new btnGenerar()).ShowDialog();
         }
 
         private void ingresosPorSucursalToolStripMenuItem_Click(object sender, EventArgs e)

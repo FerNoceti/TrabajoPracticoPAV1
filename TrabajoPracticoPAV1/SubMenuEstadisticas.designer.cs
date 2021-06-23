@@ -34,17 +34,17 @@ namespace TrabajoPracticoPAV1
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porSucursalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.porFechaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.perrosRegistradosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.porFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosObtenidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosPorSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresosPorFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosPorSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porSucursalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.porFechaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,20 @@ namespace TrabajoPracticoPAV1
             this.consultasToolStripMenuItem.Text = "Consultas Realizadas";
             this.consultasToolStripMenuItem.Click += new System.EventHandler(this.consultasToolStripMenuItem_Click);
             // 
+            // porSucursalToolStripMenuItem1
+            // 
+            this.porSucursalToolStripMenuItem1.Name = "porSucursalToolStripMenuItem1";
+            this.porSucursalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porSucursalToolStripMenuItem1.Text = "Por Sucursal";
+            this.porSucursalToolStripMenuItem1.Click += new System.EventHandler(this.porSucursalToolStripMenuItem1_Click);
+            // 
+            // porFechaToolStripMenuItem1
+            // 
+            this.porFechaToolStripMenuItem1.Name = "porFechaToolStripMenuItem1";
+            this.porFechaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porFechaToolStripMenuItem1.Text = "Por Fecha";
+            this.porFechaToolStripMenuItem1.Click += new System.EventHandler(this.porFechaToolStripMenuItem1_Click);
+            // 
             // perrosRegistradosToolStripMenuItem
             // 
             this.perrosRegistradosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -100,6 +114,13 @@ namespace TrabajoPracticoPAV1
             this.toolStripMenuItem1.Text = "Por Sucursal";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // porFechaToolStripMenuItem
+            // 
+            this.porFechaToolStripMenuItem.Name = "porFechaToolStripMenuItem";
+            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porFechaToolStripMenuItem.Text = "Por Fecha";
+            this.porFechaToolStripMenuItem.Click += new System.EventHandler(this.porFechaToolStripMenuItem_Click);
+            // 
             // ingresosObtenidosToolStripMenuItem
             // 
             this.ingresosObtenidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -113,15 +134,15 @@ namespace TrabajoPracticoPAV1
             // ingresosPorSucursalToolStripMenuItem
             // 
             this.ingresosPorSucursalToolStripMenuItem.Name = "ingresosPorSucursalToolStripMenuItem";
-            this.ingresosPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.ingresosPorSucursalToolStripMenuItem.Text = "Ingresos Por Sucursal";
+            this.ingresosPorSucursalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ingresosPorSucursalToolStripMenuItem.Text = "Por Sucursal";
             this.ingresosPorSucursalToolStripMenuItem.Click += new System.EventHandler(this.ingresosPorSucursalToolStripMenuItem_Click);
             // 
             // ingresosPorFechaToolStripMenuItem
             // 
             this.ingresosPorFechaToolStripMenuItem.Name = "ingresosPorFechaToolStripMenuItem";
-            this.ingresosPorFechaToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.ingresosPorFechaToolStripMenuItem.Text = "Ingresos Por Fecha";
+            this.ingresosPorFechaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ingresosPorFechaToolStripMenuItem.Text = "Por Fecha";
             this.ingresosPorFechaToolStripMenuItem.Click += new System.EventHandler(this.ingresosPorFechaToolStripMenuItem_Click);
             // 
             // empleadosPorSucursalToolStripMenuItem
@@ -137,37 +158,16 @@ namespace TrabajoPracticoPAV1
             // porSucursalToolStripMenuItem
             // 
             this.porSucursalToolStripMenuItem.Name = "porSucursalToolStripMenuItem";
-            this.porSucursalToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.porSucursalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.porSucursalToolStripMenuItem.Text = "Por Sucursal";
             this.porSucursalToolStripMenuItem.Click += new System.EventHandler(this.porSucursalToolStripMenuItem_Click);
             // 
             // porEdadToolStripMenuItem
             // 
             this.porEdadToolStripMenuItem.Name = "porEdadToolStripMenuItem";
-            this.porEdadToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.porEdadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.porEdadToolStripMenuItem.Text = "Por Edad";
             this.porEdadToolStripMenuItem.Click += new System.EventHandler(this.porEdadToolStripMenuItem_Click);
-            // 
-            // porFechaToolStripMenuItem
-            // 
-            this.porFechaToolStripMenuItem.Name = "porFechaToolStripMenuItem";
-            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.porFechaToolStripMenuItem.Text = "Por Fecha";
-            this.porFechaToolStripMenuItem.Click += new System.EventHandler(this.porFechaToolStripMenuItem_Click);
-            // 
-            // porSucursalToolStripMenuItem1
-            // 
-            this.porSucursalToolStripMenuItem1.Name = "porSucursalToolStripMenuItem1";
-            this.porSucursalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.porSucursalToolStripMenuItem1.Text = "Por Sucursal";
-            this.porSucursalToolStripMenuItem1.Click += new System.EventHandler(this.porSucursalToolStripMenuItem1_Click);
-            // 
-            // porFechaToolStripMenuItem1
-            // 
-            this.porFechaToolStripMenuItem1.Name = "porFechaToolStripMenuItem1";
-            this.porFechaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.porFechaToolStripMenuItem1.Text = "Por Fecha";
-            this.porFechaToolStripMenuItem1.Click += new System.EventHandler(this.porFechaToolStripMenuItem1_Click);
             // 
             // SubMenuEstadisticas
             // 
