@@ -12,19 +12,20 @@
   <xs:element name="DatosIngresos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosIngresos" msprop:Generator_UserDSName="DatosIngresos">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="IngresoMes" msprop:Generator_TableClassName="IngresoMesDataTable" msprop:Generator_TableVarName="tableIngresoMes" msprop:Generator_TablePropName="IngresoMes" msprop:Generator_RowDeletingName="IngresoMesRowDeleting" msprop:Generator_RowChangingName="IngresoMesRowChanging" msprop:Generator_RowEvHandlerName="IngresoMesRowChangeEventHandler" msprop:Generator_RowDeletedName="IngresoMesRowDeleted" msprop:Generator_UserTableName="IngresoMes" msprop:Generator_RowChangedName="IngresoMesRowChanged" msprop:Generator_RowEvArgName="IngresoMesRowChangeEvent" msprop:Generator_RowClassName="IngresoMesRow">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:string" minOccurs="0" />
-              <xs:element name="Ingreso" msprop:Generator_ColumnVarNameInTable="columnIngreso" msprop:Generator_ColumnPropNameInRow="Ingreso" msprop:Generator_ColumnPropNameInTable="IngresoColumn" msprop:Generator_UserColumnName="Ingreso" type="xs:string" minOccurs="0" />
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
         <xs:element name="IngresoSucursal" msprop:Generator_TableClassName="IngresoSucursalDataTable" msprop:Generator_TableVarName="tableIngresoSucursal" msprop:Generator_TablePropName="IngresoSucursal" msprop:Generator_RowDeletingName="IngresoSucursalRowDeleting" msprop:Generator_RowChangingName="IngresoSucursalRowChanging" msprop:Generator_RowEvHandlerName="IngresoSucursalRowChangeEventHandler" msprop:Generator_RowDeletedName="IngresoSucursalRowDeleted" msprop:Generator_UserTableName="IngresoSucursal" msprop:Generator_RowChangedName="IngresoSucursalRowChanged" msprop:Generator_RowEvArgName="IngresoSucursalRowChangeEvent" msprop:Generator_RowClassName="IngresoSucursalRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Sucursal" msprop:Generator_ColumnVarNameInTable="columnSucursal" msprop:Generator_ColumnPropNameInRow="Sucursal" msprop:Generator_ColumnPropNameInTable="SucursalColumn" msprop:Generator_UserColumnName="Sucursal" type="xs:string" minOccurs="0" />
-              <xs:element name="Ingreso" msprop:Generator_ColumnVarNameInTable="columnIngreso" msprop:Generator_ColumnPropNameInRow="Ingreso" msprop:Generator_ColumnPropNameInTable="IngresoColumn" msprop:Generator_UserColumnName="Ingreso" type="xs:string" minOccurs="0" />
+              <xs:element name="Ingreso" msprop:Generator_ColumnVarNameInTable="columnIngreso" msprop:Generator_ColumnPropNameInRow="Ingreso" msprop:Generator_ColumnPropNameInTable="IngresoColumn" msprop:Generator_UserColumnName="Ingreso" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IngresoMes" msprop:Generator_TableClassName="IngresoMesDataTable" msprop:Generator_TableVarName="tableIngresoMes" msprop:Generator_TablePropName="IngresoMes" msprop:Generator_RowDeletingName="IngresoMesRowDeleting" msprop:Generator_RowChangingName="IngresoMesRowChanging" msprop:Generator_RowEvHandlerName="IngresoMesRowChangeEventHandler" msprop:Generator_RowDeletedName="IngresoMesRowDeleted" msprop:Generator_UserTableName="IngresoMes" msprop:Generator_RowChangedName="IngresoMesRowChanged" msprop:Generator_RowEvArgName="IngresoMesRowChangeEvent" msprop:Generator_RowClassName="IngresoMesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:int" minOccurs="0" />
+              <xs:element name="Mes" msprop:Generator_ColumnVarNameInTable="columnMes" msprop:Generator_ColumnPropNameInRow="Mes" msprop:Generator_ColumnPropNameInTable="MesColumn" msprop:Generator_UserColumnName="Mes" type="xs:int" minOccurs="0" />
+              <xs:element name="Monto" msprop:Generator_ColumnVarNameInTable="columnMonto" msprop:Generator_ColumnPropNameInRow="Monto" msprop:Generator_ColumnPropNameInTable="MontoColumn" msprop:Generator_UserColumnName="Monto" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

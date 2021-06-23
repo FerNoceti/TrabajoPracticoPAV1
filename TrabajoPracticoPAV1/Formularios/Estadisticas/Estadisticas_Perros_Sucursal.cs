@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace TrabajoPracticoPAV1.Formularios.Estadisticas
 {
-    public partial class Estadisticas_Consultas : Form
+    public partial class Estadisticas_Perros_Sucursal : Form
     {
-        public Estadisticas_Consultas()
+        public Estadisticas_Perros_Sucursal()
         {
             InitializeComponent();
-        }
-
-        private void Estadisticas_Consultas_Load(object sender, EventArgs e)
-        {
-
-            this.reportViewer1.RefreshReport();
         }
     }
 }
