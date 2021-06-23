@@ -1,7 +1,7 @@
 ﻿
 namespace TrabajoPracticoPAV1.Formularios.Estadisticas
 {
-    partial class Estadisticas_Ingresos
+    partial class Estadisticas_Consultas_Sucursal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,33 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SuspendLayout();
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.TabIndex = 0;
+            // 
+            // Estadisticas_Consultas
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Estadisticas_Ingresos";
+            this.Controls.Add(this.reportViewer1);
+            this.Name = "Estadisticas_Consultas";
+            this.Text = "Estadisticas_Consultas";
+            this.Load += new System.EventHandler(this.Estadisticas_Consultas_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

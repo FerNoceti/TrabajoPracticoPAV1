@@ -1,7 +1,7 @@
 ﻿
-namespace TrabajoPracticoPAV1.Formularios.Estadisticas
+namespace TrabajoPracticoPAV1.Formularios.Estadisticas.RDLCs
 {
-    partial class Estadisticas_Perros
+    partial class Estadisticas_Consultas_Fecha
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Estadisticas_Perros";
+            this.Text = "Estadisticas_Consultas_Fecha";
         }
 
         #endregion

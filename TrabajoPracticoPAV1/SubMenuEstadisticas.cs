@@ -20,20 +20,17 @@ namespace TrabajoPracticoPAV1
 
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Estadisticas_Consultas consultas = new Estadisticas_Consultas();
+            Estadisticas_Consultas_Sucursal consultas = new Estadisticas_Consultas_Sucursal();
             consultas.ShowDialog();
         }
 
         private void perrosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Estadisticas_Perros perros = new Estadisticas_Perros();
-            perros.ShowDialog();
         }
 
         private void ingresosObtenidosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Estadisticas_Ingresos ingresos = new Estadisticas_Ingresos();
-            ingresos.ShowDialog();
+
         }
 
         private void empleadosPorSucursalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,6 +46,42 @@ namespace TrabajoPracticoPAV1
         private void porSucursalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Estadisticas_Empleados_Sucursal()).ShowDialog();
+        }
+
+        private void ingresosPorSucursalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Ingresos_Sucursal ingresos = new Estadisticas_Ingresos_Sucursal();
+            ingresos.ShowDialog();
+        }
+
+        private void ingresosPorFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Ingresos_Fecha ingresos = new Estadisticas_Ingresos_Fecha();
+            ingresos.ShowDialog();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Perros_Sucursal perros = new Estadisticas_Perros_Sucursal();
+            perros.ShowDialog();
+        }
+
+        private void porFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Perros_Fecha perros = new Estadisticas_Perros_Fecha();
+            perros.ShowDialog();
+        }
+
+        private void porSucursalToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Consultas_Sucursal consultas= new Estadisticas_Consultas_Sucursal();
+            consultas.ShowDialog();
+        }
+
+        private void porFechaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Consultas_Fecha consultas = new Estadisticas_Consultas_Fecha();
+            consultas.ShowDialog();
         }
     }
 }

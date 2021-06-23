@@ -228,11 +228,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosPerros.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.cs">
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosSucursales.cs">
+      <DependentUpon>DatosSucursales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Conjunto de Datos\DatosSucursales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosSucursales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Fecha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.Designer.cs">
-      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Fecha.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas_Fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas_Sucursal.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.cs">
       <SubType>Form</SubType>
@@ -246,17 +260,35 @@
     <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.Designer.cs">
       <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos.cs">
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos_Fecha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos.Designer.cs">
-      <DependentUpon>Estadisticas_Ingresos.cs</DependentUpon>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos_Fecha.Designer.cs">
+      <DependentUpon>Estadisticas_Ingresos_Fecha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros.cs">
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos_Sucursal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros.Designer.cs">
-      <DependentUpon>Estadisticas_Perros.cs</DependentUpon>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Ingresos_Sucursal.Designer.cs">
+      <DependentUpon>Estadisticas_Ingresos_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Fecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Fecha.Designer.cs">
+      <DependentUpon>Estadisticas_Perros_Fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Sucursal.Designer.cs">
+      <DependentUpon>Estadisticas_Perros_Sucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\RDLCs\Estadisticas_Consultas_Fecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\RDLCs\Estadisticas_Consultas_Fecha.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas_Fecha.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Procesos\FacturacionConsulta.cs">
       <SubType>Form</SubType>
@@ -374,8 +406,8 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas.resx">
-      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.resx">
+      <DependentUpon>Estadisticas_Consultas_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.resx">
       <DependentUpon>Estadisticas_Empleados_Edad.cs</DependentUpon>
@@ -383,11 +415,18 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Sucursal.resx">
       <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Ingresos_Fecha.resx">
+      <DependentUpon>Estadisticas_Ingresos_Fecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Ingresos_Sucursal.resx">
+      <DependentUpon>Estadisticas_Ingresos_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoSucursal.rdlc" />
-    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresos.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresosFecha.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresosSucursal.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportPerros.rdlc" />
     <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
@@ -498,6 +537,17 @@
     </None>
     <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosPerros.xss">
       <DependentUpon>DatosPerros.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosSucursales.xsc">
+      <DependentUpon>DatosSucursales.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosSucursales.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosSucursales.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Estadisticas\Conjunto de Datos\DatosSucursales.xss">
+      <DependentUpon>DatosSucursales.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrabajoPracticoPAV1.Formularios.Estadisticas
 {
-    public partial class Estadisticas_Ingresos : Form
+    public partial class Estadisticas_Perros_Fecha : Form
     {
-        public Estadisticas_Ingresos()
+        public Estadisticas_Perros_Fecha()
         {
             InitializeComponent();
         }
