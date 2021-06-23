@@ -108,6 +108,39 @@ namespace TrabajoPracticoPAV1.AD
             }
         }
 
+        internal static DataTable obtenerIngresosPorSucursalMayorA(int monto)
+        {
+            DataTable resultado = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string storedProcedure = "getIngresosPorSucursalMayorA";
+            SqlConnection cn = new SqlConnection(CadenaDB);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@monto", monto);
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(resultado);
+                return resultado;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         public static DataTable obtenerSucursalesReducido()
         {
             DataTable resultado = new DataTable();

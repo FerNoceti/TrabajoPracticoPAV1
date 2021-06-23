@@ -93,6 +93,82 @@ namespace TrabajoPracticoPAV1.AD
             return tabla;
         }
 
+        internal static DataTable obtenerCantEmpleadoPorSucursalEspecifisa(int idSucursal)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string query = "SELECT S.Id, S.Nombre as 'Sucursal', COUNT(*) as 'CantEmpleados'  FROM Empleados E JOIN Sucursales S ON (S.Id = E.IdSucursal)  WHERE E.IdSucursal = @id GROUP BY S.Id, S.Nombre";
+
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", idSucursal);
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
+
+        internal static DataTable obtenerCantEmpleadoPorRangoEdad(int cotaInf , int cotaSup)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string query = "getCantEmpleadosPorRangoEdad";
+
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@cotaInf", cotaInf);
+                cmd.Parameters.AddWithValue("@cotaSup", cotaSup);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         internal static DataTable obtenerCantEmpleadoPorSucursal()
         {
             DataTable tabla = new DataTable();
