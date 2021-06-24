@@ -18,12 +18,6 @@ namespace TrabajoPracticoPAV1
             InitializeComponent();
         }
 
-        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Estadisticas_Consultas consultas = new Estadisticas_Consultas();
-            consultas.ShowDialog();
-        }
-
         private void perrosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Estadisticas_Perros perros = new Estadisticas_Perros();
@@ -49,6 +43,18 @@ namespace TrabajoPracticoPAV1
         private void porSucursalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             (new Estadisticas_Empleados_Sucursal()).ShowDialog();
+        }
+
+        private void porSucursalToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Consultas_Sucursal consultas = new Estadisticas_Consultas_Sucursal();
+            consultas.ShowDialog();
+        }
+
+        private void porFechaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Consultas_Fecha consultas = new Estadisticas_Consultas_Fecha();
+            consultas.ShowDialog();
         }
     }
 }

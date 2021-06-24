@@ -220,3 +220,11 @@ C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPra
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Empleados_Sucursal.resources
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Empleados_Edad.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Empleados_Edad.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Empleados_Sucursal.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Reportes.Reporte_Laboratorios.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Reportes.ReporteMedicamentos.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Reportes.Reporte_Perros.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Reportes.Reporte_Razas.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Consultas_Sucursal.resources
+D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Consultas_Fecha.resources

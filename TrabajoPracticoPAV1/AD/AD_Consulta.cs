@@ -45,6 +45,84 @@ namespace TrabajoPracticoPAV1.AD
 
 
         }
+
+        internal static DataTable ObtenerEstadisticasFecha()
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+
+
+
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT Id, FechaEntrada, FechaSalida FROM Consultas";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
+        internal static DataTable ObtenerEstadisticasSucursales()
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+
+
+            
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+                string consulta = "SELECT s.Nombre, COUNT(c.IdSucursal) as Cantidad FROM Consultas c Inner Join Sucursales s On c.IdSucursal = s.Id group by s.Nombre";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }           
+                   
+        }
+
         public static bool AgregarPersonaABD(Consulta per)
         {
             bool resultado = false;

@@ -228,11 +228,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatosPerros.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.cs">
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Fecha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas.Designer.cs">
-      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Fecha.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas_Fecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.Designer.cs">
+      <DependentUpon>Estadisticas_Consultas_Sucursal.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.cs">
       <SubType>Form</SubType>
@@ -374,8 +380,11 @@
     <EmbeddedResource Include="Formularios\ABM\ABM_Vacunas.resx">
       <DependentUpon>ABM_Vacunas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas.resx">
-      <DependentUpon>Estadisticas_Consultas.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas_Fecha.resx">
+      <DependentUpon>Estadisticas_Consultas_Fecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Consultas_Sucursal.resx">
+      <DependentUpon>Estadisticas_Consultas_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Empleados_Edad.resx">
       <DependentUpon>Estadisticas_Empleados_Edad.cs</DependentUpon>
@@ -384,7 +393,8 @@
       <DependentUpon>Estadisticas_Empleados_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\Report1.rdlc" />
-    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultasSucursal.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultasFecha.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoSucursal.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresos.rdlc" />
