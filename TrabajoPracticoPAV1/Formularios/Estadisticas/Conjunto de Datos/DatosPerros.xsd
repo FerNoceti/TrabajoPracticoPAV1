@@ -12,7 +12,7 @@
   <xs:element name="DatosPerros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosPerros" msprop:Generator_UserDSName="DatosPerros">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="PerroSexo" msprop:Generator_TableClassName="PerroSexoDataTable" msprop:Generator_TableVarName="tablePerroSexo" msprop:Generator_RowChangedName="PerroSexoRowChanged" msprop:Generator_TablePropName="PerroSexo" msprop:Generator_RowDeletingName="PerroSexoRowDeleting" msprop:Generator_RowChangingName="PerroSexoRowChanging" msprop:Generator_RowEvHandlerName="PerroSexoRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroSexoRowDeleted" msprop:Generator_RowClassName="PerroSexoRow" msprop:Generator_UserTableName="PerroSexo" msprop:Generator_RowEvArgName="PerroSexoRowChangeEvent">
+        <xs:element name="PerroSexo" msprop:Generator_TableClassName="PerroSexoDataTable" msprop:Generator_TableVarName="tablePerroSexo" msprop:Generator_TablePropName="PerroSexo" msprop:Generator_RowDeletingName="PerroSexoRowDeleting" msprop:Generator_RowChangingName="PerroSexoRowChanging" msprop:Generator_RowEvHandlerName="PerroSexoRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroSexoRowDeleted" msprop:Generator_UserTableName="PerroSexo" msprop:Generator_RowChangedName="PerroSexoRowChanged" msprop:Generator_RowEvArgName="PerroSexoRowChangeEvent" msprop:Generator_RowClassName="PerroSexoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" type="xs:string" minOccurs="0" />
@@ -20,7 +20,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PerroAltura" msprop:Generator_TableClassName="PerroAlturaDataTable" msprop:Generator_TableVarName="tablePerroAltura" msprop:Generator_RowChangedName="PerroAlturaRowChanged" msprop:Generator_TablePropName="PerroAltura" msprop:Generator_RowDeletingName="PerroAlturaRowDeleting" msprop:Generator_RowChangingName="PerroAlturaRowChanging" msprop:Generator_RowEvHandlerName="PerroAlturaRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroAlturaRowDeleted" msprop:Generator_RowClassName="PerroAlturaRow" msprop:Generator_UserTableName="PerroAltura" msprop:Generator_RowEvArgName="PerroAlturaRowChangeEvent">
+        <xs:element name="PerroAltura" msprop:Generator_TableClassName="PerroAlturaDataTable" msprop:Generator_TableVarName="tablePerroAltura" msprop:Generator_TablePropName="PerroAltura" msprop:Generator_RowDeletingName="PerroAlturaRowDeleting" msprop:Generator_RowChangingName="PerroAlturaRowChanging" msprop:Generator_RowEvHandlerName="PerroAlturaRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroAlturaRowDeleted" msprop:Generator_UserTableName="PerroAltura" msprop:Generator_RowChangedName="PerroAlturaRowChanged" msprop:Generator_RowEvArgName="PerroAlturaRowChangeEvent" msprop:Generator_RowClassName="PerroAlturaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" type="xs:string" minOccurs="0" />
@@ -29,11 +29,19 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PerroRaza" msprop:Generator_TableClassName="PerroRazaDataTable" msprop:Generator_TableVarName="tablePerroRaza" msprop:Generator_TablePropName="PerroRaza" msprop:Generator_RowDeletingName="PerroRazaRowDeleting" msprop:Generator_RowChangingName="PerroRazaRowChanging" msprop:Generator_RowEvHandlerName="PerroRazaRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroRazaRowDeleted" msprop:Generator_UserTableName="PerroRaza" msprop:Generator_RowChangedName="PerroRazaRowChanged" msprop:Generator_RowEvArgName="PerroRazaRowChangeEvent" msprop:Generator_RowClassName="PerroRazaRow">
+        <xs:element name="PerroRaza" msprop:Generator_TableClassName="PerroRazaDataTable" msprop:Generator_TableVarName="tablePerroRaza" msprop:Generator_RowChangedName="PerroRazaRowChanged" msprop:Generator_TablePropName="PerroRaza" msprop:Generator_RowDeletingName="PerroRazaRowDeleting" msprop:Generator_RowChangingName="PerroRazaRowChanging" msprop:Generator_RowEvHandlerName="PerroRazaRowChangeEventHandler" msprop:Generator_RowDeletedName="PerroRazaRowDeleted" msprop:Generator_RowClassName="PerroRazaRow" msprop:Generator_UserTableName="PerroRaza" msprop:Generator_RowEvArgName="PerroRazaRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" type="xs:string" minOccurs="0" />
               <xs:element name="Raza" msprop:Generator_ColumnVarNameInTable="columnRaza" msprop:Generator_ColumnPropNameInRow="Raza" msprop:Generator_ColumnPropNameInTable="RazaColumn" msprop:Generator_UserColumnName="Raza" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PerrosFecha" msprop:Generator_TableClassName="PerrosFechaDataTable" msprop:Generator_TableVarName="tablePerrosFecha" msprop:Generator_TablePropName="PerrosFecha" msprop:Generator_RowDeletingName="PerrosFechaRowDeleting" msprop:Generator_RowChangingName="PerrosFechaRowChanging" msprop:Generator_RowEvHandlerName="PerrosFechaRowChangeEventHandler" msprop:Generator_RowDeletedName="PerrosFechaRowDeleted" msprop:Generator_UserTableName="PerrosFecha" msprop:Generator_RowChangedName="PerrosFechaRowChanged" msprop:Generator_RowEvArgName="PerrosFechaRowChangeEvent" msprop:Generator_RowClassName="PerrosFechaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Año" msprop:Generator_ColumnVarNameInTable="columnAño" msprop:Generator_ColumnPropNameInRow="Año" msprop:Generator_ColumnPropNameInTable="AñoColumn" msprop:Generator_UserColumnName="Año" type="xs:int" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

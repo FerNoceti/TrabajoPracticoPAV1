@@ -29,12 +29,36 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.rpPerrosXFecha = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.SuspendLayout();
+            // 
+            // rpPerrosXFecha
+            // 
+            this.rpPerrosXFecha.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rpPerrosXFecha.DocumentMapWidth = 78;
+            this.rpPerrosXFecha.LocalReport.ReportEmbeddedResource = "TrabajoPracticoPAV1.Formularios.Estadisticas.RDLCs.ReportPerrosFecha.rdlc";
+            this.rpPerrosXFecha.Location = new System.Drawing.Point(0, 0);
+            this.rpPerrosXFecha.Name = "rpPerrosXFecha";
+            this.rpPerrosXFecha.ServerReport.BearerToken = null;
+            this.rpPerrosXFecha.Size = new System.Drawing.Size(800, 450);
+            this.rpPerrosXFecha.TabIndex = 0;
+            this.rpPerrosXFecha.Load += new System.EventHandler(this.rpPerrosXFecha_Load);
+            // 
+            // Estadisticas_Perros_Fecha
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rpPerrosXFecha);
+            this.Name = "Estadisticas_Perros_Fecha";
             this.Text = "Estadisticas_Perros_Fecha";
+            this.Load += new System.EventHandler(this.Estadisticas_Perros_Fecha_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer rpPerrosXFecha;
     }
 }

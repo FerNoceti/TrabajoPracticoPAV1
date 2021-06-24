@@ -270,5 +270,39 @@ namespace TrabajoPracticoPAV1.AD
 
 
         }
+
+        public static DataTable obtenerPerrosXFecha()
+        {
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];            
+            SqlConnection cn = new SqlConnection(CadenaDB);
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                string consulta = "select year(p.FechaNacimiento) as 'Año', count(*) as 'Cantidad' from Perros p group by FechaNacimiento";
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = consulta;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                DataTable tabla = new DataTable();
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+                return tabla;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }

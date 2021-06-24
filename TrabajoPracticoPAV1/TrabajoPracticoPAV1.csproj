@@ -421,6 +421,9 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Ingresos_Sucursal.resx">
       <DependentUpon>Estadisticas_Ingresos_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Perros_Fecha.resx">
+      <DependentUpon>Estadisticas_Perros_Fecha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
@@ -428,6 +431,7 @@
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresosFecha.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportIngresosSucursal.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportPerros.rdlc" />
+    <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportPerrosFecha.rdlc" />
     <EmbeddedResource Include="Formularios\Procesos\FacturacionConsulta.resx">
       <DependentUpon>FacturacionConsulta.cs</DependentUpon>
     </EmbeddedResource>
