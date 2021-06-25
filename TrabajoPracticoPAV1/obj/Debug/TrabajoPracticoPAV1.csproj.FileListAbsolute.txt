@@ -328,4 +328,4 @@ C:\Users\My PC\Documents\FACU\SISTEMAS\PAV I\Practico\TrabajoPracticoPAV1\Trabaj
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Perros_Fecha.resources
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Perros_Razas.resources
 C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Perros_Sucursal.resources
-C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.csprojAssemblyReference.cache
+C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\obj\Debug\TrabajoPracticoPAV1.Formularios.Estadisticas.Estadisticas_Consultas_Fecha.resources

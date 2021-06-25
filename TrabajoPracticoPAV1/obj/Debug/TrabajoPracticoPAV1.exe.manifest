@@ -690,14 +690,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TrabajoPracticoPAV1.exe" size="1491936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TrabajoPracticoPAV1.exe" size="1527264">
       <assemblyIdentity name="TrabajoPracticoPAV1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>zCcDGHl8Nfz1MNa1gMgkU8OMiK3tnf4peoRq/uYkMEQ=</dsig:DigestValue>
+        <dsig:DigestValue>/QKMg5rCo9U4HgcbJSsx41ZE5bJn6Ca0xtUgEo+Tlug=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

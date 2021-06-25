@@ -20,8 +20,6 @@ namespace TrabajoPracticoPAV1
 
         private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Estadisticas_Consultas_Sucursal consultas = new Estadisticas_Consultas_Sucursal();
-            consultas.ShowDialog();
         }
 
         private void perrosRegistradosToolStripMenuItem_Click(object sender, EventArgs e)
