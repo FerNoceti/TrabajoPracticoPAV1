@@ -68,7 +68,7 @@ namespace TrabajoPracticoPAV1
 
         private void porFechaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Estadisticas_Perros_Fecha perros = new Estadisticas_Perros_Fecha();
+            Estadisticas_Perros_Razas perros = new Estadisticas_Perros_Razas();
             perros.ShowDialog();
         }
 

@@ -435,6 +435,90 @@ namespace TrabajoPracticoPAV1.AD
                 cn.Close();
             }
         }
+
+        public static DataTable Perros_x_sucursal()
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string storedProcedure = "getPerros_x_Sucursal";
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = storedProcedure;
+
+                cmd.Parameters.Clear();
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
+        internal static DataTable ObtenerDatos_Perros_x_Sucursal_PorFiltros(int filtro, string letra)
+        {
+            DataTable tabla = new DataTable();
+            string CadenaDB = System.Configuration.ConfigurationManager.AppSettings["CadenaDB"];
+            string query = "SELECT  S.Nombre as 'Sucursal', Count(P.IdSucursal) as 'Cantidad_Perros' FROM Perros P JOIN Sucursales S On(P.IdSucursal = S.Id) GROUP BY S.Nombre";
+
+            //Aplicaciones de Filtros
+            if (filtro == 1)
+            {
+                query = "SELECT  S.Nombre as 'Sucursal', Count(P.IdSucursal) as 'Cantidad_Perros' FROM Perros P JOIN Sucursales S On(P.IdSucursal = S.Id) where S.Nombre LIKE '" + letra + "%' GROUP BY S.Nombre";
+            }
+            if (filtro == 2)
+            {
+                query = "SELECT  S.Nombre as 'Sucursal', Count(P.IdSucursal) as 'Cantidad_Perros' FROM Perros P JOIN Sucursales S On(P.IdSucursal = S.Id) where S.Nombre LIKE '%" + letra + "' GROUP BY S.Nombre";
+            }
+
+
+            SqlConnection cn = new SqlConnection(CadenaDB);
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand();
+
+                cmd.Parameters.Clear();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+
+                cn.Open();
+                cmd.Connection = cn;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tabla);
+
+                return tabla;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+            return tabla;
+        }
     }
 
 }

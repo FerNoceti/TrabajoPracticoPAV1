@@ -278,6 +278,12 @@
     <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Fecha.Designer.cs">
       <DependentUpon>Estadisticas_Perros_Fecha.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Razas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Razas.designer.cs">
+      <DependentUpon>Estadisticas_Perros_Razas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Estadisticas\Estadisticas_Perros_Sucursal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,6 +430,12 @@
     <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Perros_Fecha.resx">
       <DependentUpon>Estadisticas_Perros_Fecha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Perros_Razas.resx">
+      <DependentUpon>Estadisticas_Perros_Razas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estadisticas\Estadisticas_Perros_Sucursal.resx">
+      <DependentUpon>Estadisticas_Perros_Sucursal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\Report1.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportConsultas.rdlc" />
     <EmbeddedResource Include="Formularios\Estadisticas\RDLCs\ReportEmpleadoEdad.rdlc" />
@@ -441,6 +453,10 @@
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasCompleto.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasHembras.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\ListadoDeRazasMachos.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\PerrosXRaza.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\PerrosXRaza_H.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\PerrosXRaza_M.rdlc" />
+    <EmbeddedResource Include="Formularios\Reportes\RDLCs\PerroXSucursal.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\RDLCs\reporteLaboratorios.rdlc" />
     <EmbeddedResource Include="Formularios\Reportes\Reporte_Consultas.resx">
       <DependentUpon>Reporte_Consultas.cs</DependentUpon>
