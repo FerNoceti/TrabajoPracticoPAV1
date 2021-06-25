@@ -27,10 +27,12 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
 
         private void reportViewer1_Load(object sender, EventArgs e)
         {
+
+
             DataTable tabla = new DataTable();
             tabla = AD_Consulta.ObtenerEstadisticasSucursales();
             reportConsultasPorSucursal.LocalReport.DataSources.Clear();
-            reportConsultasPorSucursal.LocalReport.DataSources.Add(new ReportDataSource("consultaS", tabla));
+            reportConsultasPorSucursal.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tabla));
             reportConsultasPorSucursal.LocalReport.Refresh();
         }
     }

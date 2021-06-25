@@ -11,7 +11,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="consultasxsuc">
+    <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>BD3K7G11_2021DataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -63,7 +63,7 @@
           <Line Name="Line1">
             <Top>1.47849cm</Top>
             <Height>0cm</Height>
-            <Width>16.51cm</Width>
+            <Width>20.10833cm</Width>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -103,11 +103,11 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Chart Name="Chart1">
+          <Chart Name="Chart3">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart3_CategoryGroup">
                     <GroupExpressions>
                       <GroupExpression>=Fields!IdSucursal.Value</GroupExpression>
                     </GroupExpressions>
@@ -124,7 +124,7 @@
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Id</Label>
+                  <Label>Id Sucursal</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -134,7 +134,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Id.Value)</Y>
+                        <Y>=Sum(Fields!IdSucursal.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -147,6 +147,7 @@
                     </ChartDataPoint>
                   </ChartDataPoints>
                   <Type>Shape</Type>
+                  <Subtype>ExplodedPie</Subtype>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -392,36 +393,15 @@
                     </ChartAxisScaleBreak>
                   </ChartAxis>
                 </ChartValueAxes>
-                <ChartThreeDProperties>
-                  <Enabled>true</Enabled>
-                </ChartThreeDProperties>
                 <Style>
                   <BackgroundColor>#00ffffff</BackgroundColor>
                   <BackgroundGradientType>None</BackgroundGradientType>
                 </Style>
               </ChartArea>
             </ChartAreas>
-            <ChartLegends>
-              <ChartLegend Name="Default">
-                <Style>
-                  <BackgroundGradientType>None</BackgroundGradientType>
-                  <FontSize>8pt</FontSize>
-                </Style>
-                <ChartLegendTitle>
-                  <Caption />
-                  <Style>
-                    <FontSize>8pt</FontSize>
-                    <FontWeight>Bold</FontWeight>
-                    <TextAlign>Center</TextAlign>
-                  </Style>
-                </ChartLegendTitle>
-                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
-                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
-              </ChartLegend>
-            </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Consultas por Sucursal</Caption>
+                <Caption>Título del gráfico</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -450,11 +430,11 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>consultasxsuc</DataSetName>
-            <Top>1.87537cm</Top>
-            <Left>1.26682cm</Left>
-            <Height>7.03729cm</Height>
-            <Width>13.79708cm</Width>
+            <DataSetName>DataSet1</DataSetName>
+            <Top>2.52801cm</Top>
+            <Left>5.7912cm</Left>
+            <Height>5.01263cm</Height>
+            <Width>9.51474cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -469,7 +449,7 @@
         <Height>3.76042in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>7.91667in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>

@@ -95,7 +95,7 @@
           <Line Name="Line1">
             <Top>1.33201cm</Top>
             <Height>0cm</Height>
-            <Width>11.54495cm</Width>
+            <Width>12.41808cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -109,7 +109,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.81549cm</Width>
+                  <Width>1.71507cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>4.59903cm</Width>
@@ -332,7 +332,7 @@
             <Top>1.82245cm</Top>
             <Left>0.63182cm</Left>
             <Height>1.27938cm</Height>
-            <Width>10.01354cm</Width>
+            <Width>10.91313cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -342,10 +342,10 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>5.02083in</Height>
+        <Height>5.83333in</Height>
         <Style />
       </Body>
-      <Width>4.54526in</Width>
+      <Width>4.88901in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
