@@ -45,6 +45,7 @@ namespace TrabajoPracticoPAV1
             this.empleadosPorSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porEdadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porFechaDeNacimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,14 +91,14 @@ namespace TrabajoPracticoPAV1
             // porSucursalToolStripMenuItem1
             // 
             this.porSucursalToolStripMenuItem1.Name = "porSucursalToolStripMenuItem1";
-            this.porSucursalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porSucursalToolStripMenuItem1.Size = new System.Drawing.Size(164, 22);
             this.porSucursalToolStripMenuItem1.Text = "Por Sucursal";
             this.porSucursalToolStripMenuItem1.Click += new System.EventHandler(this.porSucursalToolStripMenuItem1_Click);
             // 
             // porFechaToolStripMenuItem1
             // 
             this.porFechaToolStripMenuItem1.Name = "porFechaToolStripMenuItem1";
-            this.porFechaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.porFechaToolStripMenuItem1.Size = new System.Drawing.Size(164, 22);
             this.porFechaToolStripMenuItem1.Text = "Por Fecha";
             this.porFechaToolStripMenuItem1.Click += new System.EventHandler(this.porFechaToolStripMenuItem1_Click);
             // 
@@ -105,7 +106,8 @@ namespace TrabajoPracticoPAV1
             // 
             this.perrosRegistradosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.porFechaToolStripMenuItem});
+            this.porFechaToolStripMenuItem,
+            this.porFechaDeNacimientoToolStripMenuItem});
             this.perrosRegistradosToolStripMenuItem.Name = "perrosRegistradosToolStripMenuItem";
             this.perrosRegistradosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.perrosRegistradosToolStripMenuItem.Text = "Perros Registrados";
@@ -114,14 +116,14 @@ namespace TrabajoPracticoPAV1
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(263, 22);
             this.toolStripMenuItem1.Text = "Por Sucursal";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // porFechaToolStripMenuItem
             // 
             this.porFechaToolStripMenuItem.Name = "porFechaToolStripMenuItem";
-            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
             this.porFechaToolStripMenuItem.Text = "Por Raza";
             this.porFechaToolStripMenuItem.Click += new System.EventHandler(this.porFechaToolStripMenuItem_Click);
             // 
@@ -173,6 +175,13 @@ namespace TrabajoPracticoPAV1
             this.porEdadToolStripMenuItem.Text = "Por Edad";
             this.porEdadToolStripMenuItem.Click += new System.EventHandler(this.porEdadToolStripMenuItem_Click);
             // 
+            // porFechaDeNacimientoToolStripMenuItem
+            // 
+            this.porFechaDeNacimientoToolStripMenuItem.Name = "porFechaDeNacimientoToolStripMenuItem";
+            this.porFechaDeNacimientoToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.porFechaDeNacimientoToolStripMenuItem.Text = "Por Fecha de Nacimiento";
+            this.porFechaDeNacimientoToolStripMenuItem.Click += new System.EventHandler(this.porFechaDeNacimientoToolStripMenuItem_Click);
+            // 
             // SubMenuEstadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,5 +216,6 @@ namespace TrabajoPracticoPAV1
         private System.Windows.Forms.ToolStripMenuItem porFechaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porSucursalToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem porFechaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem porFechaDeNacimientoToolStripMenuItem;
     }
 }

@@ -81,5 +81,11 @@ namespace TrabajoPracticoPAV1
             Estadisticas_Consultas_Fecha consultas = new Estadisticas_Consultas_Fecha();
             consultas.ShowDialog();
         }
+
+        private void porFechaDeNacimientoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estadisticas_Perros_Fecha perros = new Estadisticas_Perros_Fecha();
+            perros.ShowDialog();
+        }
     }
 }
