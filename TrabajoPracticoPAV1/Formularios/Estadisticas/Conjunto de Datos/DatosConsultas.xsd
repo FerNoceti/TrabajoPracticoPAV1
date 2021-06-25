@@ -12,11 +12,11 @@
   <xs:element name="DatosConsultas" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatosConsultas" msprop:Generator_UserDSName="DatosConsultas">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ConsultaSucursal" msprop:Generator_TableClassName="ConsultaSucursalDataTable" msprop:Generator_TableVarName="tableConsultaSucursal" msprop:Generator_TablePropName="ConsultaSucursal" msprop:Generator_RowDeletingName="ConsultaSucursalRowDeleting" msprop:Generator_RowChangingName="ConsultaSucursalRowChanging" msprop:Generator_RowEvHandlerName="ConsultaSucursalRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultaSucursalRowDeleted" msprop:Generator_UserTableName="ConsultaSucursal" msprop:Generator_RowChangedName="ConsultaSucursalRowChanged" msprop:Generator_RowEvArgName="ConsultaSucursalRowChangeEvent" msprop:Generator_RowClassName="ConsultaSucursalRow">
+        <xs:element name="ConsultaSucursal" msprop:Generator_TableClassName="ConsultaSucursalDataTable" msprop:Generator_TableVarName="tableConsultaSucursal" msprop:Generator_RowChangedName="ConsultaSucursalRowChanged" msprop:Generator_TablePropName="ConsultaSucursal" msprop:Generator_RowDeletingName="ConsultaSucursalRowDeleting" msprop:Generator_RowChangingName="ConsultaSucursalRowChanging" msprop:Generator_RowEvHandlerName="ConsultaSucursalRowChangeEventHandler" msprop:Generator_RowDeletedName="ConsultaSucursalRowDeleted" msprop:Generator_RowClassName="ConsultaSucursalRow" msprop:Generator_UserTableName="ConsultaSucursal" msprop:Generator_RowEvArgName="ConsultaSucursalRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Sucursal" msprop:Generator_ColumnVarNameInTable="columnSucursal" msprop:Generator_ColumnPropNameInRow="Sucursal" msprop:Generator_ColumnPropNameInTable="SucursalColumn" msprop:Generator_UserColumnName="Sucursal" type="xs:string" minOccurs="0" />
-              <xs:element name="CantConsultas" msprop:Generator_ColumnVarNameInTable="columnCantConsultas" msprop:Generator_ColumnPropNameInRow="CantConsultas" msprop:Generator_ColumnPropNameInTable="CantConsultasColumn" msprop:Generator_UserColumnName="CantConsultas" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_UserColumnName="Nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

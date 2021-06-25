@@ -11,48 +11,28 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="DSConsultaSucursal">
       <Query>
         <DataSourceName>BD3K7G11_2021DataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Id">
-          <DataField>Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NroHistoriaClinica">
-          <DataField>NroHistoriaClinica</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="IdSucursal">
-          <DataField>IdSucursal</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TipoDocumentoEmpl">
-          <DataField>TipoDocumentoEmpl</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NroDocumentoEmpl">
-          <DataField>NroDocumentoEmpl</DataField>
+        <Field Name="Nombre">
+          <DataField>Nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FechaEntrada">
-          <DataField>FechaEntrada</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="FechaSalida">
-          <DataField>FechaSalida</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>BD3K7G11_2021DataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\.UTN\3ro\pav\TpPav\TrabajoPracticoPAV1\BD3K7G11_2021DataSet.xsd</rd:SchemaPath>
-        <rd:TableName>Consultas</rd:TableName>
-        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
-        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>ConsultasTableAdapter</rd:TableAdapterName>
+        <rd:DataSetName>DatosConsultas</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\matia\source\repos\82851-Fernando-Noceti\TrabajoPracticoPAV1\TrabajoPracticoPAV1\Formularios\Estadisticas\Conjunto de Datos\DatosConsultas.xsd</rd:SchemaPath>
+        <rd:TableName>ConsultaSucursal</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -109,32 +89,32 @@
                 <ChartMember>
                   <Group Name="Chart3_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!IdSucursal.Value</GroupExpression>
+                      <GroupExpression>=Fields!Nombre.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!IdSucursal.Value</Value>
+                      <Value>=Fields!Nombre.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!IdSucursal.Value</Label>
+                  <Label>=Fields!Nombre.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Id Sucursal</Label>
+                  <Label>Cantidad</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="IdSucursal">
+                <ChartSeries Name="Cantidad">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!IdSucursal.Value)</Y>
+                        <Y>=Sum(Fields!Cantidad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -430,7 +410,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>DSConsultaSucursal</DataSetName>
             <Top>2.52801cm</Top>
             <Left>5.7912cm</Left>
             <Height>5.01263cm</Height>

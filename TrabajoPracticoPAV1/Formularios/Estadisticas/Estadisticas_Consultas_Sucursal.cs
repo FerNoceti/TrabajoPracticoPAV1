@@ -32,7 +32,7 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas
             DataTable tabla = new DataTable();
             tabla = AD_Consulta.ObtenerEstadisticasSucursales();
             reportConsultasPorSucursal.LocalReport.DataSources.Clear();
-            reportConsultasPorSucursal.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", tabla));
+            reportConsultasPorSucursal.LocalReport.DataSources.Add(new ReportDataSource("DSConsultaSucursal", tabla));
             reportConsultasPorSucursal.LocalReport.Refresh();
         }
     }

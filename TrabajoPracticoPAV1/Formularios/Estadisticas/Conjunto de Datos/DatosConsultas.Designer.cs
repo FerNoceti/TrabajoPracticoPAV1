@@ -279,9 +279,9 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ConsultaSucursalDataTable : global::System.Data.TypedTableBase<ConsultaSucursalRow> {
             
-            private global::System.Data.DataColumn columnSucursal;
+            private global::System.Data.DataColumn columnNombre;
             
-            private global::System.Data.DataColumn columnCantConsultas;
+            private global::System.Data.DataColumn columnCantidad;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -318,17 +318,17 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn SucursalColumn {
+            public global::System.Data.DataColumn NombreColumn {
                 get {
-                    return this.columnSucursal;
+                    return this.columnNombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn CantConsultasColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columnCantConsultas;
+                    return this.columnCantidad;
                 }
             }
             
@@ -369,11 +369,11 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ConsultaSucursalRow AddConsultaSucursalRow(string Sucursal, string CantConsultas) {
+            public ConsultaSucursalRow AddConsultaSucursalRow(string Nombre, int Cantidad) {
                 ConsultaSucursalRow rowConsultaSucursalRow = ((ConsultaSucursalRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Sucursal,
-                        CantConsultas};
+                        Nombre,
+                        Cantidad};
                 rowConsultaSucursalRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowConsultaSucursalRow);
                 return rowConsultaSucursalRow;
@@ -396,17 +396,17 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnSucursal = base.Columns["Sucursal"];
-                this.columnCantConsultas = base.Columns["CantConsultas"];
+                this.columnNombre = base.Columns["Nombre"];
+                this.columnCantidad = base.Columns["Cantidad"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnSucursal = new global::System.Data.DataColumn("Sucursal", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSucursal);
-                this.columnCantConsultas = new global::System.Data.DataColumn("CantConsultas", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCantConsultas);
+                this.columnNombre = new global::System.Data.DataColumn("Nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombre);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -549,58 +549,58 @@ namespace TrabajoPracticoPAV1.Formularios.Estadisticas.Conjunto_de_Datos {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Sucursal {
+            public string Nombre {
                 get {
                     try {
-                        return ((string)(this[this.tableConsultaSucursal.SucursalColumn]));
+                        return ((string)(this[this.tableConsultaSucursal.NombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Sucursal\' de la tabla \'ConsultaSucursal\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nombre\' de la tabla \'ConsultaSucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableConsultaSucursal.SucursalColumn] = value;
+                    this[this.tableConsultaSucursal.NombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string CantConsultas {
+            public int Cantidad {
                 get {
                     try {
-                        return ((string)(this[this.tableConsultaSucursal.CantConsultasColumn]));
+                        return ((int)(this[this.tableConsultaSucursal.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantConsultas\' de la tabla \'ConsultaSucursal\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cantidad\' de la tabla \'ConsultaSucursal\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableConsultaSucursal.CantConsultasColumn] = value;
+                    this[this.tableConsultaSucursal.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsSucursalNull() {
-                return this.IsNull(this.tableConsultaSucursal.SucursalColumn);
+            public bool IsNombreNull() {
+                return this.IsNull(this.tableConsultaSucursal.NombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetSucursalNull() {
-                this[this.tableConsultaSucursal.SucursalColumn] = global::System.Convert.DBNull;
+            public void SetNombreNull() {
+                this[this.tableConsultaSucursal.NombreColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCantConsultasNull() {
-                return this.IsNull(this.tableConsultaSucursal.CantConsultasColumn);
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableConsultaSucursal.CantidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCantConsultasNull() {
-                this[this.tableConsultaSucursal.CantConsultasColumn] = global::System.Convert.DBNull;
+            public void SetCantidadNull() {
+                this[this.tableConsultaSucursal.CantidadColumn] = global::System.Convert.DBNull;
             }
         }
         
